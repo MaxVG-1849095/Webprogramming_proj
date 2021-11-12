@@ -1,0 +1,333 @@
+CRITICAL - 2021-11-07 04:46:14 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:46:24 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:46:30 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:47:16 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:47:20 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:49:16 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:49:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 11:51:50 --> The framework needs the following extension(s) installed and loaded: curl, intl, mbstring, xml.
+#0 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/CodeIgniter.php(218): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/CodeIgniter.php(176): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/spark(45): require('/home/max/Docum...')
+#4 {main}
+CRITICAL - 2021-11-07 11:51:50 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/CLI/CLI.php:719
+Stack trace:
+#0 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/CLI/CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/CLI/CLI.php(959): CodeIgniter\CLI\CLI::init()
+#2 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/Autoloader/Autoloader.php(264): include_once('/home/max/Docum...')
+#3 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 /home/max/Documents/2eINF/WebProgramming/webprogr_project/codeigniter/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 /home/max/Documents/2eINF/WebProg
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:52:06 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:52:06 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:56:34 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:58:04 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:58:25 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:58:53 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 04:59:37 --> Undefined variable $data
+#0 /app/app/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 04:59:50 --> Undefined variable $data
+#0 /app/app/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 04:59:51 --> Undefined variable $data
+#0 /app/app/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 05:17:30 --> Undefined variable $data
+#0 /app/app/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 05:17:49 --> Undefined variable $data
+#0 /app/app/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Home->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 05:26:57 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 05:28:02 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 05:47:16 --> syntax error, unexpected token ":"
+#0 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#2 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-11-07 05:47:51 --> syntax error, unexpected variable "$routes", expecting ")"
+#0 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#2 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-11-07 06:11:42 --> Call to undefined function link_tag()
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(23): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->view()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-07 06:21:46 --> syntax error, unexpected token "}"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(767): class_exists()
+#4 /app/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-07 06:32:33 --> syntax error, unexpected end of file
+#0 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#2 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-11-07 06:32:55 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:33:39 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:34:21 --> Class "CI_Controller" not found
+#0 /app/system/Autoloader/Autoloader.php(264): include_once()
+#1 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /app/system/CodeIgniter.php(767): class_exists()
+#5 /app/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-07 06:34:33 --> Class "Controller" not found
+#0 /app/system/Autoloader/Autoloader.php(264): include_once()
+#1 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /app/system/CodeIgniter.php(767): class_exists()
+#5 /app/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-07 06:34:49 --> Undefined property: App\Controllers\Test::$load
+#0 /app/app/Controllers/test.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Test->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:38:08 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:38:10 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:38:24 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:38:26 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 06:38:50 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:30:01 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:30:12 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:30:14 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:32:46 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:32:47 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:36:30 --> Too few arguments to function App\Controllers\Pages::view(), 0 passed in /app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->view()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-07 07:38:53 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:39:50 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:39:56 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:43:27 --> Undefined constant "App\Controllers\about"
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-07 07:48:39 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/BaseController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:52:17 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/BaseController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:52:19 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/BaseController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:53:10 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/BaseController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 07:53:47 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/BaseController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 08:00:57 --> Invalid file: pages/view/about.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Pages.php(17): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-07 08:01:58 --> Undefined variable $data
+#0 /app/app/Controllers/Pages.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-07 08:03:14 --> syntax error, unexpected token "{", expecting "function" or "const"
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

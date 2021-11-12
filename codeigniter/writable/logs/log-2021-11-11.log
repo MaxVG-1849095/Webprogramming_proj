@@ -1,0 +1,464 @@
+CRITICAL - 2021-11-11 03:40:37 --> Too few arguments to function App\Controllers\BaseController::view(), 0 passed in /app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->view()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 03:56:19 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 03:56:59 --> Call to undefined function App\Controllers\homeredirect()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 03:59:36 --> Call to undefined function App\Controllers\homeredirect()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 04:00:02 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:01:52 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:01:53 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:01:58 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:02:34 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:02:59 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:03:01 --> Invalid file: home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:03:25 --> Invalid file: Pages/home.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(54): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 04:03:49 --> Call to undefined function App\Controllers\setPage()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 04:04:04 --> Call to undefined function App\Controllers\setPage()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\BaseController->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 05:00:47 --> Call to undefined method App\Models\databasetest::findAll()
+#0 /app/app/Controllers/Pages.php(24): App\Models\databasetest->getUser()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 05:04:24 --> Class "App\Models\databasetest" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 05:09:15 --> Class "App\Models\NewsModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\News->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-11 05:09:56 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-11-11 05:09:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /app/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#5 /app/app/Controllers/News.php(15): App\Models\NewsModel->getNews()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\News->index()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-11 05:28:08 --> Class "App\Controllers\NewsModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 05:28:36 --> Call to undefined method App\Models\UsersModel::getNews
+#0 /app/app/Controllers/Pages.php(26): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 05:30:38 --> Undefined array key "title"
+#0 /app/app/Controllers/Pages.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 05:31:02 --> Undefined array key "name"
+#0 /app/app/Controllers/Pages.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 05:32:10 --> Undefined array key "name"
+#0 /app/app/Controllers/Pages.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 05:33:08 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:33:30 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:33:38 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:35:47 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:35:50 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:35:52 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:37:01 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:37:03 --> Undefined variable $news
+#0 /app/app/Views/news/view.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:46:22 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:49:12 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:49:13 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:51:55 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-11 05:52:26 --> Table 'testDB.users' doesn't exist
+CRITICAL - 2021-11-11 05:52:26 --> Table 'testDB.users' doesn't exist
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /app/app/Models/UsersModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /app/app/Controllers/Pages.php(26): App\Models\UsersModel->getUsers()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-11-11 05:52:32 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:52:33 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:53:48 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:56:11 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:56:35 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(34): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:57:02 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(47): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:58:21 --> Undefined array key "title"
+#0 /app/app/Views/pages/accountoverview.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(33): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountindex()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 05:58:22 --> Undefined array key "title"
+#0 /app/app/Views/pages/accountoverview.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(33): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountindex()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 07:03:59 --> Class "App\Models\ItemModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 07:04:43 --> Call to undefined method App\Models\ItemModel::getUsers
+#0 /app/app/Controllers/Pages.php(24): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 07:05:06 --> Undefined array key "id"
+#0 /app/app/Views/Items/itemoverview.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(30): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 07:05:24 --> Undefined array key "id"
+#0 /app/app/Views/Items/itemoverview.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(30): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 07:22:18 --> Undefined variable $userid
+#0 /app/app/Controllers/Pages.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 07:27:34 --> Undefined variable $news
+#0 /app/app/Views/Items/item.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(46): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

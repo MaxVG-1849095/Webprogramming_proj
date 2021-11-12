@@ -1,0 +1,85 @@
+
+.shopitem{
+    width:200px;
+    text-align:center;
+    display:block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+    border:5px solid black;
+    max-height: 250px;
+    margin-left:40px;
+    margin-right:40px;
+}
+.ware{
+    width:200px;
+    text-align:center;
+    display:block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+    border:5px solid black;
+    max-height: 250px;
+    margin-left:40px;
+    margin-right:40px;
+}
+.ware-item{
+    height: 200px;
+    max-width: 200px;
+    float:left;
+
+}
+.ware-description{
+    font-size: 2rem;
+    margin-right:auto;
+}
+a:hover{
+    color:rgb(16, 12, 66);
+}
+a:visited{
+    color:rgb(74, 47, 170)
+}
+p{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    color:blue;
+}
+h2{
+    font-size: 2.5rem;
+    color:red;
+} 
+
+header{
+    background-color: aquamarine;
+    font-size: 2rem;
+}
+footer{
+    background-color: aquamarine;
+    font-size: 2rem;
+}
+
+.Home-Body{
+    background-color: blanchedalmond;
+}
+
+#allitems{
+    background-size:cover;
+    background-color: rgb(46, 46, 197);
+    padding-bottom:auto;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+
+}
+
+.itemstogether{
+    text-align: center;
+}
