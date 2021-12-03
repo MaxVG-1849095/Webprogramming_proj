@@ -1,0 +1,510 @@
+ERROR - 2021-11-20 03:35:56 --> in signup
+CRITICAL - 2021-11-20 03:35:56 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 32
+#0 /app/app/Controllers/LoginController.php(32): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 03:36:50 --> in signup
+CRITICAL - 2021-11-20 03:36:50 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 32
+#0 /app/app/Controllers/LoginController.php(32): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 03:39:08 --> in login func
+ERROR - 2021-11-20 03:39:08 --> test
+ERROR - 2021-11-20 03:39:08 --> Lukas@mail.com
+CRITICAL - 2021-11-20 04:12:35 --> Call to undefined function App\Controllers\setPage()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 04:13:35 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 04:14:49 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 04:17:08 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 04:18:03 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 04:21:21 --> Undefined property: App\Controllers\ProfileController::$session
+#0 /app/app/Controllers/ProfileController.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-20 04:22:35 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-20 04:26:40 --> Invalid file: pages/Login/profileEdit.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/ProfileController.php(44): App\Controllers\BaseController->template()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-20 04:33:18 --> 11
+ERROR - 2021-11-20 04:33:21 --> 11
+ERROR - 2021-11-20 04:34:01 --> 11
+ERROR - 2021-11-20 04:34:28 --> 11
+ERROR - 2021-11-20 04:34:58 --> 11
+ERROR - 2021-11-20 04:35:40 --> 11
+ERROR - 2021-11-20 04:36:02 --> 11
+ERROR - 2021-11-20 04:36:11 --> 11
+ERROR - 2021-11-20 04:36:58 --> 11
+ERROR - 2021-11-20 04:37:28 --> 11
+ERROR - 2021-11-20 04:37:39 --> 11
+ERROR - 2021-11-20 04:38:04 --> 11
+ERROR - 2021-11-20 04:38:10 --> 11
+ERROR - 2021-11-20 04:38:24 --> 11
+CRITICAL - 2021-11-20 04:38:30 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 64
+#0 /app/app/Controllers/LoginController.php(64): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 04:38:31 --> 11
+ERROR - 2021-11-20 04:38:54 --> 11
+ERROR - 2021-11-20 04:39:05 --> 11
+ERROR - 2021-11-20 04:39:27 --> 11
+ERROR - 2021-11-20 04:39:39 --> 11
+ERROR - 2021-11-20 04:39:49 --> 11
+ERROR - 2021-11-20 04:40:10 --> 11
+ERROR - 2021-11-20 04:40:24 --> 11
+ERROR - 2021-11-20 04:40:41 --> 11
+ERROR - 2021-11-20 04:41:01 --> 11
+ERROR - 2021-11-20 04:52:28 --> 11
+CRITICAL - 2021-11-20 04:52:30 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 64
+#0 /app/app/Controllers/LoginController.php(64): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 04:53:17 --> 11
+ERROR - 2021-11-20 04:53:53 --> 11
+ERROR - 2021-11-20 04:53:57 --> 11
+ERROR - 2021-11-20 04:54:10 --> 11
+ERROR - 2021-11-20 04:55:09 --> 11
+CRITICAL - 2021-11-20 04:55:10 --> There is no data to update.
+#0 /app/system/BaseModel.php(1570): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /app/system/BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray()
+#2 /app/system/Model.php(646): CodeIgniter\BaseModel->update()
+#3 /app/app/Controllers/ProfileController.php(49): CodeIgniter\Model->update()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->editdesc()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-20 04:55:13 --> 11
+CRITICAL - 2021-11-20 04:55:21 --> There is no data to update.
+#0 /app/system/BaseModel.php(1570): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /app/system/BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray()
+#2 /app/system/Model.php(646): CodeIgniter\BaseModel->update()
+#3 /app/app/Controllers/ProfileController.php(49): CodeIgniter\Model->update()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->editdesc()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-20 04:56:19 --> 11
+ERROR - 2021-11-20 04:56:19 --> 11
+ERROR - 2021-11-20 04:56:21 --> 11
+ERROR - 2021-11-20 04:57:22 --> 11
+ERROR - 2021-11-20 04:57:23 --> 11
+ERROR - 2021-11-20 04:58:37 --> 11
+ERROR - 2021-11-20 05:00:11 --> 11
+ERROR - 2021-11-20 05:00:16 --> 11
+ERROR - 2021-11-20 05:00:17 --> 11
+ERROR - 2021-11-20 05:00:24 --> 11
+ERROR - 2021-11-20 05:02:29 --> 11
+ERROR - 2021-11-20 05:02:52 --> 11
+ERROR - 2021-11-20 05:02:59 --> 11
+ERROR - 2021-11-20 05:03:03 --> 11
+ERROR - 2021-11-20 05:03:32 --> 11
+ERROR - 2021-11-20 05:03:36 --> 11
+ERROR - 2021-11-20 05:03:59 --> in editdesc
+ERROR - 2021-11-20 05:04:45 --> 11
+ERROR - 2021-11-20 05:04:46 --> post
+ERROR - 2021-11-20 05:04:52 --> 11
+ERROR - 2021-11-20 05:05:07 --> post
+ERROR - 2021-11-20 05:05:07 --> in editdesc if
+ERROR - 2021-11-20 05:05:09 --> 11
+ERROR - 2021-11-20 05:05:15 --> post
+ERROR - 2021-11-20 05:05:15 --> in editdesc if
+ERROR - 2021-11-20 05:05:16 --> 11
+ERROR - 2021-11-20 05:06:04 --> post
+ERROR - 2021-11-20 05:06:04 --> in editdesc if
+ERROR - 2021-11-20 05:06:04 --> 11
+ERROR - 2021-11-20 05:06:17 --> 11
+CRITICAL - 2021-11-20 07:03:41 --> Invalid file: Login/profile.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(24): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-20 07:05:30 --> 11
+ERROR - 2021-11-20 07:05:39 --> in login func
+ERROR - 2021-11-20 07:05:39 --> test
+ERROR - 2021-11-20 07:05:39 --> Max@mail.com
+ERROR - 2021-11-20 07:07:58 --> in login func
+ERROR - 2021-11-20 07:07:58 --> test
+ERROR - 2021-11-20 07:07:58 --> Rigo@mail.com
+ERROR - 2021-11-20 07:07:59 --> 5
+ERROR - 2021-11-20 07:08:02 --> post
+ERROR - 2021-11-20 07:08:02 --> in editdesc if
+ERROR - 2021-11-20 07:08:02 --> 5
+ERROR - 2021-11-20 07:08:04 --> 5
+ERROR - 2021-11-20 07:08:42 --> in login func
+ERROR - 2021-11-20 07:08:42 --> test
+ERROR - 2021-11-20 07:08:42 --> Max@mail.com
+ERROR - 2021-11-20 07:08:44 --> 1
+ERROR - 2021-11-20 07:16:10 --> in login func
+ERROR - 2021-11-20 07:16:10 --> test
+ERROR - 2021-11-20 07:16:10 --> Marie@mail.com
+ERROR - 2021-11-20 07:18:39 --> 3
+ERROR - 2021-11-20 07:18:53 --> 3
+ERROR - 2021-11-20 07:18:58 --> 3
+ERROR - 2021-11-20 07:19:08 --> in login func
+ERROR - 2021-11-20 07:19:08 --> test
+ERROR - 2021-11-20 07:19:08 --> Max@mail.com
+ERROR - 2021-11-20 07:19:10 --> 1
+ERROR - 2021-11-20 07:22:13 --> 1
+ERROR - 2021-11-20 07:23:01 --> 1
+ERROR - 2021-11-20 07:23:16 --> 1
+ERROR - 2021-11-20 07:23:22 --> 1
+ERROR - 2021-11-20 07:23:59 --> 1
+ERROR - 2021-11-20 07:25:28 --> 1
+ERROR - 2021-11-20 07:26:18 --> 1
+ERROR - 2021-11-20 07:27:03 --> 1
+ERROR - 2021-11-20 07:27:24 --> 1
+ERROR - 2021-11-20 07:27:36 --> 1
+ERROR - 2021-11-20 07:27:54 --> 1
+CRITICAL - 2021-11-20 07:27:55 --> Undefined variable $items_item
+#0 /app/app/Views/Profile/wareEdit.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(38): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->editWares()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 07:28:02 --> 1
+ERROR - 2021-11-20 07:29:20 --> 1
+ERROR - 2021-11-20 07:29:23 --> 1
+ERROR - 2021-11-20 07:29:25 --> 1
+ERROR - 2021-11-20 07:29:27 --> 1
+ERROR - 2021-11-20 07:29:41 --> 1
+ERROR - 2021-11-20 07:29:51 --> 1
+ERROR - 2021-11-20 07:29:52 --> 1
+ERROR - 2021-11-20 07:29:55 --> 1
+ERROR - 2021-11-20 07:29:57 --> 1
+ERROR - 2021-11-20 07:30:00 --> 1
+ERROR - 2021-11-20 07:30:39 --> 1
+ERROR - 2021-11-20 07:30:55 --> 1
+ERROR - 2021-11-20 07:31:04 --> 1
+ERROR - 2021-11-20 07:31:06 --> 1
+ERROR - 2021-11-20 07:31:57 --> 1
+ERROR - 2021-11-20 07:32:09 --> 1
+ERROR - 2021-11-20 07:32:16 --> 1
+ERROR - 2021-11-20 07:36:31 --> 1
+ERROR - 2021-11-20 07:36:34 --> 1
+ERROR - 2021-11-20 07:36:39 --> 1
+ERROR - 2021-11-20 07:36:41 --> 1
+ERROR - 2021-11-20 07:36:43 --> 1
+ERROR - 2021-11-20 07:36:52 --> 1
+ERROR - 2021-11-20 07:36:55 --> 1
+ERROR - 2021-11-20 07:36:57 --> 1
+ERROR - 2021-11-20 07:37:42 --> 1
+CRITICAL - 2021-11-20 07:37:42 --> Too few arguments to function App\Controllers\BaseController::template(), 1 passed in /app/app/Controllers/ItemController.php on line 41 and exactly 2 expected
+#0 /app/app/Controllers/ItemController.php(41): App\Controllers\BaseController->template()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:39:24 --> 1
+ERROR - 2021-11-20 07:39:30 --> 1
+ERROR - 2021-11-20 07:39:54 --> 1
+CRITICAL - 2021-11-20 07:40:52 --> Undefined array key "id"
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(44): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 07:40:55 --> 1
+CRITICAL - 2021-11-20 07:40:58 --> Undefined array key "id"
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(44): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 07:41:00 --> 1
+ERROR - 2021-11-20 07:41:06 --> 1
+CRITICAL - 2021-11-20 07:41:06 --> Undefined variable $_SESSION
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(44): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 07:41:11 --> 1
+CRITICAL - 2021-11-20 07:41:27 --> Undefined variable $_SESSION
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(44): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 07:42:44 --> 1
+ERROR - 2021-11-20 07:42:47 --> 1
+ERROR - 2021-11-20 07:42:51 --> 1
+ERROR - 2021-11-20 07:43:05 --> 1
+ERROR - 2021-11-20 07:43:08 --> 1
+ERROR - 2021-11-20 07:43:13 --> 1
+ERROR - 2021-11-20 07:43:16 --> 1
+ERROR - 2021-11-20 07:43:20 --> 1
+ERROR - 2021-11-20 07:43:34 --> in login func
+ERROR - 2021-11-20 07:43:34 --> test
+ERROR - 2021-11-20 07:43:34 --> Marie@mail.com
+ERROR - 2021-11-20 07:43:35 --> 3
+ERROR - 2021-11-20 07:44:30 --> in login func
+ERROR - 2021-11-20 07:44:30 --> test
+ERROR - 2021-11-20 07:44:30 --> Max@mail.com
+ERROR - 2021-11-20 07:44:32 --> 1
+CRITICAL - 2021-11-20 07:55:07 --> Unclosed '{' on line 8
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 07:55:28 --> 1
+ERROR - 2021-11-20 07:55:37 --> 1
+ERROR - 2021-11-20 07:55:41 --> 1
+ERROR - 2021-11-20 07:55:43 --> 3
+ERROR - 2021-11-20 07:55:44 --> 1
+ERROR - 2021-11-20 07:58:57 --> 1
+ERROR - 2021-11-20 07:58:57 --> Unknown column 'items.id' in 'where clause'
+CRITICAL - 2021-11-20 07:58:57 --> Unknown column 'items.id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 /app/system/BaseModel.php(865): CodeIgniter\Model->doUpdate()
+#6 /app/system/Model.php(646): CodeIgniter\BaseModel->update()
+#7 /app/app/Controllers/ItemController.php(61): CodeIgniter\Model->update()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updatename()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-20 07:59:15 --> 1
+ERROR - 2021-11-20 07:59:23 --> 1
+ERROR - 2021-11-20 07:59:23 --> Unknown column 'items.id' in 'where clause'
+CRITICAL - 2021-11-20 07:59:23 --> Unknown column 'items.id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 /app/system/BaseModel.php(865): CodeIgniter\Model->doUpdate()
+#6 /app/system/Model.php(646): CodeIgniter\BaseModel->update()
+#7 /app/app/Controllers/ItemController.php(61): CodeIgniter\Model->update()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updatename()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-20 08:08:43 --> 1
+CRITICAL - 2021-11-20 08:08:43 --> whereIn() expects $values to be of type array or closure
+#0 /app/system/Database/BaseBuilder.php(706): CodeIgniter\Database\BaseBuilder->_whereIn()
+#1 /app/system/Model.php(720): CodeIgniter\Database\BaseBuilder->whereIn()
+#2 /app/app/Controllers/ItemController.php(60): CodeIgniter\Model->__call()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updatename()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-20 08:09:13 --> 1
+CRITICAL - 2021-11-20 08:09:13 --> Too few arguments to function App\Controllers\ItemController::wareEditor(), 0 passed in /app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-20 08:09:35 --> 1
+ERROR - 2021-11-20 08:09:39 --> 1
+CRITICAL - 2021-11-20 08:09:39 --> Too few arguments to function App\Controllers\ItemController::wareEditor(), 0 passed in /app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-20 08:09:45 --> 1
+ERROR - 2021-11-20 08:09:46 --> 1
+ERROR - 2021-11-20 08:10:01 --> 1
+ERROR - 2021-11-20 08:10:10 --> 3
+ERROR - 2021-11-20 08:10:10 --> 1
+ERROR - 2021-11-20 08:10:15 --> 1
+ERROR - 2021-11-20 08:10:38 --> 1
+ERROR - 2021-11-20 08:11:23 --> 1
+ERROR - 2021-11-20 08:15:14 --> 1
+ERROR - 2021-11-20 08:15:25 --> 1
+ERROR - 2021-11-20 08:21:28 --> 1
+ERROR - 2021-11-20 08:23:25 --> 1
+ERROR - 2021-11-20 08:23:35 --> 1
+ERROR - 2021-11-20 08:23:59 --> 1
+ERROR - 2021-11-20 08:24:04 --> 1
+CRITICAL - 2021-11-20 08:24:51 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 73
+#0 /app/app/Controllers/ItemController.php(73): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 08:26:01 --> is not int
+CRITICAL - 2021-11-20 08:26:01 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(91): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 08:26:04 --> is not int
+CRITICAL - 2021-11-20 08:26:04 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(91): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 08:26:24 --> 1
+ERROR - 2021-11-20 08:26:28 --> is not int
+ERROR - 2021-11-20 08:27:38 --> is not int
+ERROR - 2021-11-20 08:27:43 --> is not int
+ERROR - 2021-11-20 08:27:45 --> is not int
+CRITICAL - 2021-11-20 08:31:12 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(85): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-20 08:31:35 --> 1
+ERROR - 2021-11-20 08:32:00 --> 1
+ERROR - 2021-11-20 08:32:09 --> 1
+ERROR - 2021-11-20 08:33:43 --> 1
+ERROR - 2021-11-20 08:33:50 --> 1
+ERROR - 2021-11-20 08:33:57 --> 1
+ERROR - 2021-11-20 08:34:02 --> 1
+ERROR - 2021-11-20 08:34:06 --> 1
+ERROR - 2021-11-20 08:34:09 --> 1
+ERROR - 2021-11-20 08:34:16 --> 1
+ERROR - 2021-11-20 08:34:33 --> 1
+ERROR - 2021-11-20 08:34:38 --> 1
+ERROR - 2021-11-20 08:34:41 --> 1
+CRITICAL - 2021-11-20 08:34:43 --> Class "App\Controllers\UsersModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-20 08:34:53 --> 1
+ERROR - 2021-11-20 08:35:05 --> 1
+CRITICAL - 2021-11-20 08:35:07 --> Too few arguments to function App\Controllers\BaseController::template(), 1 passed in /app/app/Controllers/ItemController.php on line 88 and exactly 2 expected
+#0 /app/app/Controllers/ItemController.php(88): App\Controllers\BaseController->template()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-20 08:35:11 --> 1
+ERROR - 2021-11-20 08:35:35 --> 1
+ERROR - 2021-11-20 08:35:38 --> 1
+ERROR - 2021-11-20 08:35:41 --> 1
+ERROR - 2021-11-20 08:35:46 --> 1
+ERROR - 2021-11-20 08:36:12 --> 1
+ERROR - 2021-11-20 08:36:30 --> 1
+ERROR - 2021-11-20 08:36:38 --> 1
+ERROR - 2021-11-20 08:36:47 --> 1
+ERROR - 2021-11-20 08:36:49 --> 1
+ERROR - 2021-11-20 08:39:28 --> 1
+ERROR - 2021-11-20 08:39:37 --> 1
+ERROR - 2021-11-20 08:39:40 --> 1
+ERROR - 2021-11-20 08:39:41 --> 1

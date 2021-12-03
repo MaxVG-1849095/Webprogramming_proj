@@ -1,0 +1,88 @@
+ERROR - 2021-11-19 04:02:56 --> in login func
+ERROR - 2021-11-19 04:02:56 --> test
+CRITICAL - 2021-11-19 04:02:56 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:03:32 --> in login func
+ERROR - 2021-11-19 04:03:32 --> test
+CRITICAL - 2021-11-19 04:03:32 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:04:40 --> in login func
+ERROR - 2021-11-19 04:04:40 --> test
+CRITICAL - 2021-11-19 04:04:40 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:16:23 --> in login func
+ERROR - 2021-11-19 04:16:23 --> test
+CRITICAL - 2021-11-19 04:16:23 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:17:45 --> in login func
+ERROR - 2021-11-19 04:17:45 --> test
+CRITICAL - 2021-11-19 04:17:45 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:17:58 --> in login func
+ERROR - 2021-11-19 04:17:58 --> test
+CRITICAL - 2021-11-19 04:17:58 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-19 04:18:18 --> in login func
+ERROR - 2021-11-19 04:18:18 --> test
+ERROR - 2021-11-19 04:18:18 --> Max@mail.com
+ERROR - 2021-11-19 04:27:23 --> in login func
+ERROR - 2021-11-19 04:27:23 --> test
+ERROR - 2021-11-19 04:27:23 --> Max@mail.com
+ERROR - 2021-11-19 04:27:29 --> in login func
+ERROR - 2021-11-19 04:27:29 --> test
+ERROR - 2021-11-19 04:27:29 --> Max@mail.com
+ERROR - 2021-11-19 04:28:12 --> in login func
+ERROR - 2021-11-19 04:28:12 --> test
+ERROR - 2021-11-19 04:28:12 --> Max@mail.com
+ERROR - 2021-11-19 04:40:00 --> in login func
+ERROR - 2021-11-19 04:40:00 --> test
+ERROR - 2021-11-19 04:40:00 --> Max@mail.com
+ERROR - 2021-11-19 04:40:10 --> ordered
+ERROR - 2021-11-19 04:40:10 --> 0
+ERROR - 2021-11-19 04:51:27 --> in login func
+ERROR - 2021-11-19 04:51:27 --> test
+ERROR - 2021-11-19 04:51:27 --> Andreas@mail.com
+CRITICAL - 2021-11-19 06:17:58 --> Undefined array key "id"
+#0 /app/app/Controllers/Pages.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-19 06:18:06 --> Undefined array key "userid"
+#0 /app/app/Controllers/Pages.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

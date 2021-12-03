@@ -1,0 +1,27 @@
+WARNING - 2021-11-15 04:04:40 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-15 04:06:06 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-15 04:06:09 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-15 04:06:10 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-15 04:10:58 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-15 04:11:01 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2021-11-15 04:22:54 --> Max
+ERROR - 2021-11-15 04:22:54 --> pwmax
+ERROR - 2021-11-15 04:22:54 --> data vars
+ERROR - 2021-11-15 04:23:27 --> in signup
+ERROR - 2021-11-15 04:23:27 --> in singup if
+ERROR - 2021-11-15 04:24:04 --> Test
+ERROR - 2021-11-15 04:24:04 --> test
+ERROR - 2021-11-15 04:24:04 --> data vars
+ERROR - 2021-11-15 04:24:49 --> in signup
+ERROR - 2021-11-15 04:24:49 --> test thing
+ERROR - 2021-11-15 04:28:25 --> in signup
+ERROR - 2021-11-15 04:28:25 --> test thing
+ERROR - 2021-11-15 04:35:10 --> in signup
+CRITICAL - 2021-11-15 04:35:10 --> Undefined variable $name
+#0 /app/app/Controllers/LoginController.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-15 04:35:51 --> in signup

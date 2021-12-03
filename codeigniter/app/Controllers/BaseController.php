@@ -21,6 +21,13 @@ use Psr\Log\LoggerInterface;
  */
 class BaseController extends Controller
 {
+    function __construct()
+    {
+        //parent::__construct();
+        $this->session = \Config\Services::session();
+        //$this->session->start();
+    }
+
     /**
      * Instance of the main Request object.
      *
@@ -61,6 +68,19 @@ class BaseController extends Controller
     
         echo view('templates/header', $data);
         echo view('pages/'.$page, $data);
+        echo view('templates/footer', $data);
+    }
+
+    public function template($page, $data){
+        if ( ! is_file(APPPATH.'/Views/'.$page.'.php')) {
+            // Whoops, we don't have a page for that!
+            throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
+        }
+    
+        $data['title'] = ucfirst($page); // Capitalize the first letter
+    
+        echo view('templates/header', $data);
+        echo view($page, $data);
         echo view('templates/footer', $data);
     }
 

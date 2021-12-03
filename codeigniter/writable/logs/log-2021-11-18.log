@@ -1,0 +1,72 @@
+ERROR - 2021-11-18 04:03:39 --> in login func
+CRITICAL - 2021-11-18 04:03:39 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 75
+#0 /app/app/Controllers/LoginController.php(75): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-18 04:04:04 --> in login func
+ERROR - 2021-11-18 04:04:04 --> test
+ERROR - 2021-11-18 04:04:13 --> in login func
+ERROR - 2021-11-18 04:04:13 --> test
+ERROR - 2021-11-18 04:22:21 --> in login func
+ERROR - 2021-11-18 04:22:21 --> test
+ERROR - 2021-11-18 04:23:44 --> in login func
+ERROR - 2021-11-18 04:23:44 --> test
+ERROR - 2021-11-18 06:02:20 --> ordered
+ERROR - 2021-11-18 06:02:20 --> 0
+ERROR - 2021-11-18 06:04:27 --> in login func
+ERROR - 2021-11-18 06:04:27 --> test
+ERROR - 2021-11-18 06:04:34 --> in login func
+ERROR - 2021-11-18 06:04:34 --> test
+ERROR - 2021-11-18 06:04:35 --> in login func
+ERROR - 2021-11-18 06:04:35 --> test
+ERROR - 2021-11-18 06:04:36 --> in login func
+ERROR - 2021-11-18 06:04:36 --> test
+ERROR - 2021-11-18 06:04:38 --> in login func
+ERROR - 2021-11-18 06:04:38 --> test
+ERROR - 2021-11-18 06:07:51 --> in login func
+ERROR - 2021-11-18 06:07:51 --> test
+CRITICAL - 2021-11-18 06:07:51 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 79
+#0 /app/app/Controllers/LoginController.php(79): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-18 06:11:43 --> in login func
+ERROR - 2021-11-18 06:11:43 --> test
+ERROR - 2021-11-18 06:11:43 --> Andreas@mail.com
+ERROR - 2021-11-18 06:11:49 --> in login func
+ERROR - 2021-11-18 06:11:49 --> test
+ERROR - 2021-11-18 06:11:49 --> Andreas@mail.com
+ERROR - 2021-11-18 06:28:42 --> ordered
+ERROR - 2021-11-18 06:28:42 --> 0
+ERROR - 2021-11-18 06:28:49 --> ordered
+ERROR - 2021-11-18 06:28:49 --> 0
+ERROR - 2021-11-18 07:35:56 --> in login func
+ERROR - 2021-11-18 07:35:56 --> test
+ERROR - 2021-11-18 07:35:56 --> Andreas@mail.com
+ERROR - 2021-11-18 07:39:49 --> in login func
+ERROR - 2021-11-18 07:39:49 --> test
+ERROR - 2021-11-18 07:39:49 --> Andreas@mail.com
+ERROR - 2021-11-18 07:40:11 --> in login func
+ERROR - 2021-11-18 07:40:11 --> test
+ERROR - 2021-11-18 07:40:11 --> Andreas@mail.com
+ERROR - 2021-11-18 07:41:24 --> in login func
+ERROR - 2021-11-18 07:41:24 --> test
+ERROR - 2021-11-18 07:41:24 --> Andreas@mail.com
+ERROR - 2021-11-18 08:05:00 --> Table 'shopDB.mytable' doesn't exist
+CRITICAL - 2021-11-18 08:05:00 --> Table 'shopDB.mytable' doesn't exist
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/UsersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/app/Controllers/Pages.php(54): App\Models\UsersModel->getUsersandID()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

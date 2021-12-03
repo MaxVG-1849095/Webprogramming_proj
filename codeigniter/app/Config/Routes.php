@@ -40,6 +40,13 @@ $routes->get('/', 'Pages::homeredirect');
 $routes->get('users/(:segment)', 'Pages::accountredirect/$1');
 $routes->get('item/(:segment)', 'Pages::itemredirect/$1');
 $routes->get('users', 'Pages::accountindex');
+$routes->get('/login', 'LoginController::index');
+$routes->get('/signup', 'LoginController::signupRedirect');
+$routes->get('/itemorder', 'ItemController::orderItem');
+$routes->match(['get', 'post'], 'Login/login', 'LoginController::login');
+$routes->match(['get', 'post'], 'Login/signup', 'LoginController::signup');
+$routes->get('/profile', 'ProfileController::index',['filter' => 'LoginFilter']);
+$routes->get('/profile/edit', 'ProfileController::edit',['filter' => 'LoginFilter']);
 //$routes->get('(:any)', 'Pages::view/$1');
 //$routes->get('(:any)', 'BaseController::view/$1');
 

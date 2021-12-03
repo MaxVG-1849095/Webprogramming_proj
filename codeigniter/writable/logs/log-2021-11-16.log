@@ -1,0 +1,149 @@
+ERROR - 2021-11-16 04:03:13 --> Max
+ERROR - 2021-11-16 04:03:13 --> owmax
+ERROR - 2021-11-16 04:03:13 --> data vars
+ERROR - 2021-11-16 04:03:21 --> Max
+ERROR - 2021-11-16 04:03:21 --> pwmax
+ERROR - 2021-11-16 04:03:21 --> data vars
+ERROR - 2021-11-16 06:37:01 --> Max@mail.com
+ERROR - 2021-11-16 06:37:01 --> pwmax
+ERROR - 2021-11-16 06:37:01 --> data vars
+ERROR - 2021-11-16 06:37:10 --> Max@mail.com
+ERROR - 2021-11-16 06:37:10 --> pwmax
+ERROR - 2021-11-16 06:37:10 --> data vars
+ERROR - 2021-11-16 06:40:08 --> Max@mail.com
+ERROR - 2021-11-16 06:40:08 --> pwmax
+ERROR - 2021-11-16 06:40:08 --> data vars
+ERROR - 2021-11-16 06:42:19 --> Andreas@mail.com
+ERROR - 2021-11-16 06:42:19 --> pw
+ERROR - 2021-11-16 06:42:19 --> data vars
+ERROR - 2021-11-16 06:43:33 --> Max@mail.com
+ERROR - 2021-11-16 06:43:33 --> pwmax
+ERROR - 2021-11-16 06:43:33 --> data vars
+ERROR - 2021-11-16 06:45:04 --> Andreas@mail.com
+ERROR - 2021-11-16 06:45:04 --> pw
+ERROR - 2021-11-16 06:45:04 --> data vars
+ERROR - 2021-11-16 06:48:37 --> in signup
+CRITICAL - 2021-11-16 06:48:37 --> is_unique(mail) is not a valid rule.
+#0 /app/system/Validation/Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /app/system/Validation/Validation.php(151): CodeIgniter\Validation\Validation->processRules()
+#2 /app/system/Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 /app/app/Controllers/LoginController.php(32): CodeIgniter\Controller->validate()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-16 06:49:35 --> in signup
+ERROR - 2021-11-16 06:49:35 --> Table 'shopDB.email' doesn't exist
+CRITICAL - 2021-11-16 06:49:35 --> Table 'shopDB.email' doesn't exist
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Validation/Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/Validation/Validation.php(277): CodeIgniter\Validation\Rules->is_unique()
+#6 /app/system/Validation/Validation.php(151): CodeIgniter\Validation\Validation->processRules()
+#7 /app/system/Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 /app/app/Controllers/LoginController.php(32): CodeIgniter\Controller->validate()
+#9 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#10 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-16 06:50:05 --> in signup
+CRITICAL - 2021-11-16 06:50:05 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/LoginController.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-16 06:52:48 --> in signup
+ERROR - 2021-11-16 06:53:22 --> locasloser@maxbin.com
+ERROR - 2021-11-16 06:53:22 --> loserjelel
+ERROR - 2021-11-16 06:53:22 --> data vars
+CRITICAL - 2021-11-16 06:56:17 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:56:19 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:56:32 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:56:32 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:59:21 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:59:30 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-16 06:59:32 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Login/profile.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(23): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-16 06:59:40 --> Max@mail.com
+ERROR - 2021-11-16 06:59:40 --> pwmax
+ERROR - 2021-11-16 06:59:40 --> data vars
+ERROR - 2021-11-16 07:04:29 --> in signup
+ERROR - 2021-11-16 07:04:29 --> test thing
+ERROR - 2021-11-16 07:07:38 --> Andreas@mail.com
+ERROR - 2021-11-16 07:07:38 --> pw
+ERROR - 2021-11-16 07:07:38 --> data vars

@@ -1,0 +1,121 @@
+ERROR - 2021-12-01 03:40:09 --> in login func
+ERROR - 2021-12-01 03:40:09 --> test
+ERROR - 2021-12-01 03:40:09 --> Marie@mail.com
+CRITICAL - 2021-12-01 03:40:09 --> Undefined property: App\Controllers\ProfileController::$index
+#0 /app/app/Controllers/LoginController.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-01 03:41:02 --> in login func
+ERROR - 2021-12-01 03:41:02 --> test
+ERROR - 2021-12-01 03:41:02 --> Marie@mail.com
+CRITICAL - 2021-12-01 03:41:02 --> Undefined property: App\Controllers\ProfileController::$index
+#0 /app/app/Controllers/LoginController.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-01 03:41:27 --> in login func
+ERROR - 2021-12-01 03:41:27 --> test
+ERROR - 2021-12-01 03:41:27 --> Marie@mail.com
+ERROR - 2021-12-01 03:41:34 --> in login func
+ERROR - 2021-12-01 03:41:34 --> test
+ERROR - 2021-12-01 03:41:34 --> bla@mail.com
+ERROR - 2021-12-01 03:43:12 --> in login func
+ERROR - 2021-12-01 03:43:12 --> test
+ERROR - 2021-12-01 03:43:12 --> bla@mail.com
+ERROR - 2021-12-01 03:43:19 --> in login func
+ERROR - 2021-12-01 03:43:19 --> test
+ERROR - 2021-12-01 03:43:19 --> marie@mail.com
+ERROR - 2021-12-01 03:50:27 --> in login func
+ERROR - 2021-12-01 03:50:27 --> test
+ERROR - 2021-12-01 03:50:27 --> Max@mail.com
+ERROR - 2021-12-01 03:51:00 --> in login func
+ERROR - 2021-12-01 03:51:00 --> test
+ERROR - 2021-12-01 03:51:00 --> Max@mail.com
+ERROR - 2021-12-01 03:51:04 --> in login func
+ERROR - 2021-12-01 03:51:04 --> test
+ERROR - 2021-12-01 03:51:04 --> Max@mail.com
+ERROR - 2021-12-01 03:51:24 --> in login func
+ERROR - 2021-12-01 03:51:24 --> test
+ERROR - 2021-12-01 03:51:24 --> Max@mail.com
+ERROR - 2021-12-01 03:53:13 --> in login func
+ERROR - 2021-12-01 03:53:13 --> test
+ERROR - 2021-12-01 03:53:13 --> Max@mail.com
+ERROR - 2021-12-01 03:53:32 --> in login func
+ERROR - 2021-12-01 03:53:32 --> test
+ERROR - 2021-12-01 03:53:32 --> Max@mail.com
+ERROR - 2021-12-01 03:53:35 --> 1
+ERROR - 2021-12-01 03:53:53 --> post
+ERROR - 2021-12-01 03:53:53 --> in editdesc if
+ERROR - 2021-12-01 03:54:38 --> 1
+ERROR - 2021-12-01 03:54:47 --> post
+ERROR - 2021-12-01 03:54:47 --> in editdesc if
+ERROR - 2021-12-01 03:54:47 --> 1
+ERROR - 2021-12-01 03:54:59 --> 1
+ERROR - 2021-12-01 03:56:17 --> 1
+ERROR - 2021-12-01 04:01:50 --> in login func
+ERROR - 2021-12-01 04:01:50 --> test
+ERROR - 2021-12-01 04:01:50 --> Max@mail.com
+ERROR - 2021-12-01 04:12:43 --> 1
+ERROR - 2021-12-01 04:42:08 --> in login func
+ERROR - 2021-12-01 04:42:08 --> test
+ERROR - 2021-12-01 04:42:08 --> Neisl@mail.com
+ERROR - 2021-12-01 04:43:24 --> in login func
+ERROR - 2021-12-01 04:43:24 --> test
+ERROR - 2021-12-01 04:43:24 --> Neisl@mail.com
+ERROR - 2021-12-01 04:43:37 --> in login func
+ERROR - 2021-12-01 04:43:37 --> test
+ERROR - 2021-12-01 04:43:37 --> Max@mail.com
+ERROR - 2021-12-01 04:47:56 --> in login func
+ERROR - 2021-12-01 04:47:56 --> test
+CRITICAL - 2021-12-01 04:47:56 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 77
+#0 /app/app/Controllers/LoginController.php(77): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-01 04:50:13 --> in manualpw
+ERROR - 2021-12-01 04:50:21 --> in login func
+ERROR - 2021-12-01 04:50:21 --> test
+ERROR - 2021-12-01 04:50:21 --> Max@mail.com
+ERROR - 2021-12-01 04:51:12 --> in manualpw
+ERROR - 2021-12-01 04:51:23 --> in manualpw
+ERROR - 2021-12-01 04:51:34 --> in manualpw
+ERROR - 2021-12-01 04:51:40 --> in manualpw
+ERROR - 2021-12-01 04:51:45 --> in manualpw
+ERROR - 2021-12-01 04:52:05 --> in login func
+ERROR - 2021-12-01 04:52:05 --> test
+ERROR - 2021-12-01 04:52:05 --> Andreas@mail.com
+ERROR - 2021-12-01 04:52:10 --> in login func
+ERROR - 2021-12-01 04:52:10 --> test
+ERROR - 2021-12-01 04:52:10 --> Marie@mail.com
+ERROR - 2021-12-01 04:52:17 --> in login func
+ERROR - 2021-12-01 04:52:17 --> test
+ERROR - 2021-12-01 04:52:17 --> Rigo@mail.com
+ERROR - 2021-12-01 04:52:25 --> in login func
+ERROR - 2021-12-01 04:52:25 --> test
+ERROR - 2021-12-01 04:52:25 --> Joren@mail.com
+ERROR - 2021-12-01 04:52:50 --> in login func
+ERROR - 2021-12-01 04:52:50 --> test
+ERROR - 2021-12-01 04:52:50 --> Joren@mail.com
+ERROR - 2021-12-01 04:53:05 --> in login func
+ERROR - 2021-12-01 04:53:06 --> test
+ERROR - 2021-12-01 04:53:06 --> Lukas@mail.com
+ERROR - 2021-12-01 04:54:42 --> 11
+ERROR - 2021-12-01 04:56:34 --> 11
+CRITICAL - 2021-12-01 05:30:37 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/ProfileController.php(33): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->logout()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-01 05:31:16 --> in login func
+ERROR - 2021-12-01 05:31:16 --> test
+ERROR - 2021-12-01 05:31:16 --> Max@mail.com

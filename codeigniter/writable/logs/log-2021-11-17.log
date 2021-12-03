@@ -1,0 +1,362 @@
+ERROR - 2021-11-17 03:13:37 --> 
+ERROR - 2021-11-17 03:13:37 --> 
+ERROR - 2021-11-17 03:13:37 --> data vars
+CRITICAL - 2021-11-17 03:13:37 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 70
+#0 /app/app/Controllers/LoginController.php(70): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 03:26:53 --> in login func
+ERROR - 2021-11-17 03:26:59 --> in login func
+ERROR - 2021-11-17 03:27:39 --> in login func
+ERROR - 2021-11-17 03:29:05 --> in signup
+ERROR - 2021-11-17 03:29:05 --> test thing
+ERROR - 2021-11-17 03:29:43 --> in signup
+ERROR - 2021-11-17 03:29:43 --> test thing
+ERROR - 2021-11-17 03:30:45 --> Column 'name' cannot be null
+CRITICAL - 2021-11-17 03:30:45 --> Column 'name' cannot be null
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#7 /app/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /app/app/Controllers/LoginController.php(40): CodeIgniter\BaseModel->save()
+#9 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#10 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-17 03:31:46 --> test thing
+ERROR - 2021-11-17 03:31:56 --> test thing
+ERROR - 2021-11-17 03:35:27 --> Column 'name' cannot be null
+CRITICAL - 2021-11-17 03:35:27 --> Column 'name' cannot be null
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#7 /app/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /app/app/Controllers/LoginController.php(40): CodeIgniter\BaseModel->save()
+#9 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#10 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-11-17 03:37:08 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 29
+#0 /app/app/Controllers/LoginController.php(29): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 03:38:15 --> in signup
+CRITICAL - 2021-11-17 03:38:15 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 30
+#0 /app/app/Controllers/LoginController.php(30): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 03:44:16 --> in signup
+CRITICAL - 2021-11-17 03:44:16 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 30
+#0 /app/app/Controllers/LoginController.php(30): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signup()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 03:44:56 --> in signup
+ERROR - 2021-11-17 03:44:56 --> test thing
+ERROR - 2021-11-17 03:52:00 --> in signup
+ERROR - 2021-11-17 03:52:00 --> test thing
+ERROR - 2021-11-17 03:52:27 --> in signup
+ERROR - 2021-11-17 04:12:51 --> in login func
+ERROR - 2021-11-17 04:13:29 --> in login func
+ERROR - 2021-11-17 04:18:16 --> in login func
+ERROR - 2021-11-17 04:19:02 --> in login func
+ERROR - 2021-11-17 04:20:55 --> in login func
+ERROR - 2021-11-17 04:27:22 --> in login func
+ERROR - 2021-11-17 04:29:31 --> in login func
+ERROR - 2021-11-17 04:29:36 --> in login func
+ERROR - 2021-11-17 04:29:52 --> in login func
+ERROR - 2021-11-17 05:36:49 --> in login func
+ERROR - 2021-11-17 05:36:54 --> in login func
+ERROR - 2021-11-17 05:38:45 --> in login func
+CRITICAL - 2021-11-17 05:38:45 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 05:41:25 --> in login func
+CRITICAL - 2021-11-17 05:41:25 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 05:45:45 --> in login func
+CRITICAL - 2021-11-17 05:45:45 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 05:45:52 --> in login func
+CRITICAL - 2021-11-17 05:45:52 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-17 05:49:12 --> Undefined variable $items_item
+#0 /app/app/Views/Items/item.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(50): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 05:49:21 --> Undefined variable $items_item
+#0 /app/app/Views/Items/item.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(50): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 05:49:28 --> Undefined variable $items
+#0 /app/app/Views/Items/item.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(50): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 06:22:31 --> syntax error, unexpected end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Pages.php(53): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-17 06:26:56 --> Undefined array key "userid"
+#0 /app/app/Views/Items/item.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(58): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 06:42:26 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(58): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-17 06:42:52 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(58): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-17 06:43:23 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(58): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-17 06:44:18 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(58): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-17 06:51:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.' at line 1
+CRITICAL - 2021-11-17 06:51:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.' at line 1
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Models/ReviewModel.php(22): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Controllers/Pages.php(51): App\Models\ReviewModel->getItemReviews()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-17 07:08:49 --> in login func
+CRITICAL - 2021-11-17 07:08:49 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 07:44:05 --> test
+ERROR - 2021-11-17 07:44:10 --> test
+CRITICAL - 2021-11-17 08:02:52 --> Undefined array key "id"
+#0 /app/app/Views/Items/item.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(55): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-17 08:11:33 --> in login func
+CRITICAL - 2021-11-17 08:11:33 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 08:13:19 --> in login func
+CRITICAL - 2021-11-17 08:13:19 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 08:13:41 --> in login func
+CRITICAL - 2021-11-17 08:13:41 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 08:13:49 --> in login func
+CRITICAL - 2021-11-17 08:13:49 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 08:15:33 --> in login func
+CRITICAL - 2021-11-17 08:15:33 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 08:16:53 --> in login func
+CRITICAL - 2021-11-17 08:16:53 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 09:23:50 --> in login func
+CRITICAL - 2021-11-17 09:23:50 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 76
+#0 /app/app/Controllers/LoginController.php(76): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 09:24:05 --> in login func
+ERROR - 2021-11-17 09:25:08 --> in login func
+ERROR - 2021-11-17 09:25:19 --> in login func
+ERROR - 2021-11-17 09:27:00 --> in login func
+CRITICAL - 2021-11-17 09:31:52 --> Undefined variable $items_item
+#0 /app/app/Views/Items/item.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(55): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-17 09:32:02 --> Undefined array key "itemID"
+#0 /app/app/Views/Items/item.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(55): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-17 09:33:22 --> in login func
+ERROR - 2021-11-17 09:39:45 --> ordered
+ERROR - 2021-11-17 09:39:45 --> 0
+ERROR - 2021-11-17 09:40:08 --> ordered
+ERROR - 2021-11-17 09:40:08 --> 0
+ERROR - 2021-11-17 09:40:16 --> ordered
+ERROR - 2021-11-17 09:40:16 --> 0
+ERROR - 2021-11-17 09:41:42 --> ordered
+ERROR - 2021-11-17 09:41:42 --> 0
+ERROR - 2021-11-17 09:42:46 --> ordered
+ERROR - 2021-11-17 09:42:46 --> 0
+CRITICAL - 2021-11-17 09:42:46 --> Undefined array key "name"
+#0 /app/app/Controllers/ItemController.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->orderItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-17 09:42:54 --> ordered
+ERROR - 2021-11-17 09:42:54 --> 0
+CRITICAL - 2021-11-17 10:40:48 --> LoginFilter filter must have a matching alias defined.
+#0 /app/system/Filters/Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /app/system/CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-17 10:40:54 --> LoginFilter filter must have a matching alias defined.
+#0 /app/system/Filters/Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /app/system/CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

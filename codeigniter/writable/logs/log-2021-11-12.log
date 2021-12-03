@@ -1,0 +1,65 @@
+CRITICAL - 2021-11-12 08:12:07 --> Undefined variable $data
+#0 /app/app/Controllers/LoginController.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-12 08:13:42 --> Class "App\Models\UserModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->loginAuth()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-12 08:14:07 --> Class "App\Controllers\UsersModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->loginAuth()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-12 08:36:59 --> first else block
+ERROR - 2021-11-12 08:38:01 --> pw
+CRITICAL - 2021-11-12 08:38:01 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 45
+#0 /app/app/Controllers/LoginController.php(45): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->loginAuth()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-12 08:38:46 --> pw
+ERROR - 2021-11-12 08:38:46 --> test
+ERROR - 2021-11-12 08:38:56 --> pw
+ERROR - 2021-11-12 08:38:56 --> test
+ERROR - 2021-11-12 08:39:02 --> pw
+ERROR - 2021-11-12 08:39:02 --> pw
+ERROR - 2021-11-12 08:40:08 --> pwmax
+ERROR - 2021-11-12 08:40:08 --> test
+ERROR - 2021-11-12 08:40:19 --> pwmax
+ERROR - 2021-11-12 08:40:19 --> pwmax
+ERROR - 2021-11-12 08:41:00 --> pwmax
+ERROR - 2021-11-12 08:41:00 --> test
+ERROR - 2021-11-12 08:41:00 --> 
+ERROR - 2021-11-12 08:42:47 --> pwmax
+ERROR - 2021-11-12 08:42:47 --> pwmax
+ERROR - 2021-11-12 08:42:47 --> 
+ERROR - 2021-11-12 08:43:39 --> pwmax
+ERROR - 2021-11-12 08:43:39 --> maxpw
+ERROR - 2021-11-12 08:43:39 --> 
+CRITICAL - 2021-11-12 08:43:53 --> LoginGuard filter must have a matching alias defined.
+#0 /app/system/Filters/Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /app/system/CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-12 08:45:46 --> pwmax
+ERROR - 2021-11-12 08:45:46 --> pwamx
+ERROR - 2021-11-12 08:45:46 --> 
+ERROR - 2021-11-12 08:45:52 --> pwmax
+ERROR - 2021-11-12 08:45:52 --> maxpw
+ERROR - 2021-11-12 08:45:52 --> 
+CRITICAL - 2021-11-12 08:46:07 --> LoginGuard filter must have a matching alias defined.
+#0 /app/system/Filters/Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /app/system/CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

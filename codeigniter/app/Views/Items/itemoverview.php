@@ -1,20 +1,16 @@
-<div id="allitems" class="d-flex align-content-stretch flex-wrap">
+<div id="allitems" class=" align-content-stretch container d-flex justify-content-center">
 
 
     <?php if (! empty($items) && is_array($items)) : ?>
-    <div class="row justify-content-center">
-
-
+    <div class="row  justify-content-center ">
     <?php foreach ($items as $items_item): ?>
-        <div id="sepitem" class="border border-dark rounded px-3 bg-secondary">
-            <a class="d-flex justify-content-center"href="/item/<?= esc($items_item['itemid'], 'url') ?>">
-                <img alt="Qries" src="<?php echo $items_item['link']; ?>"
-                width="120" height="150">
+        <div id="sepitem" class="row container-fluid border border-dark rounded bg-primary col">
+            <a class=""href="/item/<?= esc($items_item['itemid'], 'url') ?>">
+                <img alt="Items" src="/Images/Items/<?php echo $items_item['filename']; ?>">
             </a>
-            <h3 class="d-flex"><?= esc($items_item['name']) ?></h3>
+            <h3 class=""><?= esc($items_item['name']) ?></h3>
 
             <div class="main">
-                <?= esc($items_item['description']) ?>
             </div>
         </div>
         
@@ -30,3 +26,4 @@
     <?php endif ?>
 
 </div>
+

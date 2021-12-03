@@ -1,0 +1,380 @@
+ERROR - 2021-11-13 04:00:24 --> pw
+ERROR - 2021-11-13 04:00:24 --> ow
+ERROR - 2021-11-13 04:00:24 --> 
+ERROR - 2021-11-13 04:05:06 --> pw
+ERROR - 2021-11-13 04:05:06 --> W1no5kclEhod
+ERROR - 2021-11-13 04:05:06 --> 
+ERROR - 2021-11-13 04:05:09 --> second else block
+CRITICAL - 2021-11-13 04:19:25 --> syntax error, unexpected token "<"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Pages.php(28): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-13 04:25:16 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(28): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:26:03 --> Call to undefined method CodeIgniter\View\View::session()
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(28): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:27:44 --> Undefined variable $session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(28): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:29:06 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(28): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:29:19 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(28): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:30:06 --> Undefined property: CodeIgniter\View\View::$session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(28): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:32:35 --> Undefined property: CodeIgniter\View\View::$load
+#0 /app/app/Views/templates/header.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(28): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:35:38 --> Undefined property: App\Controllers\Pages::$load
+#0 /app/app/Controllers/Pages.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-13 04:37:22 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:38:07 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:38:07 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:38:14 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:38:25 --> Undefined property: CodeIgniter\View\View::$session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(30): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:39:42 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:40:59 --> Cannot call constructor
+#0 /app/app/Controllers/Pages.php(14): App\Controllers\BaseController->__construct()
+#1 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#2 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-13 04:42:42 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:45:05 --> Undefined property: CodeIgniter\View\View::$session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(30): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:49:02 --> Undefined property: CodeIgniter\View\View::$session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(30): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:49:08 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\Pages->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:49:15 --> session_start(): Ignoring session_start() because a session is already active
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/Pages.php(26): session_start()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-13 04:49:32 --> Undefined property: CodeIgniter\View\View::$session
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(33): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:50:02 --> Call to undefined method CodeIgniter\View\View::session()
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(33): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:50:48 --> Call to a member function userdata() on array
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(33): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-13 04:51:03 --> Undefined array key "id"
+#0 /app/app/Views/templates/header.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(33): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-13 04:52:11 --> Cannot call constructor
+#0 /app/system/CodeIgniter.php(779): App\Controllers\BaseController->__construct()
+#1 /app/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 04:56:26 --> Call to undefined method App\Controllers\Pages::setPage()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\Pages->aboutredirect()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 05:02:21 --> ini_set(): Session ini settings cannot be changed when a session is active
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Session/Handlers/FileHandler.php(71): ini_set()
+#2 /app/system/Config/Services.php(570): CodeIgniter\Session\Handlers\FileHandler->__construct()
+#3 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#4 /app/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic()
+#5 /app/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#7 /app/system/Common.php(904): CodeIgniter\Config\BaseService::__callStatic()
+#8 /app/app/Views/Login/login.php(22): session()
+#9 /app/system/View/View.php(214): include('...')
+#10 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#12 /app/app/Controllers/LoginController.php(18): view()
+#13 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->index()
+#14 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#15 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#16 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-11-13 05:02:34 --> ini_set(): Session ini settings cannot be changed when a session is active
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Session/Handlers/FileHandler.php(71): ini_set()
+#2 /app/system/Config/Services.php(570): CodeIgniter\Session\Handlers\FileHandler->__construct()
+#3 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#4 /app/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic()
+#5 /app/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#7 /app/system/Common.php(904): CodeIgniter\Config\BaseService::__callStatic()
+#8 /app/app/Views/Login/login.php(22): session()
+#9 /app/system/View/View.php(214): include('...')
+#10 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#12 /app/app/Controllers/LoginController.php(18): view()
+#13 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->index()
+#14 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#15 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#16 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-11-13 05:02:37 --> ini_set(): Session ini settings cannot be changed when a session is active
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Session/Handlers/FileHandler.php(71): ini_set()
+#2 /app/system/Config/Services.php(570): CodeIgniter\Session\Handlers\FileHandler->__construct()
+#3 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#4 /app/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic()
+#5 /app/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance()
+#6 /app/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#7 /app/system/Common.php(904): CodeIgniter\Config\BaseService::__callStatic()
+#8 /app/app/Views/Login/login.php(22): session()
+#9 /app/system/View/View.php(214): include('...')
+#10 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#12 /app/app/Controllers/LoginController.php(18): view()
+#13 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->index()
+#14 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#15 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#16 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+WARNING - 2021-11-13 05:08:15 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:17 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:18 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:37 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:39 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:41 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:41 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:08:43 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:09:00 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:09:39 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:10:06 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:10:07 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:14:01 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+CRITICAL - 2021-11-13 05:14:01 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Pages.php(32): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+WARNING - 2021-11-13 05:14:07 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:14:33 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+CRITICAL - 2021-11-13 05:14:33 --> Undefined constant "name"
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/Pages.php(32): view()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+WARNING - 2021-11-13 05:14:38 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:14:58 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:15:04 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:15:13 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:15:18 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:15:31 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:15:36 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:18:25 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:24:29 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:24:31 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:24:31 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:24:45 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+CRITICAL - 2021-11-13 05:24:46 --> Class "App\Controllers\UsersModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-13 05:25:57 --> Invalid file: login/profile.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(23): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-13 05:26:33 --> Invalid file: login/profile.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(23): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+WARNING - 2021-11-13 05:28:09 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:28:10 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:28:11 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:28:12 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:28:13 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:46:33 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:46:49 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:46:51 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+WARNING - 2021-11-13 05:46:53 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2021-11-13 05:47:11 --> pwmax
+ERROR - 2021-11-13 05:47:11 --> pw
+ERROR - 2021-11-13 05:47:11 --> 
+WARNING - 2021-11-13 05:47:23 --> Session: Sessions is enabled, and one exists.Please don't $session->start();

@@ -5,8 +5,12 @@ namespace App\Controllers;
 use App\Models\NewsModel;
 use CodeIgniter\Controller;
 
-class News extends Controller
+class News extends BaseController
 {
+    function __construct()
+    {
+        parent::__construct();
+    }
     public function index()
 {
     $model = new NewsModel();

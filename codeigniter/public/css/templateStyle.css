@@ -38,30 +38,28 @@
     margin-right:auto;
 }
 a:hover{
-    color:rgb(16, 12, 66);
+    color:rgb(2, 1, 8);
 }
 a:visited{
-    color:rgb(74, 47, 170)
+    color:rgb(22, 0, 104)
 }
-p{
-    font-size: 2rem;
-}
+
 
 h1{
     font-size: 3.5rem;
-    color:blue;
+    color:rgb(0, 0, 0);
 }
 h2{
     font-size: 2.5rem;
-    color:red;
+    color:blue;
 } 
 
 header{
-    background-color: aquamarine;
+    background-color: rgb(42,157,244);
     font-size: 2rem;
 }
 footer{
-    background-color: aquamarine;
+    background-color: rgb(42,157,244);
     font-size: 2rem;
 }
 
@@ -70,16 +68,68 @@ footer{
 }
 
 #allitems{
-    background-size:cover;
-    background-color: rgb(46, 46, 197);
-    padding-bottom:auto;
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 100vw;
+    
+    
 
+}
+
+.ownBgColor{
+    background-color: rgb(208, 239, 255);
+}
+
+.itemBgColor{
+    background-color: rgb(3, 37, 76);
 }
 
 .itemstogether{
-    text-align: center;
+    
 }
+
+#sepitem{
+    min-height: fit-content;
+    max-width: 40vw;
+    max-height: 40vh;
+    
+    margin: auto;
+
+    
+}
+#sepitem img{
+    min-height: 20vh;
+    max-width: 30vw;
+    max-height: 30vh;
+    
+    margin: 0 auto;
+
+    
+}
+.carousel{
+    min-height: 60vh;
+    max-width: 40vw;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+.carousel img{
+    min-height: 60vh;
+    max-width: 40vw;
+    max-height: 80vh;
+    
+    margin: 0 auto;
+}
+.carousel video{
+    min-height: 60vh;
+    max-width: 40vw;
+    max-height: 80vh;
+    
+    margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    bottom: 75%;
+}
+
+body { 
+    padding-top:75px;
+    padding-bottom: 75px; }

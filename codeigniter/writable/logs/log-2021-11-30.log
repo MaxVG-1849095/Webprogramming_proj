@@ -1,0 +1,486 @@
+ERROR - 2021-11-30 01:40:24 --> in login func
+ERROR - 2021-11-30 01:40:24 --> test
+ERROR - 2021-11-30 01:40:24 --> Max@mail.com
+ERROR - 2021-11-30 01:40:30 --> 1
+ERROR - 2021-11-30 01:40:40 --> 1
+ERROR - 2021-11-30 01:41:21 --> 1
+ERROR - 2021-11-30 01:41:33 --> in item deleter
+ERROR - 2021-11-30 01:41:33 --> 6
+ERROR - 2021-11-30 01:41:55 --> 1
+ERROR - 2021-11-30 01:41:57 --> in item deleter
+ERROR - 2021-11-30 01:41:57 --> 7
+ERROR - 2021-11-30 01:41:57 --> 1
+ERROR - 2021-11-30 01:42:03 --> 1
+ERROR - 2021-11-30 01:42:10 --> 1
+ERROR - 2021-11-30 01:42:38 --> in login func
+ERROR - 2021-11-30 01:42:38 --> test
+ERROR - 2021-11-30 01:42:38 --> Andreas@mail.com
+ERROR - 2021-11-30 02:04:31 --> in login func
+ERROR - 2021-11-30 02:04:31 --> test
+ERROR - 2021-11-30 02:04:31 --> Marie@mail.com
+ERROR - 2021-11-30 02:13:56 --> in login func
+ERROR - 2021-11-30 02:13:56 --> test
+ERROR - 2021-11-30 02:13:56 --> Max@mail.com
+ERROR - 2021-11-30 02:20:26 --> 1
+ERROR - 2021-11-30 02:20:34 --> 1
+ERROR - 2021-11-30 02:27:47 --> 1
+ERROR - 2021-11-30 02:27:52 --> 1
+ERROR - 2021-11-30 02:27:58 --> 1
+ERROR - 2021-11-30 02:28:00 --> 1
+ERROR - 2021-11-30 02:32:23 --> 1
+ERROR - 2021-11-30 02:32:35 --> 1
+ERROR - 2021-11-30 02:34:59 --> 1
+ERROR - 2021-11-30 02:36:44 --> 1
+ERROR - 2021-11-30 02:38:58 --> in login func
+ERROR - 2021-11-30 02:38:58 --> test
+ERROR - 2021-11-30 02:38:58 --> Andreas@mail.com
+ERROR - 2021-11-30 02:39:11 --> in login func
+ERROR - 2021-11-30 02:39:11 --> test
+ERROR - 2021-11-30 02:39:11 --> Marie@mail.com
+ERROR - 2021-11-30 02:39:11 --> 3
+ERROR - 2021-11-30 02:43:26 --> 3
+ERROR - 2021-11-30 02:45:55 --> 3
+ERROR - 2021-11-30 02:46:47 --> in login func
+ERROR - 2021-11-30 02:46:47 --> test
+ERROR - 2021-11-30 02:46:47 --> Max@mail.com
+ERROR - 2021-11-30 02:46:48 --> 1
+ERROR - 2021-11-30 02:47:27 --> in update price
+ERROR - 2021-11-30 02:47:27 --> 1
+ERROR - 2021-11-30 02:47:30 --> in update price
+ERROR - 2021-11-30 02:47:30 --> 1
+ERROR - 2021-11-30 02:48:41 --> in update price
+CRITICAL - 2021-11-30 02:48:41 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 63
+#0 /app/app/Controllers/ItemController.php(63): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-30 02:49:09 --> in update price
+ERROR - 2021-11-30 02:49:09 --> 1
+ERROR - 2021-11-30 02:50:09 --> 1
+ERROR - 2021-11-30 02:50:12 --> in update price
+ERROR - 2021-11-30 02:50:12 --> 1
+ERROR - 2021-11-30 02:50:35 --> in update price
+ERROR - 2021-11-30 02:50:35 --> 1
+ERROR - 2021-11-30 02:50:45 --> in update price
+CRITICAL - 2021-11-30 02:50:45 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 63
+#0 /app/app/Controllers/ItemController.php(63): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-30 02:50:47 --> 1
+ERROR - 2021-11-30 02:50:52 --> in update price
+ERROR - 2021-11-30 02:50:52 --> 1
+ERROR - 2021-11-30 02:50:53 --> 1
+ERROR - 2021-11-30 02:53:04 --> in update price
+ERROR - 2021-11-30 02:53:04 --> 1
+ERROR - 2021-11-30 02:53:07 --> in update price
+CRITICAL - 2021-11-30 02:53:07 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 63
+#0 /app/app/Controllers/ItemController.php(63): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-30 02:53:12 --> in update price
+CRITICAL - 2021-11-30 02:53:12 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 63
+#0 /app/app/Controllers/ItemController.php(63): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-30 02:53:23 --> 1
+ERROR - 2021-11-30 02:54:25 --> in update price
+ERROR - 2021-11-30 02:54:25 --> 1
+ERROR - 2021-11-30 02:54:31 --> 1
+ERROR - 2021-11-30 02:56:58 --> in availabilitysetter
+ERROR - 2021-11-30 02:56:59 --> in availabilitysetter
+ERROR - 2021-11-30 02:57:49 --> in availabilitysetter
+ERROR - 2021-11-30 02:57:52 --> in availabilitysetter
+ERROR - 2021-11-30 02:57:53 --> in availabilitysetter
+ERROR - 2021-11-30 02:57:54 --> in availabilitysetter
+ERROR - 2021-11-30 02:57:57 --> in availabilitysetter
+ERROR - 2021-11-30 02:58:01 --> in availabilitysetter
+CRITICAL - 2021-11-30 02:58:01 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#6 /app/app/Controllers/ItemController.php(121): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->setAvailability()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-30 02:58:03 --> in availabilitysetter
+CRITICAL - 2021-11-30 02:58:03 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#6 /app/app/Controllers/ItemController.php(121): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->setAvailability()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-30 02:58:19 --> 1
+ERROR - 2021-11-30 02:58:27 --> in availabilitysetter
+ERROR - 2021-11-30 03:15:45 --> 1
+ERROR - 2021-11-30 03:15:51 --> in availabilitysetter
+ERROR - 2021-11-30 03:15:54 --> 1
+ERROR - 2021-11-30 03:18:25 --> 1
+ERROR - 2021-11-30 03:18:48 --> 1
+ERROR - 2021-11-30 03:20:12 --> 1
+ERROR - 2021-11-30 03:22:07 --> post
+ERROR - 2021-11-30 03:22:07 --> in editdesc if
+ERROR - 2021-11-30 03:22:07 --> 1
+ERROR - 2021-11-30 03:22:48 --> 1
+ERROR - 2021-11-30 03:22:52 --> 1
+CRITICAL - 2021-11-30 03:23:07 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#6 /app/app/Controllers/ItemController.php(137): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updatedescription()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-30 03:23:58 --> 1
+ERROR - 2021-11-30 03:24:09 --> in update price
+ERROR - 2021-11-30 03:24:09 --> 1
+CRITICAL - 2021-11-30 03:42:06 --> Undefined variable $nameid
+#0 /app/app/Views/Items/item.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(59): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:20 --> Undefined array key "id"
+#0 /app/app/Views/Items/item.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:39 --> Undefined variable $reviewername
+#0 /app/app/Views/Items/item.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:46 --> Undefined variable $reviewername
+#0 /app/app/Views/Items/item.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:48 --> Undefined variable $reviewername
+#0 /app/app/Views/Items/item.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:49 --> Undefined variable $reviewername
+#0 /app/app/Views/Items/item.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 03:56:50 --> Undefined variable $reviewername
+#0 /app/app/Views/Items/item.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 04:00:03 --> Undefined array key "id"
+#0 /app/app/Views/Items/item.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(68): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-30 04:01:52 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 /app/app/Controllers/Pages.php(61): array_push()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-30 04:01:55 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 /app/app/Controllers/Pages.php(61): array_push()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-30 04:07:40 --> Undefined variable $userids
+#0 /app/app/Views/Profile/messages.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(33): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-30 04:17:25 --> 1
+ERROR - 2021-11-30 04:17:30 --> 1
+ERROR - 2021-11-30 04:17:33 --> 1
+ERROR - 2021-11-30 06:26:45 --> in login func
+ERROR - 2021-11-30 06:26:45 --> test
+ERROR - 2021-11-30 06:26:45 --> Max@mail.com
+ERROR - 2021-11-30 06:26:46 --> 1
+ERROR - 2021-11-30 06:56:03 --> amongE.png
+ERROR - 2021-11-30 06:56:40 --> amongE.png
+ERROR - 2021-11-30 06:56:40 --> image/png
+ERROR - 2021-11-30 07:03:06 --> amongE.png
+ERROR - 2021-11-30 07:03:06 --> image/png
+ERROR - 2021-11-30 07:03:18 --> amongE.png
+ERROR - 2021-11-30 07:03:18 --> image/png
+ERROR - 2021-11-30 07:03:28 --> amongE.png
+ERROR - 2021-11-30 07:03:28 --> image/png
+ERROR - 2021-11-30 07:03:39 --> amongE.png
+ERROR - 2021-11-30 07:03:39 --> image/png
+CRITICAL - 2021-11-30 07:03:39 --> finfo_file(/tmp/phpIMgKcd): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-30 07:05:15 --> PagMan.png
+ERROR - 2021-11-30 07:05:15 --> image/png
+CRITICAL - 2021-11-30 07:05:15 --> finfo_file(/tmp/phpQsyxIe): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-30 07:05:37 --> 
+ERROR - 2021-11-30 07:05:37 --> 
+CRITICAL - 2021-11-30 07:05:37 --> The original file is not a valid file.
+#0 /app/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /app/app/Controllers/ImageController.php(31): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-30 07:10:55 --> 1638277855_2ee5c9e3b49666ac58f9.png
+ERROR - 2021-11-30 07:10:55 --> image/png
+CRITICAL - 2021-11-30 07:10:55 --> finfo_file(/tmp/phprCDQ5f): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-30 07:11:42 --> Allowed fields must be specified for model: App\Models\ItemMediaModel
+#0 /app/system/BaseModel.php(1134): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /app/system/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/ImageController.php(38): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-30 07:14:32 --> finfo_file(/tmp/phpt9m4R6): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-30 07:21:00 --> finfo_file(/tmp/phptL23rw): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-30 07:21:27 --> finfo_file(/tmp/phpvSol0Z): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(34): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-30 07:24:23 --> The original file is not a valid file.
+#0 /app/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /app/app/Controllers/ImageController.php(31): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-30 07:25:37 --> Illegal offset type
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-30 07:25:53 --> Illegal offset type
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-30 07:26:59 --> Illegal offset type
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-30 07:27:20 --> Illegal offset type
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-30 07:34:47 --> finfo_file(/tmp/phpSshZg7): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Files/File.php(109): finfo_file()
+#2 /app/system/HTTP/Files/UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 /app/system/HTTP/Files/UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 /app/system/Files/File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 /app/app/Controllers/ImageController.php(33): CodeIgniter\Files\File->getRandomName()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-30 07:35:53 --> Allowed fields must be specified for model: App\Models\ItemMediaModel
+#0 /app/system/BaseModel.php(1134): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /app/system/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/ImageController.php(35): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-30 07:36:51 --> Allowed fields must be specified for model: App\Models\ItemMediaModel
+#0 /app/system/BaseModel.php(1134): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /app/system/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/ImageController.php(35): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeItemImage()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-30 07:44:42 --> 1
+ERROR - 2021-11-30 07:47:19 --> 1
+ERROR - 2021-11-30 07:47:56 --> 1
+ERROR - 2021-11-30 07:48:00 --> 1
+ERROR - 2021-11-30 07:48:05 --> 1
+ERROR - 2021-11-30 07:49:33 --> 1
+CRITICAL - 2021-11-30 07:51:12 --> syntax error, unexpected token ";"
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-30 07:57:04 --> 1
+ERROR - 2021-11-30 07:57:27 --> 1
+ERROR - 2021-11-30 07:57:30 --> in item deleter
+ERROR - 2021-11-30 07:57:30 --> 8
+ERROR - 2021-11-30 07:57:30 --> 1
+ERROR - 2021-11-30 07:57:36 --> 1
+ERROR - 2021-11-30 07:57:53 --> 1
+ERROR - 2021-11-30 07:58:29 --> 1
+ERROR - 2021-11-30 07:58:42 --> 1
+ERROR - 2021-11-30 08:34:09 --> 1
+ERROR - 2021-11-30 08:35:15 --> 1
+ERROR - 2021-11-30 08:47:57 --> 1
+ERROR - 2021-11-30 08:48:01 --> in availabilitysetter
+ERROR - 2021-11-30 08:48:02 --> in availabilitysetter
+ERROR - 2021-11-30 08:48:37 --> 1
+ERROR - 2021-11-30 08:53:27 --> 1
+ERROR - 2021-11-30 08:53:34 --> 1
+ERROR - 2021-11-30 09:01:36 --> 1

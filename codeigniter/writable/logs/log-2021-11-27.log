@@ -1,0 +1,563 @@
+ERROR - 2021-11-27 04:22:22 --> in login func
+ERROR - 2021-11-27 04:22:22 --> test
+ERROR - 2021-11-27 04:22:22 --> Marie@mail.com
+ERROR - 2021-11-27 04:22:24 --> 3
+ERROR - 2021-11-27 04:22:28 --> 3
+ERROR - 2021-11-27 04:22:31 --> 3
+ERROR - 2021-11-27 04:22:33 --> 3
+ERROR - 2021-11-27 04:22:36 --> 3
+ERROR - 2021-11-27 04:24:47 --> 3
+CRITICAL - 2021-11-27 04:24:48 --> Class "App\Controllers\UsersModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-27 04:25:12 --> 3
+CRITICAL - 2021-11-27 04:25:20 --> Class "App\Controllers\UsersModel" not found
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-27 04:25:41 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 /app/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 /app/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#2 /app/app/Controllers/ItemController.php(93): CodeIgniter\BaseModel->delete()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-27 04:26:26 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 /app/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 /app/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#2 /app/app/Controllers/ItemController.php(93): CodeIgniter\BaseModel->delete()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-27 04:28:10 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:28:34 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:29:57 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:30:28 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:32:46 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:33:12 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:34:13 --> 3
+ERROR - 2021-11-27 04:34:25 --> 3
+ERROR - 2021-11-27 04:34:27 --> 3
+ERROR - 2021-11-27 04:37:35 --> 3
+ERROR - 2021-11-27 04:37:46 --> 3
+ERROR - 2021-11-27 04:37:53 --> 3
+ERROR - 2021-11-27 04:37:56 --> 3
+ERROR - 2021-11-27 04:37:59 --> 3
+ERROR - 2021-11-27 04:38:04 --> 3
+ERROR - 2021-11-27 04:38:31 --> 3
+ERROR - 2021-11-27 04:42:40 --> 3
+ERROR - 2021-11-27 04:42:49 --> 3
+ERROR - 2021-11-27 04:42:59 --> 2
+CRITICAL - 2021-11-27 04:44:18 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 53
+#0 /app/app/Controllers/ItemController.php(53): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updatename()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:44:21 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:44:47 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:46:16 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 93
+#0 /app/app/Controllers/ItemController.php(93): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:47:30 --> 2
+ERROR - 2021-11-27 04:47:38 --> 3
+CRITICAL - 2021-11-27 04:47:41 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 94
+#0 /app/app/Controllers/ItemController.php(94): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:47:45 --> 4
+ERROR - 2021-11-27 04:47:49 --> 4
+ERROR - 2021-11-27 04:48:17 --> 3
+ERROR - 2021-11-27 04:48:22 --> 4
+ERROR - 2021-11-27 04:48:55 --> in update price
+CRITICAL - 2021-11-27 04:48:55 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 74
+#0 /app/app/Controllers/ItemController.php(74): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:49:00 --> 3
+ERROR - 2021-11-27 04:49:02 --> in update price
+ERROR - 2021-11-27 04:49:02 --> 2
+ERROR - 2021-11-27 04:49:33 --> 3
+ERROR - 2021-11-27 04:49:37 --> 3
+ERROR - 2021-11-27 04:49:40 --> in update price
+ERROR - 2021-11-27 04:49:40 --> 4
+CRITICAL - 2021-11-27 04:49:43 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 95
+#0 /app/app/Controllers/ItemController.php(95): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:49:58 --> in update price
+CRITICAL - 2021-11-27 04:49:58 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 74
+#0 /app/app/Controllers/ItemController.php(74): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:50:17 --> 3
+ERROR - 2021-11-27 04:53:12 --> 3
+CRITICAL - 2021-11-27 04:53:14 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 96
+#0 /app/app/Controllers/ItemController.php(96): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:53:18 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 96
+#0 /app/app/Controllers/ItemController.php(96): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 04:53:51 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 97
+#0 /app/app/Controllers/ItemController.php(97): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 04:54:19 --> in item deleter
+CRITICAL - 2021-11-27 04:54:19 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 98
+#0 /app/app/Controllers/ItemController.php(98): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 05:00:35 --> in update price
+ERROR - 2021-11-27 05:00:35 --> 4
+ERROR - 2021-11-27 05:01:28 --> in update price
+CRITICAL - 2021-11-27 05:01:28 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ItemController.php on line 74
+#0 /app/app/Controllers/ItemController.php(74): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateprice()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 05:01:30 --> in item deleter
+ERROR - 2021-11-27 05:01:30 --> 4
+ERROR - 2021-11-27 05:01:30 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:01:30 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2175): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 /app/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#6 /app/app/Controllers/ItemController.php(99): CodeIgniter\BaseModel->delete()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-27 05:01:57 --> in item deleter
+ERROR - 2021-11-27 05:01:57 --> 4
+ERROR - 2021-11-27 05:01:57 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:01:57 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2175): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 /app/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#6 /app/app/Controllers/ItemController.php(99): CodeIgniter\BaseModel->delete()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->removeItem()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-27 05:03:04 --> in item deleter
+ERROR - 2021-11-27 05:03:04 --> 4
+ERROR - 2021-11-27 05:03:07 --> 3
+ERROR - 2021-11-27 05:03:09 --> 3
+ERROR - 2021-11-27 05:03:24 --> in item deleter
+ERROR - 2021-11-27 05:03:24 --> 4
+CRITICAL - 2021-11-27 05:03:25 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/wareEditor.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-27 05:03:25 --> 3
+ERROR - 2021-11-27 05:03:27 --> 3
+ERROR - 2021-11-27 05:03:30 --> 3
+ERROR - 2021-11-27 05:05:04 --> 3
+ERROR - 2021-11-27 05:11:21 --> 3
+ERROR - 2021-11-27 05:11:23 --> 3
+ERROR - 2021-11-27 05:11:27 --> 3
+ERROR - 2021-11-27 05:12:04 --> 3
+CRITICAL - 2021-11-27 05:12:04 --> Undefined variable $item
+#0 /app/app/Views/Profile/wareCreator.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(91): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-27 05:12:06 --> 3
+ERROR - 2021-11-27 05:12:25 --> 3
+ERROR - 2021-11-27 05:27:56 --> in login func
+ERROR - 2021-11-27 05:27:56 --> test
+ERROR - 2021-11-27 05:27:56 --> Max@mail.com
+ERROR - 2021-11-27 05:27:57 --> 1
+ERROR - 2021-11-27 05:28:01 --> 1
+ERROR - 2021-11-27 05:28:52 --> 1
+CRITICAL - 2021-11-27 05:40:19 --> Undefined variable $data
+#0 /app/app/Controllers/ItemController.php(116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-27 05:40:44 --> 1
+ERROR - 2021-11-27 05:44:38 --> 1
+ERROR - 2021-11-27 05:44:55 --> Test item
+ERROR - 2021-11-27 05:44:55 --> I am a created item
+ERROR - 2021-11-27 05:44:55 --> 4
+ERROR - 2021-11-27 05:44:55 --> 0
+ERROR - 2021-11-27 05:44:55 --> test.jpg
+ERROR - 2021-11-27 05:44:55 --> 1
+ERROR - 2021-11-27 05:44:55 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:44:55 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /app/system/Model.php(592): CodeIgniter\Model->countAllResults()
+#6 /app/system/BaseModel.php(655): CodeIgniter\Model->shouldUpdate()
+#7 /app/app/Controllers/ItemController.php(122): CodeIgniter\BaseModel->save()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-27 05:47:57 --> Test item name
+ERROR - 2021-11-27 05:47:57 --> test item description
+ERROR - 2021-11-27 05:47:57 --> 3
+ERROR - 2021-11-27 05:47:57 --> 1
+ERROR - 2021-11-27 05:47:57 --> testitemfile.jpg
+ERROR - 2021-11-27 05:47:57 --> 1
+ERROR - 2021-11-27 05:47:57 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:47:57 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /app/system/Model.php(592): CodeIgniter\Model->countAllResults()
+#6 /app/system/BaseModel.php(655): CodeIgniter\Model->shouldUpdate()
+#7 /app/app/Controllers/ItemController.php(122): CodeIgniter\BaseModel->save()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-27 05:48:21 --> Test item name
+ERROR - 2021-11-27 05:48:21 --> test item desc
+ERROR - 2021-11-27 05:48:21 --> 3
+ERROR - 2021-11-27 05:48:21 --> 0
+ERROR - 2021-11-27 05:48:21 --> testitemfile.jpg
+ERROR - 2021-11-27 05:48:21 --> 1
+ERROR - 2021-11-27 05:48:21 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:48:21 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /app/system/Model.php(592): CodeIgniter\Model->countAllResults()
+#6 /app/system/BaseModel.php(655): CodeIgniter\Model->shouldUpdate()
+#7 /app/app/Controllers/ItemController.php(122): CodeIgniter\BaseModel->save()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-27 05:52:30 --> bla
+ERROR - 2021-11-27 05:52:30 --> blabla
+ERROR - 2021-11-27 05:52:30 --> 3
+ERROR - 2021-11-27 05:52:30 --> 0
+ERROR - 2021-11-27 05:52:30 --> blabla
+ERROR - 2021-11-27 05:52:30 --> 1
+ERROR - 2021-11-27 05:52:30 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-11-27 05:52:30 --> Unknown column 'id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /app/system/Model.php(592): CodeIgniter\Model->countAllResults()
+#6 /app/system/BaseModel.php(655): CodeIgniter\Model->shouldUpdate()
+#7 /app/app/Controllers/ItemController.php(122): CodeIgniter\BaseModel->save()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->createItem()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-27 05:57:55 --> blab
+ERROR - 2021-11-27 05:57:55 --> blabla
+ERROR - 2021-11-27 05:57:55 --> 3
+ERROR - 2021-11-27 05:57:55 --> 1
+ERROR - 2021-11-27 05:57:55 --> blabla.jpg
+ERROR - 2021-11-27 05:57:55 --> 1
+ERROR - 2021-11-27 05:58:01 --> 1
+ERROR - 2021-11-27 05:58:03 --> in item deleter
+ERROR - 2021-11-27 05:58:03 --> 5
+ERROR - 2021-11-27 05:58:07 --> 1
+ERROR - 2021-11-27 05:59:03 --> Created test item
+ERROR - 2021-11-27 05:59:03 --> i am a created test item sold by max
+ERROR - 2021-11-27 05:59:03 --> 5
+ERROR - 2021-11-27 05:59:03 --> 0
+ERROR - 2021-11-27 05:59:03 --> blabla.jpg
+ERROR - 2021-11-27 05:59:03 --> 1
+CRITICAL - 2021-11-27 07:29:07 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(24): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-27 07:29:28 --> 1
+ERROR - 2021-11-27 07:29:30 --> 1
+ERROR - 2021-11-27 07:30:29 --> 1
+ERROR - 2021-11-27 07:30:42 --> in login func
+ERROR - 2021-11-27 07:30:42 --> test
+ERROR - 2021-11-27 07:30:42 --> Andreas@mail.com
+ERROR - 2021-11-27 07:30:45 --> 2
+CRITICAL - 2021-11-27 08:09:37 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-27 08:10:20 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-27 08:12:42 --> in login func
+ERROR - 2021-11-27 08:12:42 --> test
+ERROR - 2021-11-27 08:12:42 --> Marie@mail.com
+CRITICAL - 2021-11-27 09:15:12 --> Array to string conversion
+#0 /app/app/Views/Profile/messages.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(23): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-27 09:15:22 --> Array to string conversion
+#0 /app/app/Views/Profile/messages.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(23): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-27 09:30:35 --> Call to undefined method App\Models\MessageModel::getMaxID
+#0 /app/app/Controllers/MessageController.php(21): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-27 09:30:56 --> Call to undefined method App\Models\UsersModel::last
+#0 /app/app/Models/UsersModel.php(47): CodeIgniter\Model->__call()
+#1 /app/app/Controllers/MessageController.php(21): App\Models\UsersModel->getMaxID()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-27 09:40:30 --> Not unique table/alias: 'Users'
+CRITICAL - 2021-11-27 09:40:30 --> Not unique table/alias: 'Users'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/UsersModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/app/Controllers/MessageController.php(21): App\Models\UsersModel->getMaxID()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-27 09:42:37 --> Not unique table/alias: 'Users'
+CRITICAL - 2021-11-27 09:42:37 --> Not unique table/alias: 'Users'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/UsersModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/app/Controllers/MessageController.php(21): App\Models\UsersModel->getMaxID()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-27 09:51:52 --> Undefined array key "id"
+#0 /app/app/Views/Profile/messages.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-27 09:52:06 --> Undefined array key "id"
+#0 /app/app/Views/Profile/messages.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-27 09:53:39 --> Cannot use object of type stdClass as array
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-27 09:53:49 --> Object of class stdClass could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-27 09:53:56 --> Object of class stdClass could not be converted to string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-27 09:54:19 --> Call to undefined function toInt()
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(24): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-27 10:03:32 --> in login func
+ERROR - 2021-11-27 10:03:32 --> test
+ERROR - 2021-11-27 10:03:32 --> Andreas@mail.com
+ERROR - 2021-11-27 10:04:48 --> ordered
+ERROR - 2021-11-27 10:04:48 --> 0
