@@ -64,6 +64,8 @@ class Pages extends BaseController
         array_shift($array);
         $data['reviewers'] = $array;
 
+        $data['average'] = $reviewmodel->getAverageReviewScore($itemid);
+
         $itemmediamodel = new ItemMediaModel();
 
         $data['media'] = $itemmediamodel->getItemMedia($itemid);

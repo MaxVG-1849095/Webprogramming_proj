@@ -38,6 +38,7 @@ class LoginController extends BaseController
             'password'  => 'required|max_length[255]',
             'email' => 'required|max_length[128]|is_unique[Users.email]',
             'description' => 'required',
+            'adress' => 'required'
         ])) {
             $UsersModel->save([
                 'name' => $this->request->getPost('name'),
@@ -45,6 +46,7 @@ class LoginController extends BaseController
                 'email' => $this->request->getPost('email'),
                 'slug' => $this->request->getPost('customertype'),
                 'description'  => $this->request->getPost('description'),
+                'adress' => $this->request->getPost('adress'),
             ]);
             $data = $UsersModel->getUserLogin($this->request->getVar('email'), $this->request->getVar('password'));
             $ses_data = [

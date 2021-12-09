@@ -1,0 +1,309 @@
+ERROR - 2021-12-08 02:33:42 --> in login func
+ERROR - 2021-12-08 02:33:42 --> test
+ERROR - 2021-12-08 02:33:42 --> Marie@mail.com
+ERROR - 2021-12-08 02:33:42 --> 0
+ERROR - 2021-12-08 02:36:43 --> 0
+ERROR - 2021-12-08 02:39:34 --> 0
+ERROR - 2021-12-08 02:39:55 --> in login func
+ERROR - 2021-12-08 02:39:55 --> test
+ERROR - 2021-12-08 02:39:55 --> Joren@mail.com
+ERROR - 2021-12-08 02:39:55 --> 0
+ERROR - 2021-12-08 02:40:11 --> 0
+ERROR - 2021-12-08 02:40:17 --> 0
+ERROR - 2021-12-08 02:40:19 --> 3
+ERROR - 2021-12-08 02:42:17 --> 0
+ERROR - 2021-12-08 02:48:16 --> 0
+CRITICAL - 2021-12-08 02:49:14 --> Undefined array key "delivery"
+#0 /app/app/Controllers/OrderController.php(208): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->completeOrder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-08 02:50:26 --> 0
+ERROR - 2021-12-08 02:50:32 --> in login func
+ERROR - 2021-12-08 02:50:32 --> test
+ERROR - 2021-12-08 02:50:32 --> Andreas@mail.com
+ERROR - 2021-12-08 02:50:32 --> 0
+ERROR - 2021-12-08 02:55:54 --> 0
+ERROR - 2021-12-08 03:01:59 --> 0
+ERROR - 2021-12-08 03:02:42 --> 0
+ERROR - 2021-12-08 03:04:24 --> 0
+ERROR - 2021-12-08 03:08:46 --> in login func
+ERROR - 2021-12-08 03:08:46 --> test
+ERROR - 2021-12-08 03:08:46 --> rigo@mail.com
+ERROR - 2021-12-08 03:08:46 --> 0
+ERROR - 2021-12-08 03:09:12 --> 0
+ERROR - 2021-12-08 03:10:57 --> 0
+ERROR - 2021-12-08 03:11:30 --> 0
+ERROR - 2021-12-08 03:22:14 --> 0
+ERROR - 2021-12-08 03:22:22 --> 0
+ERROR - 2021-12-08 03:22:26 --> 0
+ERROR - 2021-12-08 03:31:56 --> 0
+ERROR - 2021-12-08 03:31:58 --> 5
+ERROR - 2021-12-08 04:11:19 --> 0
+ERROR - 2021-12-08 04:11:21 --> 2
+ERROR - 2021-12-08 04:11:51 --> 2
+ERROR - 2021-12-08 04:12:19 --> in editdesc if
+ERROR - 2021-12-08 04:12:19 --> 2
+ERROR - 2021-12-08 04:14:47 --> 0
+ERROR - 2021-12-08 04:14:57 --> 0
+ERROR - 2021-12-08 04:15:01 --> 0
+ERROR - 2021-12-08 04:15:02 --> 2
+CRITICAL - 2021-12-08 04:19:43 --> Undefined array key "delivery"
+#0 /app/app/Controllers/OrderController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-08 04:20:56 --> Undefined variable $id
+#0 /app/app/Models/UsersModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(35): App\Models\UsersModel->getUserAdress()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorder()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-08 04:21:36 --> 0
+ERROR - 2021-12-08 04:21:40 --> in login func
+ERROR - 2021-12-08 04:21:40 --> test
+ERROR - 2021-12-08 04:21:40 --> Max@mail.com
+ERROR - 2021-12-08 04:21:40 --> 0
+ERROR - 2021-12-08 04:25:07 --> 0
+ERROR - 2021-12-08 04:27:00 --> 0
+CRITICAL - 2021-12-08 04:28:24 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/OrderController.php(171): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-08 04:28:36 --> 0
+ERROR - 2021-12-08 04:32:32 --> 3
+ERROR - 2021-12-08 04:36:40 --> 0
+ERROR - 2021-12-08 04:36:53 --> 1
+ERROR - 2021-12-08 04:36:59 --> 0
+ERROR - 2021-12-08 04:37:16 --> 0
+ERROR - 2021-12-08 04:37:17 --> 2
+ERROR - 2021-12-08 04:37:26 --> 1
+ERROR - 2021-12-08 04:37:36 --> 0
+ERROR - 2021-12-08 04:37:38 --> 1
+ERROR - 2021-12-08 04:37:42 --> 0
+ERROR - 2021-12-08 04:37:44 --> 1
+ERROR - 2021-12-08 04:38:20 --> 0
+ERROR - 2021-12-08 05:04:34 --> 0
+ERROR - 2021-12-08 05:29:11 --> 0
+ERROR - 2021-12-08 05:32:44 --> Operand should contain 1 column(s)
+CRITICAL - 2021-12-08 05:32:44 --> Operand should contain 1 column(s)
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /app/app/Models/OrderModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 /app/app/Controllers/OrderController.php(119): App\Models\OrderModel->getActiveSellerOrders()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-12-08 05:34:50 --> 0
+CRITICAL - 2021-12-08 05:36:35 --> Too few arguments to function App\Controllers\BaseController::template(), 0 passed in /app/app/Controllers/OrderController.php on line 285 and exactly 2 expected
+#0 /app/app/Controllers/OrderController.php(285): App\Controllers\BaseController->template()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-08 05:43:06 --> 0
+ERROR - 2021-12-08 05:43:14 --> 0
+ERROR - 2021-12-08 05:44:30 --> 0
+ERROR - 2021-12-08 05:45:15 --> 0
+ERROR - 2021-12-08 05:46:00 --> 0
+ERROR - 2021-12-08 05:52:24 --> 0
+ERROR - 2021-12-08 05:52:29 --> 0
+ERROR - 2021-12-08 05:55:11 --> 0
+ERROR - 2021-12-08 05:56:15 --> 0
+ERROR - 2021-12-08 05:57:06 --> 0
+CRITICAL - 2021-12-08 05:57:09 --> Undefined array key "itemname"
+#0 /app/app/Views/Profile/orderDate.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 05:58:10 --> in login func
+ERROR - 2021-12-08 05:58:10 --> test
+ERROR - 2021-12-08 05:58:10 --> andreas@mail.com
+ERROR - 2021-12-08 05:58:10 --> 0
+ERROR - 2021-12-08 05:58:15 --> 0
+ERROR - 2021-12-08 05:58:18 --> 0
+ERROR - 2021-12-08 06:03:53 --> 0
+ERROR - 2021-12-08 06:06:37 --> 0
+CRITICAL - 2021-12-08 06:08:56 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 294
+#0 /app/app/Controllers/OrderController.php(294): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->createOrderTime()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-08 06:09:43 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 294
+#0 /app/app/Controllers/OrderController.php(294): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->createOrderTime()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-08 06:10:38 --> 0
+CRITICAL - 2021-12-08 06:10:47 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 294
+#0 /app/app/Controllers/OrderController.php(294): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->createOrderTime()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-08 06:11:21 --> 0
+CRITICAL - 2021-12-08 06:11:31 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 294
+#0 /app/app/Controllers/OrderController.php(294): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->createOrderTime()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-08 06:12:43 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:13:29 --> 0
+CRITICAL - 2021-12-08 06:13:49 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-08 06:16:14 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:17:24 --> 0
+CRITICAL - 2021-12-08 06:17:35 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:19:12 --> 0
+ERROR - 2021-12-08 06:19:37 --> 0
+CRITICAL - 2021-12-08 06:21:22 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:24:13 --> 0
+CRITICAL - 2021-12-08 06:24:56 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:29:48 --> 0
+CRITICAL - 2021-12-08 06:29:54 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/orderDate.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(288): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->orderdateredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 06:30:06 --> 23
+ERROR - 2021-12-08 06:30:06 --> 09:40
+ERROR - 2021-12-08 06:30:06 --> 2021-12-23
+ERROR - 2021-12-08 06:31:03 --> 0
+ERROR - 2021-12-08 07:19:22 --> 0
+ERROR - 2021-12-08 07:19:24 --> 0
+ERROR - 2021-12-08 07:21:46 --> 0
+ERROR - 2021-12-08 07:23:11 --> 0
+ERROR - 2021-12-08 07:23:22 --> 66
+ERROR - 2021-12-08 07:23:22 --> 09:30
+ERROR - 2021-12-08 07:23:22 --> 2021-12-24
+ERROR - 2021-12-08 07:23:40 --> 0
+ERROR - 2021-12-08 07:24:09 --> 0
+ERROR - 2021-12-08 07:24:19 --> 0
+ERROR - 2021-12-08 07:24:21 --> 1
+ERROR - 2021-12-08 07:24:27 --> 0
+ERROR - 2021-12-08 07:24:29 --> 0
+ERROR - 2021-12-08 07:24:53 --> 0
+ERROR - 2021-12-08 07:25:14 --> 68
+ERROR - 2021-12-08 07:25:14 --> 18:30
+ERROR - 2021-12-08 07:25:14 --> 2021-12-23
+ERROR - 2021-12-08 07:25:21 --> 0
+ERROR - 2021-12-08 07:26:00 --> 0
+ERROR - 2021-12-08 07:26:14 --> 0
+ERROR - 2021-12-08 07:26:20 --> in login func
+ERROR - 2021-12-08 07:26:20 --> test
+ERROR - 2021-12-08 07:26:20 --> Marie@mail.com
+ERROR - 2021-12-08 07:26:21 --> 0
+ERROR - 2021-12-08 07:26:29 --> 0
+ERROR - 2021-12-08 07:26:33 --> 0
+ERROR - 2021-12-08 07:28:24 --> 0
+ERROR - 2021-12-08 07:29:56 --> 0
+ERROR - 2021-12-08 07:30:15 --> 0
+ERROR - 2021-12-08 07:32:03 --> 0
+ERROR - 2021-12-08 07:32:06 --> 3
+ERROR - 2021-12-08 07:32:41 --> 0
+ERROR - 2021-12-08 07:47:16 --> in login func
+ERROR - 2021-12-08 07:47:16 --> test
+ERROR - 2021-12-08 07:47:16 --> Rigo@mail.com
+ERROR - 2021-12-08 07:47:17 --> 0

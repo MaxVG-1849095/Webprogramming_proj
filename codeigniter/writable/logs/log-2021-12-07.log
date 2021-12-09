@@ -1,0 +1,579 @@
+ERROR - 2021-12-07 03:20:00 --> in login func
+ERROR - 2021-12-07 03:20:00 --> test
+ERROR - 2021-12-07 03:20:00 --> Max@mail.com
+ERROR - 2021-12-07 03:20:00 --> 0
+ERROR - 2021-12-07 04:27:07 --> 0
+ERROR - 2021-12-07 04:27:32 --> 0
+ERROR - 2021-12-07 04:27:39 --> 0
+ERROR - 2021-12-07 04:27:41 --> 1
+ERROR - 2021-12-07 04:28:27 --> 0
+ERROR - 2021-12-07 04:28:29 --> 1
+ERROR - 2021-12-07 04:28:42 --> 0
+ERROR - 2021-12-07 04:29:01 --> 0
+ERROR - 2021-12-07 04:29:15 --> 0
+ERROR - 2021-12-07 04:39:30 --> 0
+ERROR - 2021-12-07 04:39:33 --> Unknown column 'order' in 'where clause'
+CRITICAL - 2021-12-07 04:39:33 --> Unknown column 'order' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(2175): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 /app/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#6 /app/app/Controllers/OrderController.php(119): CodeIgniter\BaseModel->delete()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-07 04:39:55 --> Call to a member function set() on null
+#0 /app/app/Controllers/OrderController.php(121): App\Models\OrderModel->setNextActive()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-07 04:40:40 --> Call to a member function set() on array
+#0 /app/app/Controllers/OrderController.php(121): App\Models\OrderModel->setNextActive()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 04:41:28 --> in login func
+ERROR - 2021-12-07 04:41:28 --> test
+ERROR - 2021-12-07 04:41:28 --> Andreas@mail.com
+ERROR - 2021-12-07 04:41:28 --> 0
+ERROR - 2021-12-07 04:41:39 --> 0
+ERROR - 2021-12-07 04:41:52 --> 0
+ERROR - 2021-12-07 04:41:56 --> 2
+ERROR - 2021-12-07 04:42:07 --> 0
+ERROR - 2021-12-07 04:42:11 --> 0
+ERROR - 2021-12-07 04:44:53 --> 0
+ERROR - 2021-12-07 04:44:57 --> 1
+ERROR - 2021-12-07 04:45:16 --> 0
+ERROR - 2021-12-07 04:45:23 --> 0
+ERROR - 2021-12-07 04:45:41 --> 0
+ERROR - 2021-12-07 04:46:48 --> 0
+ERROR - 2021-12-07 04:46:50 --> 0
+ERROR - 2021-12-07 04:46:51 --> 1
+ERROR - 2021-12-07 04:47:05 --> 0
+ERROR - 2021-12-07 04:47:14 --> 0
+CRITICAL - 2021-12-07 04:47:17 --> Call to a member function set() on array
+#0 /app/app/Controllers/OrderController.php(131): App\Models\OrderModel->setNextActive()
+#1 /app/app/Controllers/OrderController.php(121): App\Controllers\OrderController->setFirstPendingActive()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-07 04:50:29 --> 0
+ERROR - 2021-12-07 04:50:35 --> 0
+ERROR - 2021-12-07 04:50:36 --> 1
+CRITICAL - 2021-12-07 04:50:43 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/OrderController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorderavailable()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 04:50:52 --> 0
+CRITICAL - 2021-12-07 04:50:56 --> Call to a member function set() on array
+#0 /app/app/Controllers/OrderController.php(131): App\Models\OrderModel->setNextActive()
+#1 /app/app/Controllers/OrderController.php(121): App\Controllers\OrderController->setFirstPendingActive()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-07 04:52:25 --> Call to a member function set() on array
+#0 /app/app/Controllers/OrderController.php(121): App\Controllers\OrderController->setFirstPendingActive()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 04:58:34 --> 0
+CRITICAL - 2021-12-07 04:58:45 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Database/Query.php(322): implode()
+#2 /app/system/Database/Query.php(302): CodeIgniter\Database\Query->matchNamedBinds()
+#3 /app/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\Query->getQuery()
+#5 /app/system/Database/BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query()
+#6 /app/system/Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#7 /app/system/BaseModel.php(865): CodeIgniter\Model->doUpdate()
+#8 /app/system/Model.php(646): CodeIgniter\BaseModel->update()
+#9 /app/app/Controllers/OrderController.php(134): CodeIgniter\Model->update()
+#10 /app/app/Controllers/OrderController.php(121): App\Controllers\OrderController->setFirstPendingActive()
+#11 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrder()
+#12 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#13 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#14 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+ERROR - 2021-12-07 05:00:48 --> 0
+ERROR - 2021-12-07 05:01:34 --> 0
+ERROR - 2021-12-07 05:01:45 --> 0
+ERROR - 2021-12-07 05:02:56 --> 0
+ERROR - 2021-12-07 05:03:05 --> in login func
+ERROR - 2021-12-07 05:03:05 --> test
+ERROR - 2021-12-07 05:03:05 --> Marie@mail.com
+ERROR - 2021-12-07 05:03:05 --> 0
+ERROR - 2021-12-07 05:03:23 --> 0
+ERROR - 2021-12-07 05:03:31 --> in login func
+ERROR - 2021-12-07 05:03:31 --> test
+ERROR - 2021-12-07 05:03:31 --> Joren@mail.com
+ERROR - 2021-12-07 05:03:31 --> 0
+ERROR - 2021-12-07 05:03:43 --> 0
+ERROR - 2021-12-07 05:07:36 --> 0
+ERROR - 2021-12-07 05:07:39 --> 0
+ERROR - 2021-12-07 05:08:21 --> 11
+ERROR - 2021-12-07 05:08:35 --> 0
+ERROR - 2021-12-07 05:13:15 --> 0
+ERROR - 2021-12-07 05:13:46 --> 0
+ERROR - 2021-12-07 05:14:34 --> 0
+ERROR - 2021-12-07 05:17:27 --> 0
+CRITICAL - 2021-12-07 06:29:49 --> Undefined variable $SESSION
+#0 /app/app/Controllers/OrderController.php(125): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-07 06:30:20 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(129): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:32:11 --> Your order on item trim 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:32:11 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:33:00 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:33:00 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:33:33 --> 0
+ERROR - 2021-12-07 06:33:35 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:33:35 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:36:06 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:36:06 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:37:16 --> 0
+ERROR - 2021-12-07 06:37:18 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:37:18 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:37:28 --> 0
+ERROR - 2021-12-07 06:39:11 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:39:11 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:40:21 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:40:21 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:40:35 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:40:35 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(130): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:41:34 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:41:34 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(131): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 06:43:18 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+ERROR - 2021-12-07 06:43:55 --> 0
+ERROR - 2021-12-07 06:43:58 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+ERROR - 2021-12-07 06:47:23 --> Your order on item  has been cancelled. You can contact user with id 3 for more information!
+CRITICAL - 2021-12-07 06:47:23 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/OrderController.php(131): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 06:47:28 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+ERROR - 2021-12-07 06:47:30 --> Your order on item 2 has been cancelled. You can contact user with id 3 for more information!
+ERROR - 2021-12-07 06:47:37 --> 0
+ERROR - 2021-12-07 06:47:40 --> 3
+ERROR - 2021-12-07 06:48:22 --> in login func
+ERROR - 2021-12-07 06:48:22 --> test
+ERROR - 2021-12-07 06:48:22 --> Andreas@mail.com
+ERROR - 2021-12-07 06:48:22 --> 0
+ERROR - 2021-12-07 06:49:11 --> 0
+CRITICAL - 2021-12-07 06:51:22 --> Undefined array key "available"
+#0 /app/app/Controllers/OrderController.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 06:53:19 --> in login func
+ERROR - 2021-12-07 06:53:19 --> test
+ERROR - 2021-12-07 06:53:19 --> Max@mail.com
+ERROR - 2021-12-07 06:53:19 --> 0
+ERROR - 2021-12-07 06:53:46 --> 0
+ERROR - 2021-12-07 06:53:49 --> 0
+ERROR - 2021-12-07 06:53:50 --> 1
+ERROR - 2021-12-07 06:54:24 --> 0
+ERROR - 2021-12-07 06:56:44 --> 0
+ERROR - 2021-12-07 07:07:47 --> 0
+ERROR - 2021-12-07 07:16:58 --> 0
+ERROR - 2021-12-07 07:17:23 --> 0
+ERROR - 2021-12-07 07:22:52 --> 0
+ERROR - 2021-12-07 07:22:54 --> 0
+ERROR - 2021-12-07 07:30:54 --> 0
+ERROR - 2021-12-07 07:33:55 --> 0
+CRITICAL - 2021-12-07 07:35:22 --> Undefined array key "selelrid"
+#0 /app/app/Views/Profile/shopperOrders.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(146): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-07 07:35:32 --> Undefined variable $itemname
+#0 /app/app/Views/Profile/shopperOrders.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(146): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-07 07:36:41 --> Call to undefined method App\Models\OrderModel::getShopperItemids
+#0 /app/app/Controllers/OrderController.php(133): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-07 07:37:13 --> Call to undefined method App\Models\OrderModel::getShopperItemids
+#0 /app/app/Controllers/OrderController.php(133): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 07:37:13 --> 0
+CRITICAL - 2021-12-07 07:37:15 --> Call to undefined method App\Models\OrderModel::getShopperItemids
+#0 /app/app/Controllers/OrderController.php(133): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 07:37:22 --> 0
+CRITICAL - 2021-12-07 07:37:42 --> Call to undefined method App\Models\OrderModel::getShopperItemids
+#0 /app/app/Controllers/OrderController.php(133): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 07:38:10 --> 0
+ERROR - 2021-12-07 07:40:32 --> 0
+ERROR - 2021-12-07 07:44:44 --> 0
+ERROR - 2021-12-07 07:47:03 --> 0
+ERROR - 2021-12-07 07:54:04 --> 0
+ERROR - 2021-12-07 07:54:12 --> in login func
+ERROR - 2021-12-07 07:54:12 --> test
+ERROR - 2021-12-07 07:54:12 --> Max@mail.com
+ERROR - 2021-12-07 07:54:12 --> 0
+CRITICAL - 2021-12-07 07:54:39 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(200): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->completeOrder()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-07 07:58:01 --> 0
+ERROR - 2021-12-07 07:58:49 --> 0
+ERROR - 2021-12-07 08:08:55 --> 0
+ERROR - 2021-12-07 08:09:01 --> 0
+ERROR - 2021-12-07 08:09:04 --> 1
+CRITICAL - 2021-12-07 08:09:08 --> Call to undefined method App\Models\OrderModel::decrementavailability
+#0 /app/app/Controllers/ItemController.php(197): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateavailability()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 08:09:51 --> 0
+ERROR - 2021-12-07 08:09:57 --> 0
+ERROR - 2021-12-07 08:10:02 --> 0
+ERROR - 2021-12-07 08:10:04 --> 1
+ERROR - 2021-12-07 08:10:32 --> 0
+ERROR - 2021-12-07 08:10:36 --> 0
+ERROR - 2021-12-07 08:10:38 --> 1
+ERROR - 2021-12-07 08:10:43 --> 0
+ERROR - 2021-12-07 08:10:53 --> 0
+ERROR - 2021-12-07 08:10:58 --> 0
+ERROR - 2021-12-07 08:10:59 --> 1
+ERROR - 2021-12-07 08:11:06 --> 0
+ERROR - 2021-12-07 08:11:24 --> 0
+ERROR - 2021-12-07 08:11:29 --> in login func
+ERROR - 2021-12-07 08:11:29 --> test
+ERROR - 2021-12-07 08:11:29 --> Joren@mail.com
+ERROR - 2021-12-07 08:11:29 --> 0
+ERROR - 2021-12-07 08:11:37 --> 0
+ERROR - 2021-12-07 08:11:43 --> 0
+ERROR - 2021-12-07 08:11:49 --> 0
+ERROR - 2021-12-07 08:11:51 --> 3
+ERROR - 2021-12-07 08:12:00 --> 0
+ERROR - 2021-12-07 08:12:17 --> 0
+ERROR - 2021-12-07 08:12:20 --> 0
+ERROR - 2021-12-07 08:12:21 --> 3
+ERROR - 2021-12-07 08:12:28 --> 0
+ERROR - 2021-12-07 08:12:45 --> 0
+ERROR - 2021-12-07 08:12:50 --> in login func
+ERROR - 2021-12-07 08:12:50 --> test
+ERROR - 2021-12-07 08:12:50 --> Max@mail.com
+ERROR - 2021-12-07 08:12:54 --> in login func
+ERROR - 2021-12-07 08:12:54 --> test
+ERROR - 2021-12-07 08:12:55 --> Max@mail.com
+ERROR - 2021-12-07 08:12:55 --> 0
+ERROR - 2021-12-07 08:13:02 --> 0
+ERROR - 2021-12-07 08:13:05 --> 1
+ERROR - 2021-12-07 08:13:20 --> 0
+ERROR - 2021-12-07 08:16:11 --> 0
+ERROR - 2021-12-07 08:16:12 --> 1
+CRITICAL - 2021-12-07 08:16:16 --> Undefined array key "shopperid"
+#0 /app/app/Controllers/ItemController.php(205): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateavailability()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 08:16:37 --> 0
+ERROR - 2021-12-07 08:16:41 --> Your order on item 10 has been cancelled. You can contact user with id 1 for more information!
+ERROR - 2021-12-07 08:16:44 --> 0
+CRITICAL - 2021-12-07 08:16:49 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/OrderController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorder()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 08:17:06 --> Your order on item 10 has been cancelled. You can contact user with id 1 for more information!
+ERROR - 2021-12-07 08:17:10 --> 0
+ERROR - 2021-12-07 08:18:16 --> 0
+ERROR - 2021-12-07 08:18:32 --> 0
+ERROR - 2021-12-07 08:18:54 --> 0
+ERROR - 2021-12-07 08:19:01 --> 0
+ERROR - 2021-12-07 08:19:03 --> 1
+CRITICAL - 2021-12-07 08:19:08 --> Undefined array key "userid"
+#0 /app/app/Controllers/ItemController.php(205): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateavailability()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-07 08:19:46 --> syntax error, unexpected token ";", expecting "]"
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 08:20:37 --> 0
+ERROR - 2021-12-07 08:20:46 --> 0
+ERROR - 2021-12-07 08:20:50 --> 0
+CRITICAL - 2021-12-07 08:20:53 --> Trying to access array offset on value of type null
+#0 /app/app/Controllers/OrderController.php(217): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(180): App\Controllers\OrderController->setFirstPendingActive()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderShopper()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-07 08:25:35 --> 0
+ERROR - 2021-12-07 08:25:38 --> 0
+ERROR - 2021-12-07 08:25:51 --> 0
+ERROR - 2021-12-07 08:26:05 --> 0
+ERROR - 2021-12-07 08:26:12 --> 0
+ERROR - 2021-12-07 08:26:18 --> Your order on item 10 has been cancelled. You can contact user with id 1 for more information!
+CRITICAL - 2021-12-07 08:26:18 --> CodeIgniter\Database\BaseBuilder::set(): Argument #2 ($value) must be of type ?string, array given, called in /app/system/Model.php on line 236
+#0 /app/system/Model.php(236): CodeIgniter\Database\BaseBuilder->set()
+#1 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(213): CodeIgniter\Model->insert()
+#4 /app/app/Controllers/OrderController.php(166): App\Controllers\OrderController->setFirstPendingActive()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-07 08:26:59 --> Your order on item 10 has been cancelled. You can contact user with id 1 for more information!
+ERROR - 2021-12-07 08:27:12 --> 0
+ERROR - 2021-12-07 08:27:15 --> 1
+CRITICAL - 2021-12-07 08:27:19 --> Undefined array key "userid"
+#0 /app/app/Controllers/ItemController.php(205): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateavailability()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-07 08:27:52 --> 0
+ERROR - 2021-12-07 08:27:55 --> Your order on item 10 has been cancelled. You can contact user with id 1 for more information!
+ERROR - 2021-12-07 08:27:58 --> 0
+ERROR - 2021-12-07 08:27:59 --> 1
+ERROR - 2021-12-07 08:28:05 --> 0
+ERROR - 2021-12-07 08:28:08 --> 0
+ERROR - 2021-12-07 08:28:16 --> 0
+ERROR - 2021-12-07 08:28:18 --> 1
+ERROR - 2021-12-07 08:28:20 --> 1
+ERROR - 2021-12-07 08:28:28 --> 0
+ERROR - 2021-12-07 08:28:34 --> 0
+ERROR - 2021-12-07 08:28:36 --> 1
+ERROR - 2021-12-07 08:28:41 --> 0
+ERROR - 2021-12-07 08:28:45 --> 0
+ERROR - 2021-12-07 08:30:31 --> 0
+ERROR - 2021-12-07 08:31:12 --> 0
+ERROR - 2021-12-07 08:31:16 --> 0
+ERROR - 2021-12-07 08:31:18 --> 1
+ERROR - 2021-12-07 08:31:28 --> 0
+ERROR - 2021-12-07 08:31:58 --> in login func
+ERROR - 2021-12-07 08:31:58 --> test
+ERROR - 2021-12-07 08:31:58 --> Andreas@mail.com
+ERROR - 2021-12-07 08:31:58 --> 0
+ERROR - 2021-12-07 08:32:07 --> 0
+ERROR - 2021-12-07 08:32:11 --> 0
+ERROR - 2021-12-07 08:32:33 --> 0
+ERROR - 2021-12-07 08:32:38 --> 0
+ERROR - 2021-12-07 08:33:01 --> 0
+ERROR - 2021-12-07 08:33:09 --> 0
+ERROR - 2021-12-07 08:33:12 --> 0
+ERROR - 2021-12-07 08:50:01 --> 0
+ERROR - 2021-12-07 08:50:07 --> 0
+ERROR - 2021-12-07 08:50:13 --> 0
+ERROR - 2021-12-07 08:51:34 --> 0
+ERROR - 2021-12-07 08:51:40 --> 0
+ERROR - 2021-12-07 08:52:04 --> 0
+ERROR - 2021-12-07 08:52:10 --> 0
+CRITICAL - 2021-12-07 09:22:05 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Items/itemreviewform.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(100): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->reviewpage()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-07 09:28:22 --> 0
+ERROR - 2021-12-07 09:28:26 --> 0
+ERROR - 2021-12-07 09:28:30 --> 0
+ERROR - 2021-12-07 09:29:04 --> 0
+ERROR - 2021-12-07 09:29:24 --> 0
+ERROR - 2021-12-07 09:29:37 --> 0
+ERROR - 2021-12-07 09:31:08 --> 0
+ERROR - 2021-12-07 09:31:11 --> 0
+ERROR - 2021-12-07 09:35:11 --> 0
+ERROR - 2021-12-07 09:35:18 --> 0
+CRITICAL - 2021-12-07 09:35:32 --> whereIn() expects $values to be of type array or closure
+#0 /app/system/Database/BaseBuilder.php(706): CodeIgniter\Database\BaseBuilder->_whereIn()
+#1 /app/system/Model.php(720): CodeIgniter\Database\BaseBuilder->whereIn()
+#2 /app/app/Controllers/MessageController.php(124): CodeIgniter\Model->__call()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->createReview()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-07 09:37:11 --> 0
+ERROR - 2021-12-07 09:38:28 --> 0
+ERROR - 2021-12-07 09:39:26 --> 0
+ERROR - 2021-12-07 09:40:31 --> 0
+ERROR - 2021-12-07 09:40:36 --> in login func
+ERROR - 2021-12-07 09:40:36 --> test
+ERROR - 2021-12-07 09:40:36 --> Lukas@mail.com
+ERROR - 2021-12-07 09:40:36 --> 0
+ERROR - 2021-12-07 09:40:43 --> 0
+ERROR - 2021-12-07 09:41:47 --> 0
+ERROR - 2021-12-07 09:41:49 --> 11
+ERROR - 2021-12-07 09:41:54 --> 0
+ERROR - 2021-12-07 09:42:08 --> 0
+ERROR - 2021-12-07 09:42:32 --> 0

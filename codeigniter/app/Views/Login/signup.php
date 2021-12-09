@@ -30,6 +30,10 @@
                     <label for="exampleInputName1">Description</label>
                     <input type="descryption" class="form-control" name="description" aria-describedby="descriptionHelp" placeholder="Enter a small description">
                 </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Adress (street number city)</label>
+                    <input type="adress" class="form-control" name="adress" aria-describedby="adressHelp" placeholder="Enter your adress">
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <?php if(session()->getFlashdata('signuperror')):?>
                     <div class="alert alert-warning">

@@ -31,29 +31,48 @@
     </button>
 </div>
 
-<h3>
+<h3 class="d-flex justify-content-center">
     Description:
 </h3>
-<p>
+<p class="d-flex justify-content-center">
     <?= esc($item['description']) ?>
 </p>
-<h3>
+<h3 class="d-flex justify-content-center">
     Sold by seller <?= esc($nameid['name']) ?> with id: <?= esc($item['sellerid']) ?>
 </h3>
-<h3>
+<h3 class="d-flex justify-content-center">
     Price:<?= esc($item['price']) ?>$
 </h3>
-<?php if ($item['availability'] == 1) : ?>
-    <h3 class="text-success">Available </h3>
-    <a type="button" class="btn btn-success" href="/itemorder">Place order</a>
-<?php else : ?>
-    <h3 class="text-danger"> Not Available (click to receive notification)</h3>
-    <a type="button" class="btn btn-danger" href="/itemorder">Notify me</a>
+<?php if (isset($_SESSION['id']) && $_SESSION['slug'] == "Shopper") : ?>
+    <div class="d-flex justify-content-center row">
+        <?php if ($item['availability'] > 0) : ?>
+            <form action="/OrderController/placeorder" method="post" class="d-flex justify-content-center">
+                <?= csrf_field() ?>
+                <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
+                <button type="submit" class="btn btn-success">place order</button>
+        <?php else : ?>
+            <form action="/OrderController/placeorder" method="post" class="d-flex justify-content-center">
+                <?= csrf_field() ?>
+                <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
+                <button type="submit" class="btn btn-danger">place reservation</button>
+        <?php endif; ?>
+        <div class="form-group">
+                    <select class="form-control" id="delivery" name="delivery">
+                    <option>Pickup at store</option>
+                    <option>Delivery at account adress</option>
+                    </select>
+                </div>
+        </form>
+    </div>
 
 <?php endif ?>
+
 <h3>
     Reviews:
 </h3>
+<h4>
+    This item has an average review score of <?php echo round($average['score'], 1)?>
+</h4>
 <?php if (!empty($reviews) && is_array($reviews)) : ?>
     <?php foreach ($reviews as $reviews_review) : ?>
         <?php foreach ($reviewers as $reviewer) {
@@ -62,7 +81,7 @@
                 break;
             }
         } ?>
-        <div class="bg-secondary">
+        <div class="bg-secondary m-4 p-2 rounded">
             <h4> Review by user <?php echo $reviewername ?> with userid: <?php echo $reviews_review['userID']; ?></h4>
             <p><?php echo $reviews_review['reviewtext']; ?></p>
             <h5><?php echo $reviews_review['score']; ?> /5</h5>

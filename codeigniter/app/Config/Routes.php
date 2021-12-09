@@ -39,6 +39,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Pages::homeredirect');
 $routes->get('users/(:segment)', 'Pages::accountredirect/$1');
 $routes->get('item/(:segment)', 'Pages::itemredirect/$1');
+$routes->get('profile', 'ProfileController::index');
+$routes->get('profile/(:segment)', 'ProfileController::index/$1');
 $routes->get('users', 'Pages::accountindex');
 $routes->get('/login', 'LoginController::index');
 $routes->get('/signup', 'LoginController::signupRedirect');

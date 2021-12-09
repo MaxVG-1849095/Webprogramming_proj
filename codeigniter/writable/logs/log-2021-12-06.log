@@ -1,0 +1,235 @@
+ERROR - 2021-12-06 03:35:39 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-06 03:35:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/app/Models/ItemModel.php(25): CodeIgniter\BaseModel->findAll()
+#5 /app/app/Controllers/Pages.php(32): App\Models\ItemModel->getItems()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-06 07:18:06 --> 3
+ERROR - 2021-12-06 07:19:02 --> 3
+ERROR - 2021-12-06 07:19:13 --> 3
+ERROR - 2021-12-06 07:30:37 --> in login func
+ERROR - 2021-12-06 07:30:37 --> test
+ERROR - 2021-12-06 07:30:37 --> Andreas@mail.com
+ERROR - 2021-12-06 07:30:37 --> 0
+ERROR - 2021-12-06 07:41:51 --> 0
+ERROR - 2021-12-06 07:45:49 --> in login func
+ERROR - 2021-12-06 07:45:49 --> test
+ERROR - 2021-12-06 07:45:49 --> Max@mail.com
+ERROR - 2021-12-06 07:45:49 --> 0
+ERROR - 2021-12-06 07:45:51 --> 1
+ERROR - 2021-12-06 07:49:42 --> in availabilitysetter
+CRITICAL - 2021-12-06 07:50:08 --> Unsupported operand types: string - int
+#0 /app/app/Controllers/OrderController.php(18): App\Controllers\ItemController->decrementavailability()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->availtest()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-06 07:56:58 --> 0
+ERROR - 2021-12-06 07:57:01 --> 1
+CRITICAL - 2021-12-06 07:57:03 --> Unsupported operand types: App\Models\ItemModel - int
+#0 /app/app/Controllers/ItemController.php(172): App\Models\ItemModel->decrementavailability()
+#1 /app/app/Controllers/OrderController.php(18): App\Controllers\ItemController->decrementavailability()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->availtest()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-06 07:58:51 --> Unknown column 'items.id' in 'where clause'
+CRITICAL - 2021-12-06 07:58:51 --> Unknown column 'items.id' in 'where clause'
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /app/app/Models/ItemModel.php(65): CodeIgniter\BaseModel->find()
+#7 /app/app/Controllers/ItemController.php(172): App\Models\ItemModel->decrementavailability()
+#8 /app/app/Controllers/OrderController.php(18): App\Controllers\ItemController->decrementavailability()
+#9 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->availtest()
+#10 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 08:01:44 --> Trying to access array offset on value of type null
+#0 /app/app/Models/ItemModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/ItemController.php(191): App\Models\ItemModel->decrementavailability()
+#2 /app/app/Controllers/OrderController.php(18): App\Controllers\ItemController->decrementavailability()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->availtest()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-06 08:01:58 --> 0
+ERROR - 2021-12-06 08:02:04 --> 0
+ERROR - 2021-12-06 08:02:06 --> 1
+CRITICAL - 2021-12-06 08:02:34 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#4 /app/app/Controllers/ItemController.php(185): App\Controllers\ItemController->wareEditor()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->updateavailability()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 08:02:40 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-06 08:02:41 --> 1
+CRITICAL - 2021-12-06 08:02:42 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/ItemController.php(34): App\Controllers\BaseController->template()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-06 08:04:19 --> 0
+ERROR - 2021-12-06 08:04:24 --> in login func
+ERROR - 2021-12-06 08:04:24 --> test
+ERROR - 2021-12-06 08:04:24 --> Andreas@mail.com
+ERROR - 2021-12-06 08:04:24 --> 0
+CRITICAL - 2021-12-06 08:11:53 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/Pages.php(74): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 08:33:59 --> Array callback must have exactly two elements
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorderavailable()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-06 08:34:14 --> Allowed fields must be specified for model: App\Models\OrderModel
+#0 /app/system/BaseModel.php(1134): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /app/system/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(43): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorderavailable()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 08:37:07 --> Allowed fields must be specified for model: App\Models\OrderModel
+#0 /app/system/BaseModel.php(1134): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /app/system/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields()
+#2 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#3 /app/app/Controllers/OrderController.php(43): CodeIgniter\Model->insert()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->placeorderavailable()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-06 08:59:17 --> 0
+ERROR - 2021-12-06 09:06:13 --> 0
+ERROR - 2021-12-06 09:06:18 --> in login func
+ERROR - 2021-12-06 09:06:18 --> test
+ERROR - 2021-12-06 09:06:18 --> Rigo@mail.com
+ERROR - 2021-12-06 09:06:18 --> 0
+ERROR - 2021-12-06 09:12:23 --> 0
+ERROR - 2021-12-06 09:12:26 --> 0
+ERROR - 2021-12-06 09:22:55 --> 0
+ERROR - 2021-12-06 09:23:06 --> in login func
+ERROR - 2021-12-06 09:23:06 --> test
+ERROR - 2021-12-06 09:23:06 --> Max@mail.com
+ERROR - 2021-12-06 09:23:06 --> 0
+CRITICAL - 2021-12-06 09:23:08 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 /app/app/Controllers/OrderController.php(88): array_push()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 09:23:20 --> Call to undefined method App\Models\OrderModel::getActiveSellerOrders
+#0 /app/app/Controllers/OrderController.php(94): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-06 09:23:25 --> 0
+CRITICAL - 2021-12-06 09:23:26 --> Call to undefined method App\Models\OrderModel::getActiveSellerOrders
+#0 /app/app/Controllers/OrderController.php(94): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-06 09:24:24 --> 0
+ERROR - 2021-12-06 09:24:30 --> 0
+ERROR - 2021-12-06 09:28:12 --> 0
+ERROR - 2021-12-06 09:28:46 --> 0
+ERROR - 2021-12-06 09:29:24 --> 0
+CRITICAL - 2021-12-06 09:31:57 --> Undefined variable $sender
+#0 /app/app/Views/Profile/sellerOrders.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(97): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 09:32:16 --> Undefined variable $message
+#0 /app/app/Views/Profile/sellerOrders.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(97): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-06 09:40:34 --> 0
+ERROR - 2021-12-06 09:46:22 --> 0
+ERROR - 2021-12-06 09:46:28 --> in login func
+ERROR - 2021-12-06 09:46:28 --> test
+ERROR - 2021-12-06 09:46:28 --> Max@mail.com
+ERROR - 2021-12-06 09:46:28 --> 0
+CRITICAL - 2021-12-06 09:46:30 --> syntax error, unexpected token "endforeach"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/OrderController.php(105): App\Controllers\BaseController->template()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 09:47:59 --> syntax error, unexpected token "endforeach"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/BaseController.php(83): view()
+#3 /app/app/Controllers/OrderController.php(105): App\Controllers\BaseController->template()
+#4 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#5 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#6 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

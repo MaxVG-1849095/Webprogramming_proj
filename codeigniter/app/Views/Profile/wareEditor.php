@@ -18,6 +18,16 @@
         </div>
     </form>
 
+    <form action="/ItemController/updateavailability" method="post" class="">
+        <?= csrf_field() ?>
+        <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
+        <label class="" for="priceEdit">Edit Amount of available items (Current amount of items available: <?php echo $item['availability'] ?>)</label>
+        <div class="d-flex">
+            <input rows="2" class="form-control" type="number" min="0" name="newavailable" placeholder="new amount of items available"></input>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+
     <form action="/ItemController/updatedescription" method="post" class="">
         <?= csrf_field() ?>
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
@@ -28,22 +38,6 @@
         </div>
     </form>
 
-
-    <div class="my-4">
-        <form action="/ItemController/setAvailability" method="post">
-            <?= csrf_field() ?>
-            <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-            <?php if ($item['availability'] == 1) : ?>
-                <input type="hidden" name="availability" value="0">
-                <button type="submit" class="btn btn-danger">Set Unavailable</button>
-            <?php else : ?>
-
-                <input type="hidden" name="availability" value="1">
-                <button type="submit" class="btn btn-success">Set Available</button>
-            <?php endif; ?>
-        <?php endif; ?>
-        </form>
-    </div>
     <h3>Upload new picture</h3>
     <form method="post" action="/ImageController/storeItemImage" enctype="multipart/form-data" class="my-4">
     <?= csrf_field() ?>    
@@ -55,6 +49,8 @@
     <form action="/ItemController/removeItem" method="post" class="">
         <?= csrf_field() ?>
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-        <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
         <button type="submit" class="btn btn-danger">delete ware</button>
     </form>
+
+
+    <?php endif; ?>

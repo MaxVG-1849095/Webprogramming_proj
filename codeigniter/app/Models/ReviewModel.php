@@ -26,4 +26,12 @@ class ReviewModel extends Model
     public function getUserIds($itemid){
         return $this->distinct()->select('userID')->where(['itemID' => $itemid])->findAll();
     }
+    public function getAverageReviewScore($itemid){
+        $db = \Config\Database::connect();
+        $builder = $db->table('Reviews');
+        $builder->where('itemID', $itemid);
+        $builder->selectAvg('score');
+        $query = $builder->get()->getRowArray();
+        return $query;
+    }
 }

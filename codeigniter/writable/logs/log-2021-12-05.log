@@ -1,0 +1,700 @@
+ERROR - 2021-12-05 03:02:50 --> in login func
+ERROR - 2021-12-05 03:02:50 --> test
+ERROR - 2021-12-05 03:02:50 --> Max@mail.com
+CRITICAL - 2021-12-05 03:11:05 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-05 03:11:24 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-05 03:11:32 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-05 03:11:42 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ProfileController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-05 03:11:47 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-05 03:12:20 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:12:36 --> syntax error, unexpected token ")"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-05 03:13:17 --> 1
+CRITICAL - 2021-12-05 03:14:35 --> syntax error, unexpected token "<"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:14:47 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:15:01 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:15:14 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:15:19 --> Undefined variable $user
+#0 /app/app/Views/Profile/profile.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(31): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-05 03:15:45 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:16:39 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-05 03:16:43 --> Undefined variable $user
+#0 /app/app/Views/Profile/profile.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(31): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-05 03:17:17 --> syntax error, unexpected token "endif", expecting end of file
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(31): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-05 03:21:19 --> in login func
+ERROR - 2021-12-05 03:21:19 --> test
+ERROR - 2021-12-05 03:21:19 --> Andreas@mail.com
+ERROR - 2021-12-05 03:23:01 --> 2
+ERROR - 2021-12-05 03:24:54 --> 1
+ERROR - 2021-12-05 03:24:58 --> 4
+ERROR - 2021-12-05 03:25:02 --> 6
+ERROR - 2021-12-05 03:25:20 --> 2
+ERROR - 2021-12-05 03:25:22 --> 6
+ERROR - 2021-12-05 03:25:26 --> 2
+ERROR - 2021-12-05 03:25:28 --> 0
+ERROR - 2021-12-05 03:25:35 --> 0
+ERROR - 2021-12-05 03:26:53 --> 0
+ERROR - 2021-12-05 03:27:14 --> 0
+ERROR - 2021-12-05 03:27:45 --> 1
+ERROR - 2021-12-05 03:30:26 --> 3
+ERROR - 2021-12-05 03:30:40 --> 0
+ERROR - 2021-12-05 03:30:44 --> in login func
+ERROR - 2021-12-05 03:30:44 --> test
+ERROR - 2021-12-05 03:30:44 --> Max@mail.com
+ERROR - 2021-12-05 03:30:44 --> 0
+ERROR - 2021-12-05 03:30:52 --> 3
+ERROR - 2021-12-05 03:31:04 --> 3
+ERROR - 2021-12-05 03:32:46 --> 3
+ERROR - 2021-12-05 03:32:46 --> in var
+ERROR - 2021-12-05 03:33:13 --> 3
+ERROR - 2021-12-05 03:43:48 --> 0
+ERROR - 2021-12-05 03:45:48 --> 1
+ERROR - 2021-12-05 03:46:02 --> 1
+ERROR - 2021-12-05 03:46:18 --> 0
+ERROR - 2021-12-05 03:46:20 --> 1
+ERROR - 2021-12-05 03:46:24 --> 1
+CRITICAL - 2021-12-05 03:46:24 --> Undefined variable $item
+#0 /app/app/Views/Profile/profileEdit.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ProfileController.php(58): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 03:46:46 --> 1
+ERROR - 2021-12-05 03:47:14 --> 1
+ERROR - 2021-12-05 03:51:30 --> 1
+ERROR - 2021-12-05 03:52:44 --> 1
+CRITICAL - 2021-12-05 03:52:50 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-05 03:54:08 --> 1
+CRITICAL - 2021-12-05 03:54:13 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/ImageController.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ImageController->storeProfileImage()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-05 03:55:08 --> 1
+ERROR - 2021-12-05 03:55:14 --> 1
+ERROR - 2021-12-05 04:00:34 --> 0
+CRITICAL - 2021-12-05 04:00:34 --> Undefined variable $item
+#0 /app/app/Views/Profile/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-05 04:01:43 --> 0
+ERROR - 2021-12-05 04:03:02 --> 0
+ERROR - 2021-12-05 04:03:50 --> 1
+ERROR - 2021-12-05 04:03:56 --> 1
+ERROR - 2021-12-05 04:03:58 --> 0
+ERROR - 2021-12-05 04:05:09 --> 0
+ERROR - 2021-12-05 04:05:15 --> 0
+ERROR - 2021-12-05 04:06:24 --> 0
+CRITICAL - 2021-12-05 04:06:24 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(40): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-05 04:06:43 --> 0
+ERROR - 2021-12-05 04:07:25 --> 0
+ERROR - 2021-12-05 04:07:49 --> 0
+ERROR - 2021-12-05 04:07:58 --> in login func
+ERROR - 2021-12-05 04:07:58 --> test
+ERROR - 2021-12-05 04:07:58 --> Marie@mail.com
+ERROR - 2021-12-05 04:07:58 --> 0
+ERROR - 2021-12-05 04:09:18 --> in login func
+ERROR - 2021-12-05 04:09:18 --> test
+CRITICAL - 2021-12-05 04:09:18 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 83
+#0 /app/app/Controllers/LoginController.php(83): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-05 04:09:30 --> in login func
+ERROR - 2021-12-05 04:09:30 --> test
+ERROR - 2021-12-05 04:09:30 --> Marie@mail.com
+ERROR - 2021-12-05 04:09:30 --> 0
+ERROR - 2021-12-05 04:09:38 --> in login func
+ERROR - 2021-12-05 04:09:38 --> test
+ERROR - 2021-12-05 04:09:38 --> Max@mail.com
+ERROR - 2021-12-05 04:09:38 --> 0
+ERROR - 2021-12-05 04:09:41 --> 0
+ERROR - 2021-12-05 04:10:10 --> 0
+ERROR - 2021-12-05 04:10:34 --> 0
+ERROR - 2021-12-05 04:10:36 --> 0
+ERROR - 2021-12-05 04:10:43 --> in login func
+ERROR - 2021-12-05 04:10:43 --> test
+ERROR - 2021-12-05 04:10:43 --> Marie@mail.com
+ERROR - 2021-12-05 04:10:43 --> 0
+ERROR - 2021-12-05 04:12:15 --> 3
+ERROR - 2021-12-05 04:12:20 --> 3
+ERROR - 2021-12-05 04:12:25 --> 3
+ERROR - 2021-12-05 04:12:26 --> 0
+ERROR - 2021-12-05 04:15:29 --> 0
+ERROR - 2021-12-05 04:15:57 --> 0
+ERROR - 2021-12-05 04:16:15 --> 0
+ERROR - 2021-12-05 04:16:44 --> 0
+ERROR - 2021-12-05 04:17:14 --> 0
+ERROR - 2021-12-05 04:17:46 --> 0
+ERROR - 2021-12-05 04:18:29 --> 1
+ERROR - 2021-12-05 04:18:51 --> 7
+CRITICAL - 2021-12-05 04:18:51 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profile.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-05 04:18:53 --> 8
+CRITICAL - 2021-12-05 04:18:53 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profile.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-05 04:18:55 --> 9
+CRITICAL - 2021-12-05 04:18:55 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profile.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-05 04:18:57 --> 10
+CRITICAL - 2021-12-05 04:18:57 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profile.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-05 04:18:59 --> 11
+ERROR - 2021-12-05 05:15:39 --> 0
+ERROR - 2021-12-05 05:15:43 --> 0
+ERROR - 2021-12-05 05:22:02 --> 0
+ERROR - 2021-12-05 05:22:05 --> 0
+CRITICAL - 2021-12-05 05:29:57 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /app/app/Models/UsersModel.php on line 59
+#0 /app/app/Models/UsersModel.php(59): CodeIgniter\Database\BaseBuilder->like()
+#1 /app/app/Controllers/SearchController.php(17): App\Models\UsersModel->getUsersbyname()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\SearchController->index()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-05 05:48:11 --> 0
+ERROR - 2021-12-05 06:04:17 --> 0
+ERROR - 2021-12-05 06:07:13 --> 0
+ERROR - 2021-12-05 06:08:58 --> 1
+ERROR - 2021-12-05 06:09:10 --> 2
+ERROR - 2021-12-05 06:09:17 --> 5
+ERROR - 2021-12-05 06:10:00 --> 1
+ERROR - 2021-12-05 06:10:03 --> 0
+ERROR - 2021-12-05 06:10:07 --> 5
+ERROR - 2021-12-05 06:10:18 --> 2
+ERROR - 2021-12-05 06:11:17 --> 2
+ERROR - 2021-12-05 06:13:51 --> 1
+ERROR - 2021-12-05 06:21:13 --> 11
+ERROR - 2021-12-05 06:23:25 --> 0
+ERROR - 2021-12-05 06:25:04 --> 0
+CRITICAL - 2021-12-05 06:25:04 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/LoginController.php(23): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signupRedirect()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-05 06:25:11 --> 0
+CRITICAL - 2021-12-05 06:25:11 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/LoginController.php(23): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->signupRedirect()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-05 06:26:47 --> 0
+ERROR - 2021-12-05 06:26:49 --> 13
+ERROR - 2021-12-05 06:26:56 --> 13
+ERROR - 2021-12-05 06:26:58 --> 13
+ERROR - 2021-12-05 06:27:00 --> 0
+ERROR - 2021-12-05 06:27:03 --> 0
+ERROR - 2021-12-05 06:27:24 --> 0
+ERROR - 2021-12-05 06:27:26 --> 0
+ERROR - 2021-12-05 06:28:05 --> 0
+ERROR - 2021-12-05 06:28:12 --> 0
+CRITICAL - 2021-12-05 06:28:12 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-05 06:28:19 --> in login func
+ERROR - 2021-12-05 06:28:19 --> test
+ERROR - 2021-12-05 06:28:19 --> Max@mail.com
+ERROR - 2021-12-05 06:28:19 --> 0
+ERROR - 2021-12-05 06:28:25 --> 0
+ERROR - 2021-12-05 06:28:32 --> in login func
+ERROR - 2021-12-05 06:28:32 --> test
+ERROR - 2021-12-05 06:28:32 --> Ronan@mail.com
+ERROR - 2021-12-05 06:28:32 --> 0
+ERROR - 2021-12-05 06:28:53 --> 0
+ERROR - 2021-12-05 06:29:03 --> 0
+CRITICAL - 2021-12-05 06:29:03 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-05 06:29:15 --> in login func
+ERROR - 2021-12-05 06:29:15 --> test
+ERROR - 2021-12-05 06:29:15 --> Max@mail.com
+ERROR - 2021-12-05 06:29:15 --> 0
+ERROR - 2021-12-05 06:29:48 --> 0
+ERROR - 2021-12-05 06:30:32 --> 13
+ERROR - 2021-12-05 06:31:18 --> 0
+ERROR - 2021-12-05 06:31:20 --> 1
+ERROR - 2021-12-05 06:31:21 --> 0
+ERROR - 2021-12-05 06:31:22 --> 1
+ERROR - 2021-12-05 06:31:27 --> 0
+ERROR - 2021-12-05 06:31:32 --> in login func
+ERROR - 2021-12-05 06:31:32 --> test
+ERROR - 2021-12-05 06:31:32 --> Ronan@mail.com
+ERROR - 2021-12-05 06:31:32 --> 0
+ERROR - 2021-12-05 06:31:34 --> 13
+ERROR - 2021-12-05 06:32:05 --> 13
+ERROR - 2021-12-05 06:32:06 --> 0
+ERROR - 2021-12-05 06:32:49 --> in login func
+ERROR - 2021-12-05 06:32:49 --> test
+ERROR - 2021-12-05 06:32:49 --> Lukas@mail.com
+ERROR - 2021-12-05 06:32:49 --> 0
+ERROR - 2021-12-05 06:34:00 --> 11
+ERROR - 2021-12-05 06:34:05 --> 11
+ERROR - 2021-12-05 06:34:06 --> 0
+ERROR - 2021-12-05 06:36:38 --> 0
+CRITICAL - 2021-12-05 06:36:38 --> syntax error, unexpected token "<", expecting "elseif" or "else" or "endif"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#2 /app/app/Controllers/ProfileController.php(40): view()
+#3 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#4 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-05 06:36:52 --> 11
+ERROR - 2021-12-05 06:36:55 --> 0
+ERROR - 2021-12-05 06:37:28 --> 0
+ERROR - 2021-12-05 06:37:40 --> 0
+ERROR - 2021-12-05 06:37:59 --> 0
+ERROR - 2021-12-05 06:38:03 --> in login func
+ERROR - 2021-12-05 06:38:03 --> test
+ERROR - 2021-12-05 06:38:03 --> Andreas@mail.com
+ERROR - 2021-12-05 06:38:03 --> 0
+ERROR - 2021-12-05 06:38:33 --> 0
+ERROR - 2021-12-05 06:38:36 --> 0
+ERROR - 2021-12-05 06:38:49 --> 0
+ERROR - 2021-12-05 06:38:55 --> 0
+ERROR - 2021-12-05 06:39:03 --> in login func
+ERROR - 2021-12-05 06:39:03 --> test
+ERROR - 2021-12-05 06:39:03 --> Lukas@mail.com
+ERROR - 2021-12-05 06:39:03 --> 0
+ERROR - 2021-12-05 06:40:28 --> 0
+ERROR - 2021-12-05 06:41:51 --> 0
+ERROR - 2021-12-05 06:42:24 --> 0
+ERROR - 2021-12-05 06:45:22 --> 0
+ERROR - 2021-12-05 06:45:25 --> 11
+ERROR - 2021-12-05 06:45:30 --> 0
+ERROR - 2021-12-05 06:45:31 --> 11
+ERROR - 2021-12-05 06:47:55 --> 0
+ERROR - 2021-12-05 06:49:26 --> 0
+ERROR - 2021-12-05 06:49:29 --> 0
+CRITICAL - 2021-12-05 06:49:30 --> Undefined variable $item
+#0 /app/app/Views/Profile/messages.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(34): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 06:49:52 --> 0
+ERROR - 2021-12-05 06:49:57 --> 0
+ERROR - 2021-12-05 06:50:22 --> in login func
+ERROR - 2021-12-05 06:50:22 --> test
+ERROR - 2021-12-05 06:50:22 --> Andreas@mail.com
+ERROR - 2021-12-05 06:50:22 --> 0
+ERROR - 2021-12-05 06:50:38 --> 0
+ERROR - 2021-12-05 06:51:39 --> 0
+ERROR - 2021-12-05 06:52:06 --> 0
+ERROR - 2021-12-05 06:52:59 --> 0
+ERROR - 2021-12-05 07:31:53 --> 0
+ERROR - 2021-12-05 07:31:58 --> in login func
+ERROR - 2021-12-05 07:31:58 --> test
+ERROR - 2021-12-05 07:31:58 --> Ronan@mail.com
+ERROR - 2021-12-05 07:31:58 --> 0
+ERROR - 2021-12-05 07:32:00 --> 13
+ERROR - 2021-12-05 07:32:20 --> post
+ERROR - 2021-12-05 07:32:20 --> in editdesc if
+ERROR - 2021-12-05 07:32:20 --> 13
+ERROR - 2021-12-05 07:32:46 --> 13
+ERROR - 2021-12-05 07:32:56 --> 0
+ERROR - 2021-12-05 07:34:41 --> 13
+ERROR - 2021-12-05 07:34:44 --> 13
+ERROR - 2021-12-05 07:35:20 --> 13
+ERROR - 2021-12-05 08:48:57 --> 0
+ERROR - 2021-12-05 08:53:49 --> 0
+CRITICAL - 2021-12-05 08:55:04 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/app/Controllers/MessageController.php(54): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->sendMessage()
+#8 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-12-05 08:56:44 --> 0
+CRITICAL - 2021-12-05 08:56:45 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 08:57:29 --> 0
+CRITICAL - 2021-12-05 08:57:31 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 08:58:04 --> 0
+CRITICAL - 2021-12-05 08:58:06 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 08:58:11 --> 0
+ERROR - 2021-12-05 08:58:15 --> in login func
+ERROR - 2021-12-05 08:58:15 --> test
+ERROR - 2021-12-05 08:58:15 --> Max@mail.com
+ERROR - 2021-12-05 08:58:15 --> 0
+ERROR - 2021-12-05 08:58:29 --> 0
+ERROR - 2021-12-05 08:58:33 --> in login func
+ERROR - 2021-12-05 08:58:33 --> test
+ERROR - 2021-12-05 08:58:33 --> Joren@mail.com
+ERROR - 2021-12-05 08:58:33 --> 0
+ERROR - 2021-12-05 08:58:41 --> 0
+ERROR - 2021-12-05 08:58:48 --> in login func
+ERROR - 2021-12-05 08:58:48 --> test
+ERROR - 2021-12-05 08:58:48 --> Ronan@mail.com
+ERROR - 2021-12-05 08:58:48 --> 0
+CRITICAL - 2021-12-05 08:58:49 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-05 08:59:05 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 08:59:42 --> 0
+CRITICAL - 2021-12-05 08:59:44 --> Undefined variable $sendername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(35): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:01:17 --> 0
+ERROR - 2021-12-05 09:02:07 --> 0
+ERROR - 2021-12-05 09:02:13 --> in login func
+ERROR - 2021-12-05 09:02:13 --> test
+ERROR - 2021-12-05 09:02:13 --> Max@mail.com
+ERROR - 2021-12-05 09:02:14 --> 0
+ERROR - 2021-12-05 09:06:04 --> 0
+CRITICAL - 2021-12-05 09:07:11 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-05 09:09:27 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:09:28 --> 0
+CRITICAL - 2021-12-05 09:09:36 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:10:23 --> 0
+CRITICAL - 2021-12-05 09:10:26 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:12:03 --> 0
+CRITICAL - 2021-12-05 09:12:04 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:13:31 --> 0
+CRITICAL - 2021-12-05 09:13:34 --> Undefined variable $receivername
+#0 /app/app/Views/Profile/messages.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/MessageController.php(45): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-05 09:14:42 --> 0
+ERROR - 2021-12-05 09:14:52 --> 0
+ERROR - 2021-12-05 09:14:56 --> in login func
+ERROR - 2021-12-05 09:14:56 --> test
+ERROR - 2021-12-05 09:14:56 --> Marie@mail.com
+ERROR - 2021-12-05 09:14:56 --> 0
+ERROR - 2021-12-05 09:15:03 --> 0
+ERROR - 2021-12-05 09:15:08 --> in login func
+ERROR - 2021-12-05 09:15:08 --> test
+ERROR - 2021-12-05 09:15:08 --> Max@mail.com
+ERROR - 2021-12-05 09:15:08 --> 0

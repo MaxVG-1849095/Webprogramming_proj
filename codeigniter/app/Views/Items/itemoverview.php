@@ -19,9 +19,9 @@
     </div>
     <?php else : ?>
 
-    <h3>No items</h3>
-
-    <p>Unable to find any items for you.</p>
+    <h3 class="d-flex justify-content-center">No items</h3>
+        <br/>
+    <p class="d-flex justify-content-center">Unable to find any items for you.</p>
 
     <?php endif ?>
 

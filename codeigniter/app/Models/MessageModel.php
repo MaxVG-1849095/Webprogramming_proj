@@ -26,7 +26,21 @@ class MessageModel extends Model
         ->findAll();
     }
 
-    public function getUserIds($receiverid){
+    public function getSentMessages($id = 0){
+        if($id === 0){
+            return $this ->findAll();
+        }
+
+        return $this->asArray()
+        ->where(['senderid' => $id])
+        ->findAll();
+    }
+
+    public function getSentUserIds($receiverid){
         return $this->distinct()->select('senderid')->where(['receiverid' => $receiverid])->findAll();
+    }
+
+    public function getReceivedUserIds($senderid){
+        return $this->distinct()->select('receiverid')->where(['senderid' => $senderid])->findAll();
     }
 }

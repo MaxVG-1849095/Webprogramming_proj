@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\UserMediaModel;
 use CodeIgniter\Controller;
 use App\Models\UsersModel;
 
@@ -11,14 +12,29 @@ class ProfileController extends BaseController
     {
         //parent::__construct();
     }
-    public function index()
+    public function index($profid = 0)
     {
+        $session=session();
         $model = new UsersModel();
-
-        $data = [
-            'users'  => $model->getUsers($_SESSION['id']),
-            'title' => 'Users archive',
-        ];
+        log_message('error',$profid);
+        if($profid === 0){
+            
+            $data = [
+                'user'  => $model->getUsers($_SESSION['id']),
+                'title' => 'Users archive',
+            ];
+            $usermediamodel = new UserMediaModel();
+            $data['media'] = $usermediamodel->getUserMedia($_SESSION['id']);
+    }
+        else{
+            
+            $data = [
+                'user'  => $model->getUsers($profid),
+                'title' => 'Users archive',
+            ];
+            $usermediamodel = new UserMediaModel();
+            $data['media'] = $usermediamodel->getUserMedia($profid);
+        }
 
         echo view('templates/header', $data);
         echo view('Profile/profile', $data);
@@ -65,4 +81,24 @@ class ProfileController extends BaseController
         }
         return $this->edit();
     }
+
+    public function editadress()
+    {
+        $session = session();
+
+        $session_id = $session->get('id');
+        $model = new UsersModel();
+        if ($this->request->getMethod() === 'post' && $this->validate([
+            'newadress' => 'required',
+        ])) {
+            log_message('error', 'in editdesc if');
+            $data = [
+                'adress' => $this->request->getPost('newadress'),
+            ];
+            $model->update($session_id, $data);
+        }
+        return $this->edit();
+    }
+
+    
 }

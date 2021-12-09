@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Models\ItemModel;
+use App\Models\NotificationModel;
+use App\Models\OrderModel;
+use App\Models\ReviewModel;
 
 class ItemController extends BaseController
 {
@@ -60,6 +63,8 @@ class ItemController extends BaseController
         $data = [];
         $this->template("/Profile/wareCreator",$data);
     }
+    
+
     public function createItem(){
         $session = session();
         $itemmodel = new ItemModel();
@@ -113,8 +118,6 @@ class ItemController extends BaseController
     }
 
     public function setAvailability(){
-        log_message('error', 'in availabilitysetter');
-
         $session = session();
         $model = new ItemModel();
         $item_id = $this->request->getPost('itemid'); 
@@ -128,8 +131,13 @@ class ItemController extends BaseController
             ->set(['availability' => $this->request->getPost('availability')])
             ->update();
         }
+
+
+
         $this->wareEditor($item_id);
     }
+
+
     public function updatedescription(){
         $session = session();
         
@@ -165,4 +173,55 @@ class ItemController extends BaseController
         }
         $this->wareEditor($item_id);
     }
+
+    public function updateavailability()
+    {
+        $session = session();
+        
+        $item_id = $this->request->getPost('itemid');
+        
+        $model = new ItemModel();
+        if ($this->request->getMethod() === 'post' && $this->validate([
+            'newavailable' => 'required',
+        ])) {
+            
+            $model
+            ->wherein('itemid',[$item_id])
+            ->set(['availability' => $this->request->getPost('newavailable')])
+            ->update();
+        }
+        $ordermodel = new OrderModel();
+        $notimodel = new NotificationModel();
+        $counter = $this->request->getPost('newavailable');
+        while($counter > 0 && $ordermodel->getFirstInactive($item_id) != null){
+            $order = $ordermodel->getFirstInactiveShopper($item_id);
+            $item = $model->getItems($item_id);
+            $ordermodel
+            ->where(['itemid' => $item_id, 'orderid' => $ordermodel->getFirstInactive($item_id)])
+            ->set(['active' => 1])
+            ->update();
+            $model->decrementavailability($item_id);
+            $counter = $counter - 1;
+
+            $notimodel->insert([
+                'content' => "Your order on " . $item['name'] . " has started, you can still cancel it if you want to!",
+                'userid' => $order['shopperid'],
+                'itemid' => $item['itemid'],
+            ]);
+        }
+
+        $this->wareEditor($item_id);
+    }
+
+    public function decrementavailability($itemid){
+        $model = new ItemModel();
+
+        $model->decrementavailability($itemid);
+    }
+    public function incrementavailability($itemid){
+        $model = new ItemModel();
+
+        $model->incrementavailability($itemid);
+    }
+    
 }

@@ -14,8 +14,10 @@ class UsersModel extends Model
         'PASSWORD',
         'id',
         'email',
-        'slug'
+        'slug',
+        'adress'
     ];
+
     public function getUserLogin($email, $pw){
         if($email === 0 OR $pw === 0){
             return 0;
@@ -34,7 +36,9 @@ class UsersModel extends Model
                 ->where(['id' => $id])
                 ->first();
     }
-
+    public function getUserAdress($userid){
+        return $this->select('adress')->where(['id' => $userid])->first();
+    }
     public function getUserByID($id = 0){
         return $this->select('name')->where(['id' => $id])->first();
     }
@@ -51,6 +55,13 @@ class UsersModel extends Model
         $builder = $db->table('Users');
         $builder->selectMax('id');
         $query = $builder->get()->getRowArray();
+        return $query;
+    }
+    public function getUsersbyname($name =''){
+        $db = \Config\Database::connect();
+        $builder = $db->table('Users');
+        $builder->like('name', $name);
+        $query = $builder->get()->getResultArray();
         return $query;
     }
 }
