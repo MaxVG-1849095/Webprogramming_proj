@@ -50,6 +50,41 @@ class MessageController extends BaseController
         $this->template('Profile/messages', $data);
     }
 
+    public function loadSpecificMessages(){
+        $session = session();
+        if($this->request->getPost('userid') ==0){
+            $this->loadMessages();
+        }
+        else{
+            $this->loadSpecificMessagesHelper();
+        }
+
+    }
+
+    public function loadSpecificMessagesHelper(){
+        $messagemodel = new MessageModel();
+        $usersmodel = new UsersModel();
+        $notimodel = new NotificationModel();
+        $senderarray[] = [];
+        $receiverarray[]=[];
+
+        array_push($senderarray, $usersmodel->getUserandID($this->request->getPost('userid')));
+        array_shift($senderarray);
+
+        array_push($receiverarray, $usersmodel->getUserandID($this->request->getPost('userid')));
+        array_shift($receiverarray);
+
+        $data = [
+            'senders' => $senderarray,
+            'receivers' => $receiverarray,
+            'received_messages' => $messagemodel->getSpecificReceivedMessages($_SESSION['id'], $this->request->getPost('userid')),
+            'sent_messages' => $messagemodel->getSpecificSentMessages($_SESSION['id'], $this->request->getPost('userid')),
+            'highestid' => $usersmodel->getMaxID(),
+            'notifications' => $notimodel->getUserNotis($_SESSION['id'],)
+        ];
+        $this->template('Profile/messages', $data);
+    }
+
     public function sendMessage()
     {
         $session = session();
@@ -58,13 +93,24 @@ class MessageController extends BaseController
         if ($this->request->getMethod() === 'post' && $this->validate([
             'receiverid' => 'required',
             'content'  => 'required',
-        ])) {
+        ]) && $this->request->getPost('senderid') != $this->request->getPost('receiverid')) {
             $messagemodel->insert([
                 'senderid' => $this->request->getPost('senderid'),
                 'receiverid' => $this->request->getPost('receiverid'),
                 'content' => $this->request->getPost('content'),
                 'systemmessage' => 0,
+                'ownerid' => $this->request->getPost('senderid'),
             ]);
+            $messagemodel->insert([
+                'senderid' => $this->request->getPost('senderid'),
+                'receiverid' => $this->request->getPost('receiverid'),
+                'content' => $this->request->getPost('content'),
+                'systemmessage' => 0,
+                'ownerid' => $this->request->getPost('receiverid'),
+            ]);
+        }else
+        {
+            $session->setFlashdata('messageerror', 'Something went wrong, check if you entered everything correctly (Unable to send message to yourself!)');
         }
         $this->loadMessages();
     }
@@ -76,6 +122,7 @@ class MessageController extends BaseController
 
         $messagemodel
             ->wherein('messageid',[$message_id])
+            ->wherein('ownerid', [$_SESSION['id']])
             ->delete();
         
         $this->loadMessages();

@@ -103,6 +103,14 @@ footer{
 
     
 }
+
+#order img{
+    min-height: 20vh;
+    max-width: 30vw;
+    max-height: 30vh;
+    
+    margin: 0 auto;
+}
 .carousel{
     min-height: 50vh;
     max-width: 50vh;
@@ -135,3 +143,16 @@ footer{
 body { 
     padding-top:75px;
     padding-bottom: 75px; }
+
+#messages{
+    max-height: 38vh;
+}
+#cartitems{
+    max-height:60vh;
+}
+#cartitems img{
+    max-height:20vh;
+}
+#cartitem{
+    max-height: 30vh;
+}

@@ -1,0 +1,245 @@
+ERROR - 2021-12-13 04:34:27 --> in login func
+ERROR - 2021-12-13 04:34:27 --> test
+ERROR - 2021-12-13 04:34:27 --> Max@mail.com
+ERROR - 2021-12-13 04:34:27 --> 0
+ERROR - 2021-12-13 04:34:57 --> in login func
+ERROR - 2021-12-13 04:34:57 --> test
+ERROR - 2021-12-13 04:34:57 --> Joren@mail.com
+ERROR - 2021-12-13 04:34:57 --> 0
+ERROR - 2021-12-13 04:35:58 --> 0
+ERROR - 2021-12-13 04:39:34 --> 0
+ERROR - 2021-12-13 04:39:38 --> 0
+ERROR - 2021-12-13 04:41:07 --> 0
+ERROR - 2021-12-13 04:41:32 --> 0
+ERROR - 2021-12-13 04:41:52 --> 6
+ERROR - 2021-12-13 04:42:18 --> 6
+ERROR - 2021-12-13 04:42:19 --> 0
+ERROR - 2021-12-13 04:46:06 --> 2
+ERROR - 2021-12-13 04:47:18 --> 0
+ERROR - 2021-12-13 04:47:29 --> 0
+CRITICAL - 2021-12-13 04:58:00 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-13 05:00:28 --> 0
+CRITICAL - 2021-12-13 05:00:28 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 05:00:30 --> 0
+CRITICAL - 2021-12-13 05:00:30 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 05:00:40 --> in login func
+ERROR - 2021-12-13 05:00:40 --> test
+ERROR - 2021-12-13 05:00:40 --> Joren@mail.com
+ERROR - 2021-12-13 05:00:40 --> 0
+ERROR - 2021-12-13 05:01:39 --> in login func
+ERROR - 2021-12-13 05:01:39 --> test
+ERROR - 2021-12-13 05:01:39 --> Joren@mail.com
+ERROR - 2021-12-13 05:01:39 --> 0
+CRITICAL - 2021-12-13 05:01:41 --> Array to string conversion
+#0 /app/app/Views/Items/item.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(76): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->itemredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 05:02:23 --> Only variables should be passed by reference
+#0 /app/app/Controllers/OrderController.php(324): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 05:02:55 --> Call to a member function array_push() on string
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-13 05:05:47 --> in login func
+ERROR - 2021-12-13 05:05:47 --> test
+ERROR - 2021-12-13 05:05:47 --> Joren@mail.com
+ERROR - 2021-12-13 05:05:47 --> 0
+CRITICAL - 2021-12-13 05:44:10 --> Array callback must have exactly two elements
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/OrderController.php(370): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 05:45:12 --> Array callback must have exactly two elements
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/OrderController.php(370): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 05:45:53 --> Undefined array key "id"
+#0 /app/app/Views/Items/OrderCart.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(370): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-13 06:59:30 --> in login func
+ERROR - 2021-12-13 06:59:30 --> test
+ERROR - 2021-12-13 06:59:30 --> Joren@mail.com
+ERROR - 2021-12-13 06:59:30 --> 0
+CRITICAL - 2021-12-13 07:00:08 --> in_array(): Argument #2 ($haystack) must be of type array, null given
+#0 /app/app/Controllers/OrderController.php(331): in_array()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 07:02:22 --> 0
+CRITICAL - 2021-12-13 07:02:24 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Database/Query.php(322): implode()
+#2 /app/system/Database/Query.php(302): CodeIgniter\Database\Query->matchNamedBinds()
+#3 /app/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\Query->getQuery()
+#5 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#6 /app/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#7 /app/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#8 /app/app/Models/ItemModel.php(30): CodeIgniter\BaseModel->first()
+#9 /app/app/Controllers/OrderController.php(366): App\Models\ItemModel->getItems()
+#10 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#11 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#12 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#13 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2021-12-13 07:02:38 --> 0
+CRITICAL - 2021-12-13 07:03:01 --> Undefined array key 1
+#0 /app/app/Controllers/OrderController.php(366): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 07:03:07 --> 0
+ERROR - 2021-12-13 07:04:47 --> in login func
+ERROR - 2021-12-13 07:04:47 --> test
+ERROR - 2021-12-13 07:04:47 --> Joren@mail.com
+ERROR - 2021-12-13 07:04:47 --> 0
+ERROR - 2021-12-13 07:06:09 --> in login func
+ERROR - 2021-12-13 07:06:09 --> test
+ERROR - 2021-12-13 07:06:09 --> Joren@mail.com
+ERROR - 2021-12-13 07:06:09 --> 0
+ERROR - 2021-12-13 07:06:11 --> 0
+ERROR - 2021-12-13 07:06:37 --> 0
+CRITICAL - 2021-12-13 07:06:37 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 07:06:39 --> 0
+CRITICAL - 2021-12-13 07:06:39 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 07:06:45 --> in login func
+ERROR - 2021-12-13 07:06:45 --> test
+ERROR - 2021-12-13 07:06:45 --> Joren@mail.com
+ERROR - 2021-12-13 07:06:45 --> 0
+ERROR - 2021-12-13 07:17:27 --> in login func
+ERROR - 2021-12-13 07:17:27 --> test
+ERROR - 2021-12-13 07:17:27 --> Joren@mail.com
+ERROR - 2021-12-13 07:17:27 --> 0
+ERROR - 2021-12-13 07:18:43 --> in login func
+ERROR - 2021-12-13 07:18:43 --> test
+ERROR - 2021-12-13 07:18:43 --> Joren@mail.com
+ERROR - 2021-12-13 07:18:43 --> 0
+ERROR - 2021-12-13 07:20:57 --> in login func
+ERROR - 2021-12-13 07:20:57 --> test
+ERROR - 2021-12-13 07:20:57 --> Joren@mail.com
+ERROR - 2021-12-13 07:20:57 --> 0
+ERROR - 2021-12-13 07:22:43 --> in login func
+ERROR - 2021-12-13 07:22:43 --> test
+ERROR - 2021-12-13 07:22:43 --> Joren@mail.com
+ERROR - 2021-12-13 07:22:43 --> 0
+ERROR - 2021-12-13 07:26:41 --> in login func
+ERROR - 2021-12-13 07:26:41 --> test
+ERROR - 2021-12-13 07:26:41 --> Joren@mail.com
+ERROR - 2021-12-13 07:26:41 --> 0
+ERROR - 2021-12-13 07:26:43 --> 0
+CRITICAL - 2021-12-13 07:26:50 --> Illegal offset type
+#0 /app/app/Controllers/OrderController.php(350): CodeIgniter\Session\Session->set()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 07:29:15 --> in login func
+ERROR - 2021-12-13 07:29:15 --> test
+ERROR - 2021-12-13 07:29:15 --> Joren@mail.com
+ERROR - 2021-12-13 07:29:16 --> 0
+ERROR - 2021-12-13 07:39:01 --> in login func
+ERROR - 2021-12-13 07:39:01 --> test
+ERROR - 2021-12-13 07:39:01 --> Joren@mail.com
+ERROR - 2021-12-13 07:39:01 --> 0
+CRITICAL - 2021-12-13 07:40:30 --> Undefined array key 1
+#0 /app/app/Controllers/OrderController.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 08:36:37 --> in login func
+ERROR - 2021-12-13 08:36:37 --> test
+ERROR - 2021-12-13 08:36:37 --> Joren@mail.com
+ERROR - 2021-12-13 08:36:38 --> 0
+CRITICAL - 2021-12-13 08:36:47 --> Undefined array key 1
+#0 /app/app/Controllers/OrderController.php(352): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-13 08:38:14 --> 0
+ERROR - 2021-12-13 08:39:17 --> 0
+ERROR - 2021-12-13 08:39:26 --> 0
+ERROR - 2021-12-13 08:39:30 --> 1
+ERROR - 2021-12-13 08:39:36 --> 0
+ERROR - 2021-12-13 08:39:49 --> 0
+ERROR - 2021-12-13 08:40:13 --> 0
+ERROR - 2021-12-13 08:40:45 --> in login func
+ERROR - 2021-12-13 08:40:45 --> test
+ERROR - 2021-12-13 08:40:45 --> Joren@mail.com
+ERROR - 2021-12-13 08:40:45 --> 0
+ERROR - 2021-12-13 08:41:23 --> 0
+ERROR - 2021-12-13 08:41:26 --> 6
+ERROR - 2021-12-13 08:41:27 --> 0

@@ -21,13 +21,18 @@
     <div class=" p-4">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <div class="nav-item ml-1"><a title="ab" href='/Pages/homeredirect'>Home</a></div>
+          <div class="nav-item ml-1"><a title="Home" href='/Pages/homeredirect'>Home</a></div>
         </li>
         <li class="nav-item ml-1">
-          <div class="nav-item "><a title="ab" href='/Pages/aboutredirect'>About</a></div>
+          <div class="nav-item "><a title="About" href='/Pages/aboutredirect'>About</a></div>
         </li>
+        <?php if(isset($_SESSION['cart'])) :?>
+          <li class="nav-item ml-1">
+          <div class="nav-item "><a title="Order Cart" href='/OrderController/loadCartView'>Order cart</a></div>
+        </li>
+        <?php endif;?>
         <li class="nav-item ml-1">
-          <div class="nav-item"><a title="ab" href='<?php if (isset($_SESSION['id'])) {
+          <div class="nav-item"><a title="Profile/Login" href='<?php if (isset($_SESSION['id'])) {
                                                       echo '/profile';
                                                     } else {
                                                       echo '/login';

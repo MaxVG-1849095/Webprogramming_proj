@@ -1,4 +1,3 @@
-<?php if ($user['slug'] === "Seller") : ?>
     <!-- seller pagina -->
 
     <?php if (!empty($media) && is_array($media)) : ?>
@@ -41,8 +40,8 @@
             </button>
         </div>
     <?php else : ?>
-        <h3>
-            This seller has no pictures!
+        <h3 class="d-flex justify-content-center">
+            This user has no pictures!
         </h3>
     <?php endif; ?>
     <h3 class="d-flex justify-content-center">
@@ -61,7 +60,6 @@
         You can contact me at: <?php echo $user['email'] ?>
     </h5>
     <!-- info code-->
-<?php endif; ?>
 
 <?php if (isset($_SESSION['id']) && (($user['id'] == $_SESSION['id']) || $user['id'] === 0)) : ?>
     <h3>

@@ -37,6 +37,9 @@ class OrderModel extends Model
     public function getShopperid($orderid){
         return $this->select('shopperid')->where(['orderid' => $orderid])->first();
     }
+    public function getSellerid($orderid){
+        return $this->select('sellerid')->where(['orderid' => $orderid])->first();
+    }
     public function getActiveSellerOrders($sellerid){
         return $this->asArray()
         ->where(['sellerid' => $sellerid, 'active'=>1, 'finished' => 0])

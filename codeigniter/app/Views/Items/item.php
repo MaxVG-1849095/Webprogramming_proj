@@ -45,25 +45,59 @@
 </h3>
 <?php if (isset($_SESSION['id']) && $_SESSION['slug'] == "Shopper") : ?>
     <div class="d-flex justify-content-center row">
-        <?php if ($item['availability'] > 0) : ?>
-            <form action="/OrderController/placeorder" method="post" class="d-flex justify-content-center">
-                <?= csrf_field() ?>
-                <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-                <button type="submit" class="btn btn-success">place order</button>
-        <?php else : ?>
-            <form action="/OrderController/placeorder" method="post" class="d-flex justify-content-center">
-                <?= csrf_field() ?>
-                <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-                <button type="submit" class="btn btn-danger">place reservation</button>
-        <?php endif; ?>
-        <div class="form-group">
-                    <select class="form-control" id="delivery" name="delivery">
-                    <option>Pickup at store</option>
-                    <option>Delivery at account adress</option>
-                    </select>
-                </div>
+        <form action="/OrderController/addOrderToCart" method="post" class="d-flex justify-content-center">
+            <?= csrf_field() ?>
+            <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
+            <button type="submit" class="btn btn-success">place order</button>
+            <input rows="2" class="form-control d-inline-flex" type="number" min="1" max="3" name="orderamount" placeholder="amount of items you want to order" required></input>
         </form>
     </div>
+
+    <form type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
+    <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
+    <input rows="2" class="form-control d-inline-flex" type="number" min="1" max="3" id="orderamount" name="orderamount" placeholder="amount of items you want to order" required></input>
+    <button type="submit" id="btn-order" class="btn btn-primary">place order</button>
+    </form>
+    
+    <script type="text/javascript">
+        
+        function ajaxOrder() {
+            console.log("success in items");
+            var link = "<?php echo base_url('/item/1/ajaxorder'); ?>"
+            var xmlhttp = new XMLHttpRequest();
+            // xmlhttp.onreadystatechange = function() {
+            //     if ((xmlhttp) && (xmlhttp.readyState == 4) && (xmlhttp.status == 200)){
+            //         var itemid = 
+            //    }
+            // {
+            // };
+            xmlhttp.open("GET", link, true);
+            xmlhttp.send();
+            
+        }
+        
+    </script>
+
+    <!--
+    <script>
+        $(function(){
+            $(document).on("click", "#btn-order", function(){
+                $.ajax({
+                    url: "<?= site_url('ajaxorder') ?> ",
+                    type: "POST",
+                    data:{
+                        name: "Max",
+                        age: "21"
+                    },
+                    dataType:"JSON",
+                    succes: function(response){
+                        console.log(response);
+                    }
+                });
+            });
+        });
+    </script>
+    -->
 
 <?php endif ?>
 
@@ -71,7 +105,7 @@
     Reviews:
 </h3>
 <h4>
-    This item has an average review score of <?php echo round($average['score'], 1)?>
+    This item has an average review score of <?php echo round($average['score'], 1) ?>
 </h4>
 <?php if (!empty($reviews) && is_array($reviews)) : ?>
     <?php foreach ($reviews as $reviews_review) : ?>

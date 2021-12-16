@@ -8,10 +8,10 @@
                     <h3>
                         <?php echo $user['name']; ?>
                     </h3>
-                    <h4>Id: <?php echo $user['id']?></h4>
-                    <?php if ($user['slug'] == 'Seller') : ?>
-                        <a class="btn btn-info" href="/profile/<?php echo $user['id'] ?>" type="button">Go to profile</a>
-                    <?php endif; ?>
+                    <h4>Id: <?php echo $user['id'] ?></h4>
+
+                    <a class="btn btn-info" href="/profile/<?php echo $user['id'] ?>" type="button">Go to profile</a>
+
                 </div>
 
             <?php endforeach; ?>

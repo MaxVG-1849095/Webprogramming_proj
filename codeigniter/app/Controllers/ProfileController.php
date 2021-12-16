@@ -46,6 +46,7 @@ class ProfileController extends BaseController
         $session->remove('email');
         $session->remove('id');
         $session->remove('name');
+        $session->remove('cart');
         $logincont = new LoginController();
         return $logincont->index();
     }

@@ -1,0 +1,116 @@
+ERROR - 2021-12-15 04:12:36 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-15 04:12:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/app/Models/ItemModel.php(25): CodeIgniter\BaseModel->findAll()
+#5 /app/app/Controllers/Pages.php(32): App\Models\ItemModel->getItems()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 04:12:47 --> in login func
+ERROR - 2021-12-15 04:12:47 --> test
+ERROR - 2021-12-15 04:12:47 --> Joren@mail.com
+ERROR - 2021-12-15 04:12:47 --> 0
+ERROR - 2021-12-15 06:31:35 --> in login func
+ERROR - 2021-12-15 06:31:35 --> test
+ERROR - 2021-12-15 06:31:35 --> Joren@mail.com
+ERROR - 2021-12-15 06:31:35 --> 0
+ERROR - 2021-12-15 06:35:22 --> 0
+ERROR - 2021-12-15 06:35:38 --> 0
+ERROR - 2021-12-15 06:35:57 --> in login func
+ERROR - 2021-12-15 06:35:57 --> test
+ERROR - 2021-12-15 06:35:57 --> Joren@mail.com
+ERROR - 2021-12-15 06:35:57 --> 0
+ERROR - 2021-12-15 06:43:19 --> in login func
+ERROR - 2021-12-15 06:43:19 --> test
+ERROR - 2021-12-15 06:43:19 --> Joren@mail.com
+ERROR - 2021-12-15 06:43:19 --> 0
+ERROR - 2021-12-15 06:45:14 --> 0
+ERROR - 2021-12-15 06:48:22 --> 0
+ERROR - 2021-12-15 06:58:25 --> 0
+ERROR - 2021-12-15 07:08:55 --> in login func
+ERROR - 2021-12-15 07:08:55 --> test
+ERROR - 2021-12-15 07:08:55 --> Andreas@mail.com
+ERROR - 2021-12-15 07:08:55 --> 0
+CRITICAL - 2021-12-15 07:36:05 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:36:13 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:36:25 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:36:26 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:37:05 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:37:12 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:37:13 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:37:20 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:38:38 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:38:53 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 07:39:34 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/OrderController.php on line 400
+#0 /app/app/Controllers/OrderController.php(400): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

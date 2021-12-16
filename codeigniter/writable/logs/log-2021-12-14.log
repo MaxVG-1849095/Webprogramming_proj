@@ -1,0 +1,164 @@
+CRITICAL - 2021-12-14 04:04:21 --> Undefined array key "id"
+#0 /app/app/Controllers/OrderController.php(191): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-14 04:04:25 --> Undefined array key "id"
+#0 /app/app/Controllers/OrderController.php(191): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->removeActiveOrderSeller()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-14 04:04:49 --> in login func
+ERROR - 2021-12-14 04:04:49 --> test
+ERROR - 2021-12-14 04:04:49 --> Max@mail.com
+ERROR - 2021-12-14 04:04:49 --> 0
+ERROR - 2021-12-14 04:24:01 --> in login func
+ERROR - 2021-12-14 04:24:01 --> test
+ERROR - 2021-12-14 04:24:01 --> Joren@mail.com
+ERROR - 2021-12-14 04:24:01 --> 0
+ERROR - 2021-12-14 04:24:05 --> 0
+ERROR - 2021-12-14 04:25:06 --> 0
+ERROR - 2021-12-14 04:25:12 --> 0
+ERROR - 2021-12-14 04:25:18 --> 0
+ERROR - 2021-12-14 04:26:34 --> 0
+ERROR - 2021-12-14 04:26:41 --> 0
+ERROR - 2021-12-14 04:26:46 --> 0
+ERROR - 2021-12-14 04:27:23 --> 0
+ERROR - 2021-12-14 04:28:02 --> 0
+ERROR - 2021-12-14 04:30:45 --> 0
+CRITICAL - 2021-12-14 04:47:48 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(67): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadSpecificMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-14 04:51:35 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(67): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadSpecificMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-14 04:53:28 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(67): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadSpecificMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-14 04:56:50 --> 0
+CRITICAL - 2021-12-14 04:57:17 --> Cannot access offset of type string on string
+#0 /app/system/View/View.php(214): include()
+#1 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#3 /app/app/Controllers/BaseController.php(83): view()
+#4 /app/app/Controllers/MessageController.php(67): App\Controllers\BaseController->template()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadSpecificMessages()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-14 05:00:35 --> 0
+ERROR - 2021-12-14 05:07:22 --> 0
+ERROR - 2021-12-14 05:08:41 --> 0
+ERROR - 2021-12-14 05:08:51 --> 0
+ERROR - 2021-12-14 05:08:56 --> in login func
+ERROR - 2021-12-14 05:08:56 --> test
+ERROR - 2021-12-14 05:08:56 --> Andreas@mail.com
+ERROR - 2021-12-14 05:08:56 --> 0
+ERROR - 2021-12-14 05:10:14 --> 0
+ERROR - 2021-12-14 05:12:43 --> 0
+ERROR - 2021-12-14 05:13:16 --> 0
+ERROR - 2021-12-14 08:45:17 --> in login func
+ERROR - 2021-12-14 08:45:17 --> test
+ERROR - 2021-12-14 08:45:17 --> Max@mail.com
+ERROR - 2021-12-14 08:45:17 --> 0
+ERROR - 2021-12-14 08:45:18 --> 1
+ERROR - 2021-12-14 08:45:33 --> 0
+ERROR - 2021-12-14 08:46:02 --> in login func
+ERROR - 2021-12-14 08:46:02 --> test
+ERROR - 2021-12-14 08:46:02 --> Joren@mail.com
+ERROR - 2021-12-14 08:46:02 --> 0
+ERROR - 2021-12-14 08:46:29 --> 0
+ERROR - 2021-12-14 08:46:33 --> 0
+ERROR - 2021-12-14 08:46:38 --> in login func
+ERROR - 2021-12-14 08:46:38 --> test
+ERROR - 2021-12-14 08:46:38 --> Joren@mail.com
+ERROR - 2021-12-14 08:46:38 --> 0
+ERROR - 2021-12-14 08:47:05 --> 0
+ERROR - 2021-12-14 08:49:20 --> 0
+ERROR - 2021-12-14 08:49:26 --> 0
+ERROR - 2021-12-14 08:49:32 --> 0
+ERROR - 2021-12-14 08:55:28 --> 0
+ERROR - 2021-12-14 08:56:05 --> 0
+ERROR - 2021-12-14 08:56:45 --> 0
+ERROR - 2021-12-14 08:57:15 --> 0
+ERROR - 2021-12-14 09:01:43 --> 0
+ERROR - 2021-12-14 09:01:48 --> 1
+ERROR - 2021-12-14 09:02:07 --> 0
+ERROR - 2021-12-14 09:21:15 --> 0
+ERROR - 2021-12-14 11:03:35 --> 0
+ERROR - 2021-12-14 11:03:47 --> in login func
+ERROR - 2021-12-14 11:03:47 --> test
+ERROR - 2021-12-14 11:03:47 --> Andreas@mail.com
+ERROR - 2021-12-14 11:03:47 --> 0
+CRITICAL - 2021-12-14 11:45:46 --> The action you requested is not allowed.
+#0 /app/system/Security/Security.php(222): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /app/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify()
+#2 /app/system/Filters/Filters.php(169): CodeIgniter\Filters\CSRF->before()
+#3 /app/system/CodeIgniter.php(374): CodeIgniter\Filters\Filters->run()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-14 11:45:48 --> The action you requested is not allowed.
+#0 /app/system/Security/Security.php(222): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /app/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify()
+#2 /app/system/Filters/Filters.php(169): CodeIgniter\Filters\CSRF->before()
+#3 /app/system/CodeIgniter.php(374): CodeIgniter\Filters\Filters->run()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-14 11:45:49 --> The action you requested is not allowed.
+#0 /app/system/Security/Security.php(222): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /app/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify()
+#2 /app/system/Filters/Filters.php(169): CodeIgniter\Filters\CSRF->before()
+#3 /app/system/CodeIgniter.php(374): CodeIgniter\Filters\Filters->run()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+
+ERROR - 2021-12-14 12:53:31 --> ajax worked
+ERROR - 2021-12-14 12:54:23 --> ajax worked
+ERROR - 2021-12-14 12:54:31 --> ajax worked
+ERROR - 2021-12-14 12:54:31 --> ajax worked
+ERROR - 2021-12-14 12:54:39 --> ajax worked
+ERROR - 2021-12-14 12:55:40 --> ajax worked
+ERROR - 2021-12-14 12:55:41 --> ajax worked
+CRITICAL - 2021-12-14 12:56:24 --> Undefined variable $_SESSION
+#0 /app/app/Controllers/OrderController.php(401): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-14 12:58:39 --> in login func
+ERROR - 2021-12-14 12:58:39 --> test
+ERROR - 2021-12-14 12:58:39 --> Joren@mail.com
+ERROR - 2021-12-14 12:58:39 --> 0

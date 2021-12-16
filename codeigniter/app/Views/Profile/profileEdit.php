@@ -30,7 +30,6 @@
                 </form>
             </div>
             <br>
-            <?php if ($_SESSION['slug'] == "Seller") : ?>
                 <h3>Upload picture/video</h3>
                 <form method="post" action="/ImageController/storeProfileImage" enctype="multipart/form-data" class="my-4">
                     <?= csrf_field() ?>
@@ -38,5 +37,4 @@
                     <input type="file" id="profile_image" name="media_file" size="33" />
                     <input type="submit" value="Upload Image" />
                 </form>
-            <?php endif; ?>
 </div>
