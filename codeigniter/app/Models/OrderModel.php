@@ -42,40 +42,40 @@ class OrderModel extends Model
     }
     public function getActiveSellerOrders($sellerid){
         return $this->asArray()
-        ->where(['sellerid' => $sellerid, 'active'=>1, 'finished' => 0])
+        ->where(['itemid !=' => null, 'sellerid' => $sellerid, 'active'=>1, 'finished' => 0])
         ->findAll();
     }
 
     public function getInactiveSellerOrders($sellerid){
         return $this->asArray()
-        ->where(['sellerid' => $sellerid, 'active'=>0, 'finished' => 0])
+        ->where(['itemid !=' => null, 'sellerid' => $sellerid, 'active'=>0, 'finished' => 0])
         ->findAll();
     }
     public function getActiveShopperOrders($shopperid){
         return $this->asArray()
-        ->where(['shopperid' => $shopperid, 'active'=>1, 'finished' => 0])
+        ->where(['itemid !=' => null, 'shopperid' => $shopperid, 'active'=>1, 'finished' => 0])
         ->findAll();
     }
     public function getInactiveShopperOrders($shopperid){
         return $this->asArray()
-        ->where(['shopperid' => $shopperid, 'active'=>0, 'finished' => 0])
+        ->where(['itemid !=' => null, 'shopperid' => $shopperid, 'active'=>0, 'finished' => 0])
         ->findAll();
     }
 
     public function getShopperItemids($shopperid){
-        return $this->distinct()->select('itemid')->where(['shopperid' => $shopperid])->findAll();
+        return $this->distinct()->select('itemid')->where(['itemid !=' => null, 'shopperid' => $shopperid])->findAll();
     }
 
     public function getSellerItemids($sellerid){
-        return $this->distinct()->select('itemid')->where(['sellerid' => $sellerid])->findAll();
+        return $this->distinct()->select('itemid')->where(['itemid !=' => null, 'sellerid' => $sellerid])->findAll();
     }
 
     public function getFirstInactive($itemid){
-        return $this->distinct()->select('orderid')->where(['itemid' => $itemid,  'active' => 0, "finished" => 0])->first();
+        return $this->distinct()->select('orderid')->where(['itemid !=' => null, 'itemid' => $itemid,  'active' => 0, "finished" => 0])->first();
     }
     
     public function getFirstInactiveShopper($itemid){
-        return $this->distinct()->select('shopperid')->where(['itemid' => $itemid,  'active' => 0, "finished" => 0])->first();
+        return $this->distinct()->select('shopperid')->where(['itemid !=' => null, 'itemid' => $itemid,  'active' => 0, "finished" => 0])->first();
     }
 
     public function setNextActive($itemid){

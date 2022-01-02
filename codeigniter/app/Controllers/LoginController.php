@@ -38,15 +38,19 @@ class LoginController extends BaseController
             'password'  => 'required|max_length[255]',
             'email' => 'required|max_length[128]|is_unique[Users.email]',
             'description' => 'required',
-            'adress' => 'required'
+            'street' => 'required',
+            'city' => 'required',
+            'housenumber' => 'required'
         ])) {
+            $adress = $this->request->getPost('street') . " " . $this->request->getPost('housenumber') . " " . $this->request->getPost("city");
+            
             $UsersModel->save([
                 'name' => $this->request->getPost('name'),
                 'PASSWORD'  => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 'email' => $this->request->getPost('email'),
                 'slug' => $this->request->getPost('customertype'),
                 'description'  => $this->request->getPost('description'),
-                'adress' => $this->request->getPost('adress'),
+                'adress' => $adress,
             ]);
             $data = $UsersModel->getUserLogin($this->request->getVar('email'), $this->request->getVar('password'));
             $ses_data = [
@@ -72,7 +76,7 @@ class LoginController extends BaseController
 
         $UsersModel = new UsersModel();
 
-        $email = $this->request->getPost('email'); //dit moet getpost zijn maar dan werkt het niet !
+        $email = $this->request->getPost('email'); 
         $password = $this->request->getPost('password');
         log_message('error', 'test');
         $data = $UsersModel->getUserLogin($email, $password);

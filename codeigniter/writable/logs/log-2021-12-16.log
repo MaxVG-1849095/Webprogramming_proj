@@ -1,0 +1,190 @@
+ERROR - 2021-12-16 09:04:00 --> in login func
+ERROR - 2021-12-16 09:04:00 --> test
+ERROR - 2021-12-16 09:04:00 --> Andreas@mail.com
+ERROR - 2021-12-16 09:04:00 --> 0
+ERROR - 2021-12-16 09:09:29 --> in ajax function
+ERROR - 2021-12-16 09:09:29 --> 1
+ERROR - 2021-12-16 09:09:29 --> 2
+ERROR - 2021-12-16 09:09:36 --> in ajax function
+ERROR - 2021-12-16 09:09:36 --> 1
+ERROR - 2021-12-16 09:09:36 --> 2
+ERROR - 2021-12-16 09:19:45 --> 0
+ERROR - 2021-12-16 09:19:52 --> 0
+ERROR - 2021-12-16 09:19:54 --> 2
+ERROR - 2021-12-16 09:21:16 --> 0
+ERROR - 2021-12-16 09:21:25 --> in login func
+ERROR - 2021-12-16 09:21:25 --> test
+ERROR - 2021-12-16 09:21:25 --> Lukas@mail.com
+ERROR - 2021-12-16 09:21:25 --> 0
+ERROR - 2021-12-16 09:21:36 --> 11
+ERROR - 2021-12-16 09:22:35 --> 0
+ERROR - 2021-12-16 09:22:39 --> 11
+ERROR - 2021-12-16 09:22:56 --> 0
+ERROR - 2021-12-16 09:22:58 --> 11
+ERROR - 2021-12-16 09:23:22 --> 11
+ERROR - 2021-12-16 09:23:40 --> 0
+ERROR - 2021-12-16 09:50:44 --> 0
+ERROR - 2021-12-16 09:52:08 -->   
+ERROR - 2021-12-16 09:52:08 --> 0
+ERROR - 2021-12-16 09:52:11 --> 15
+ERROR - 2021-12-16 09:53:37 --> 0
+ERROR - 2021-12-16 09:55:02 --> Street 3 City
+ERROR - 2021-12-16 09:55:02 --> Street
+ERROR - 2021-12-16 09:55:02 --> 3
+ERROR - 2021-12-16 09:55:02 --> City
+ERROR - 2021-12-16 09:55:02 --> 0
+ERROR - 2021-12-16 09:55:04 --> 16
+ERROR - 2021-12-16 10:01:22 --> 16
+ERROR - 2021-12-16 10:01:55 --> 16
+ERROR - 2021-12-16 10:02:21 --> 16
+ERROR - 2021-12-16 10:03:14 --> 16
+ERROR - 2021-12-16 10:03:24 --> 16
+ERROR - 2021-12-16 10:08:00 --> 0
+ERROR - 2021-12-16 10:08:49 --> 0
+ERROR - 2021-12-16 10:09:06 --> in login func
+ERROR - 2021-12-16 10:09:06 --> test
+ERROR - 2021-12-16 10:09:06 --> marie@mail.com
+ERROR - 2021-12-16 10:09:06 --> 0
+ERROR - 2021-12-16 10:09:23 --> 83
+ERROR - 2021-12-16 10:09:23 --> 09:30
+ERROR - 2021-12-16 10:09:23 --> 2021-12-24
+ERROR - 2021-12-16 10:09:28 --> 0
+ERROR - 2021-12-16 10:09:35 --> 0
+ERROR - 2021-12-16 10:13:09 --> 0
+CRITICAL - 2021-12-16 10:13:09 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profile.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/ProfileController.php(40): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-16 10:13:24 --> in login func
+ERROR - 2021-12-16 10:13:24 --> test
+ERROR - 2021-12-16 10:13:24 --> Marie@mail.com
+ERROR - 2021-12-16 10:13:25 --> 0
+ERROR - 2021-12-16 10:33:51 --> 0
+ERROR - 2021-12-16 10:33:59 --> 0
+ERROR - 2021-12-16 10:34:04 --> 0
+ERROR - 2021-12-16 10:34:14 --> in login func
+ERROR - 2021-12-16 10:34:14 --> test
+ERROR - 2021-12-16 10:34:14 --> Rigo@mail.com
+ERROR - 2021-12-16 10:34:14 --> 0
+ERROR - 2021-12-16 10:34:18 --> in login func
+ERROR - 2021-12-16 10:34:18 --> test
+ERROR - 2021-12-16 10:34:18 --> Lukas@mail.com
+ERROR - 2021-12-16 10:34:18 --> 0
+ERROR - 2021-12-16 10:34:30 --> 0
+ERROR - 2021-12-16 10:34:44 --> 0
+ERROR - 2021-12-16 10:34:48 --> 0
+ERROR - 2021-12-16 10:34:49 --> 11
+ERROR - 2021-12-16 10:34:51 --> in item deleter
+ERROR - 2021-12-16 10:34:51 --> 13
+ERROR - 2021-12-16 10:34:51 --> 11
+ERROR - 2021-12-16 10:34:55 --> 0
+CRITICAL - 2021-12-16 10:34:56 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/shopperOrders.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(175): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:39:24 --> 0
+CRITICAL - 2021-12-16 10:39:25 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/shopperOrders.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(175): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersShopper()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:39:27 --> 0
+ERROR - 2021-12-16 10:42:37 --> 0
+ERROR - 2021-12-16 10:43:32 --> 0
+ERROR - 2021-12-16 10:43:55 --> 0
+ERROR - 2021-12-16 10:43:57 --> 11
+ERROR - 2021-12-16 10:44:10 --> 11
+ERROR - 2021-12-16 10:44:33 --> 0
+ERROR - 2021-12-16 10:44:38 --> 0
+ERROR - 2021-12-16 10:45:09 --> 0
+ERROR - 2021-12-16 10:45:13 --> 11
+ERROR - 2021-12-16 10:45:15 --> in item deleter
+ERROR - 2021-12-16 10:45:15 --> 14
+ERROR - 2021-12-16 10:45:15 --> 11
+ERROR - 2021-12-16 10:45:18 --> 0
+ERROR - 2021-12-16 10:47:12 --> 0
+ERROR - 2021-12-16 10:47:14 --> 11
+ERROR - 2021-12-16 10:47:28 --> 11
+ERROR - 2021-12-16 10:47:40 --> in item deleter
+ERROR - 2021-12-16 10:47:40 --> 15
+ERROR - 2021-12-16 10:47:40 --> 11
+ERROR - 2021-12-16 10:48:33 --> 11
+CRITICAL - 2021-12-16 10:58:12 --> Undefined array key 2
+#0 /app/app/Controllers/OrderController.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(403): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-16 10:59:41 --> in login func
+ERROR - 2021-12-16 10:59:41 --> test
+ERROR - 2021-12-16 10:59:41 --> Joren@mail.com
+ERROR - 2021-12-16 10:59:41 --> 0
+CRITICAL - 2021-12-16 11:01:00 --> Undefined array key 0
+#0 /app/app/Controllers/OrderController.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(404): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-16 11:01:10 --> Undefined array key 0
+#0 /app/app/Controllers/OrderController.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(404): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-16 11:01:55 --> in login func
+ERROR - 2021-12-16 11:01:55 --> test
+ERROR - 2021-12-16 11:01:55 --> Joren@mail.com
+ERROR - 2021-12-16 11:01:55 --> 0
+ERROR - 2021-12-16 11:02:14 --> im here with amount:3
+CRITICAL - 2021-12-16 11:04:30 --> Undefined array key 0
+#0 /app/app/Controllers/OrderController.php(363): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/app/Controllers/OrderController.php(403): App\Controllers\OrderController->addOrderToCart()
+#2 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->ajaxOrderCart()
+#3 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#4 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-16 11:04:41 --> Undefined array key 0
+#0 /app/app/Controllers/OrderController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->makeOrdersFromCart()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-16 11:04:56 --> in login func
+ERROR - 2021-12-16 11:04:56 --> test
+ERROR - 2021-12-16 11:04:56 --> Joren@mail.com
+ERROR - 2021-12-16 11:04:56 --> 0
+ERROR - 2021-12-16 11:08:50 --> in login func
+ERROR - 2021-12-16 11:08:50 --> test
+ERROR - 2021-12-16 11:08:50 --> Joren@mail.com
+ERROR - 2021-12-16 11:08:50 --> 0
+ERROR - 2021-12-16 11:10:27 --> 0

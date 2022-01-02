@@ -17,7 +17,7 @@ class Pages extends BaseController
     }
     public function index()
     {
-        return view("pages/home");
+        throw new \CodeIgniter\Exceptions\PageNotFoundException('this page does not exist');
     }
 
     public function aboutredirect()
@@ -34,7 +34,6 @@ class Pages extends BaseController
         ];
 
         echo view('templates/header', $data);
-        echo view('pages/home', $data);
         echo view('Items/itemoverview', $data);
         echo view('templates/footer', $data);
     }
@@ -72,36 +71,8 @@ class Pages extends BaseController
 
         $data['nameid'] = $Usersmodel->getUserByID($data['item']['sellerid']);
         echo view('templates/header', $data);
-        echo view('pages/home', $data);
         echo view('Items/item', $data);
         echo view('templates/footer', $data);
     }
 
-    public function accountindex()
-    {
-        $model = new UsersModel();
-
-        $data = [
-            'users'  => $model->getUsers(),
-            'title' => 'Users archive',
-        ];
-
-        echo view('templates/header', $data);
-        echo view('pages/accountoverview', $data);
-        echo view('templates/footer', $data);
-    }
-    public function accountredirect($userid = 0)
-    {
-        $model = new UsersModel();
-
-        $data['users'] = $model->getUsers($userid);
-
-        if (empty($data['users'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the user: ' . $userid);
-        }
-
-        echo view('templates/header', $data);
-        echo view('pages/account', $data);
-        echo view('templates/footer', $data);
-    }
 }

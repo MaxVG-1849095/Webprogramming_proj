@@ -46,6 +46,7 @@ $routes->get('users', 'Pages::accountindex');
 $routes->get('/login', 'LoginController::index');
 $routes->get('/signup', 'LoginController::signupRedirect');
 $routes->get('/itemorder', 'ItemController::orderItem');
+$routes->get('/cart', 'OrderController::loadCartView');
 $routes->match(['get', 'post'], 'Login/login', 'LoginController::login');
 $routes->match(['get', 'post'], 'Login/signup', 'LoginController::signup');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'LoginFilter']);

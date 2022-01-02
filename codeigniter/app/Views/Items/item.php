@@ -4,13 +4,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/Images/Items/<?php echo $item['filename']; ?>" class="d-block w-100" alt="...">
+            <img src="/Images/Items/<?php echo $item['filename']; ?>" class="d-block w-100" alt="<?php echo $item['name'] ?>-picture">
         </div>
         <?php if (!empty($media) && is_array($media)) : ?>
             <?php foreach ($media as $media_m) : ?>
                 <?php if ($media_m['type'] == 'video/mp4') : ?>
                     <div class="carousel-item">
-                        <video controls src="/Images/Items/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="...">
+                        <video controls src="/Images/Items/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="<?php echo $item['name'] ?>-video">
                     </div>
                 <?php else : ?>
                     <div class="carousel-item">
@@ -19,7 +19,6 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         <?php endif; ?>
-
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,60 +43,48 @@
     Price:<?= esc($item['price']) ?>$
 </h3>
 <?php if (isset($_SESSION['id']) && $_SESSION['slug'] == "Shopper") : ?>
-    <div class="d-flex justify-content-center row">
-        <form action="/OrderController/addOrderToCart" method="post" class="d-flex justify-content-center">
-            <?= csrf_field() ?>
-            <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-            <button type="submit" class="btn btn-success">place order</button>
-            <input rows="2" class="form-control d-inline-flex" type="number" min="1" max="3" name="orderamount" placeholder="amount of items you want to order" required></input>
-        </form>
-    </div>
 
-    <form type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
-    <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
-    <input rows="2" class="form-control d-inline-flex" type="number" min="1" max="3" id="orderamount" name="orderamount" placeholder="amount of items you want to order" required></input>
-    <button type="submit" id="btn-order" class="btn btn-primary">place order</button>
+
+    <form class="d-flex justify-content-center row" type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
+        <div class=" justify-content-center">
+            <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
+            <label>Amount to order? 1-3</label>
+            <div class="d-flex">
+            <input rows="2" class="form-control d-inline-flex" type="number" min="0" max="3" id="orderamount" name="orderamount" placeholder="amount of items you want to order" required></input>
+            <button type="submit" id="btn-order" class="btn btn-primary">place order</button>
+            </div>
+        </div>
     </form>
-    
+
+    <div id="succesOrder" class="d-flex justify-content-center">
+    </div>
     <script type="text/javascript">
-        
         function ajaxOrder() {
             console.log("success in items");
-            var link = "<?php echo base_url('/item/1/ajaxorder'); ?>"
+            var itemid = document.getElementById("itemid").value;
+            var orderamount = document.getElementById("orderamount").value;
+            var params = "?itemid=" + itemid + "&orderamount=" + orderamount;
+            console.log(params);
+            console.log(orderamount);
+            var linkstr = "/item/" + itemid + "/ajaxorder"
+            var link = "<?php echo base_url(); ?>" + "/item/" + itemid + "/ajaxorder";
             var xmlhttp = new XMLHttpRequest();
-            // xmlhttp.onreadystatechange = function() {
-            //     if ((xmlhttp) && (xmlhttp.readyState == 4) && (xmlhttp.status == 200)){
-            //         var itemid = 
-            //    }
-            // {
-            // };
-            xmlhttp.open("GET", link, true);
-            xmlhttp.send();
-            
-        }
-        
-    </script>
-
-    <!--
-    <script>
-        $(function(){
-            $(document).on("click", "#btn-order", function(){
-                $.ajax({
-                    url: "<?= site_url('ajaxorder') ?> ",
-                    type: "POST",
-                    data:{
-                        name: "Max",
-                        age: "21"
-                    },
-                    dataType:"JSON",
-                    succes: function(response){
-                        console.log(response);
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (orderamount == 0) {
+                        document.getElementById("succesOrder").innerHTML = "Succesfully removed this item from your cart!";
+                    } else {
+                        document.getElementById("succesOrder").innerHTML = "Succesfully added " + orderamount + " units to cart!";
                     }
-                });
-            });
-        });
+                }
+            }
+            xmlhttp.open("GET", link + params, true);
+            xmlhttp.send();
+
+
+
+        }
     </script>
-    -->
 
 <?php endif ?>
 

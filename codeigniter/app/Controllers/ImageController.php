@@ -15,7 +15,9 @@ class ImageController extends BaseController
     public function storeItemImage()
     {
         $mediamodel = new ItemMediaModel();
-
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $input = $this->validate([
             'media_file' => 
             'uploaded[media_file]',
@@ -43,7 +45,9 @@ class ImageController extends BaseController
     public function storeProfileImage()
     {
         $mediamodel = new UserMediaModel();
-
+        if ( empty($this->request->getPost('userid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $input = $this->validate([
             'media_file' => 
             'uploaded[media_file]',

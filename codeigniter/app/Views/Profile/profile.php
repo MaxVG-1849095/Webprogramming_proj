@@ -6,11 +6,11 @@
             <div class="carousel-inner">
                 <?php if ($media[0]['type'] == 'video/mp4') : ?>
                     <div class="carousel-item active">
-                        <video controls src="/Images/Users/<?php echo $media[0]['file']; ?>" class="d-block w-100" alt="...">
+                        <video controls src="/Images/Users/<?php echo $media[0]['file']; ?>" class="d-block w-100" alt="carousel-controls">
                     </div>
                 <?php else : ?>
                     <div class="carousel-item active">
-                        <img src="/Images/Users/<?php echo $media[0]['file']; ?>" class="d-block w-100" alt="...">
+                        <img src="/Images/Users/<?php echo $media[0]['file']; ?>" class="d-block w-100" alt="<?php echo $user['name']?>-picture">
                     </div>
                 <?php endif; ?>
                 <?php array_shift($media); ?>
@@ -19,11 +19,11 @@
                     <?php foreach ($media as $media_m) : ?>
                         <?php if ($media_m['type'] == 'video/mp4') : ?>
                             <div class="carousel-item">
-                                <video controls src="/Images/Users/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="...">
+                                <video controls src="/Images/Users/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="<?php echo $user['name']?>-video">
                             </div>
                         <?php else : ?>
                             <div class="carousel-item">
-                                <img src="/Images/Users/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="...">
+                                <img src="/Images/Users/<?php echo $media_m['file']; ?>" class="d-block w-100" alt="<?php echo $user['name']?>-picture">
                             </div>
                         <?php endif; ?>
                     <?php endforeach; ?>
@@ -63,27 +63,27 @@
 
 <?php if (isset($_SESSION['id']) && (($user['id'] == $_SESSION['id']) || $user['id'] === 0)) : ?>
     <h3>
-        <div class="nav-item"><a title="ab" href="/ProfileController/edit">Edit profile</a></div>
+        <div class="nav-item"><a tabindex=0 title="ab" href="/ProfileController/edit">Edit profile</a></div>
     </h3>
     <?php if ($_SESSION['slug'] === "Seller") : ?>
         <h3>
-            <div class="nav-item"><a title="ab" href="/ItemController/editwares">Edit wares</a></div>
+            <div class="nav-item"><a tabindex=0 title="ab" href="/ItemController/editwares">Edit wares</a></div>
         </h3>
 
     <?php endif; ?>
 
     <h3>
-        <div class="nav-item"><a title="ab" href="/MessageController/loadMessages">Messaging</a></div>
+        <div class="nav-item"><a tabindex=0 title="ab" href="/MessageController/loadMessages">Messaging</a></div>
     </h3>
 
     <?php if ($_SESSION['slug'] == 'Seller') : ?>
         <h3>
-            <div class="nav-item"><a title="ab" href="/OrderController/loadOrdersSeller">Orders</a></div>
+            <div class="nav-item"><a tabindex=0 title="ab" href="/OrderController/loadOrdersSeller">Orders</a></div>
         </h3>
     <?php else : ?>
         <h3>
-            <div class="nav-item"><a title="ab" href="/OrderController/loadOrdersShopper">Orders</a></div>
+            <div class="nav-item"><a tabindex=0 title="ab" href="/OrderController/loadOrdersShopper">Orders</a></div>
         </h3>
     <?php endif; ?>
-    <a type="button" class="btn btn-danger" href="/ProfileController/logout">Log out</a>
+    <a tabindex=0 type="button" class="btn btn-danger" href="/ProfileController/logout">Log out</a>
 <?php endif; ?>

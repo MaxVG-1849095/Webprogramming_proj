@@ -24,6 +24,9 @@ class ItemController extends BaseController
     public function editWares(){
         $session = session();
         $itemmodel = new ItemModel();
+        if ( !$session->has('id') | $session->get('slug') != 'Seller') {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         log_message('error', $session->get('id'));
         $data['wares'] = $itemmodel->getItemsSellerid($session->get('id'));
 
@@ -40,7 +43,9 @@ class ItemController extends BaseController
     public function updatename()
     {
         $session = session();
-        
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid');
         log_message('error', $item_id);
         $model = new ItemModel();
@@ -61,6 +66,9 @@ class ItemController extends BaseController
     public function createItemRedirect(){
         $session = session();
         $data = [];
+        if ( !$session->has('id') | $session->get('slug') != 'Seller') {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $this->template("/Profile/wareCreator",$data);
     }
     
@@ -68,13 +76,9 @@ class ItemController extends BaseController
     public function createItem(){
         $session = session();
         $itemmodel = new ItemModel();
-        if($this->request->getPost('availability') === 'Currently available'){
-            $availability = 1;
+        if ( empty($this->request->getPost('name'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
         }
-        else{
-            $availability = 0;
-        }
-        
         if ($this->request->getMethod() === 'post'&& $this->validate([
             'name' => 'required|max_length[128]',
             'description'  => 'required',
@@ -93,13 +97,15 @@ class ItemController extends BaseController
                 'description'  => $this->request->getPost('description'),
                 'price' => $this->request->getPost('price'),
                 'filename' => $file->getName(),
-                'availability' => $availability,
+                'availability' => $this->request->getPost('availability'),
                 'sellerid' => $this->request->getPost('sellerid'),
             ]);
         }
         else{
-            print_r('something went wrong');
-            return;
+            $session->setFlashdata('itemError', 'Something went wrong, check if you entered everything correctly!');
+            
+            return $this->createItemRedirect();
+            
         }
         $data = [];
         $this->editWares();
@@ -107,6 +113,9 @@ class ItemController extends BaseController
     public function removeItem(){
         $session = session();
         $model = new ItemModel();
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid'); 
         log_message('error', 'in item deleter');
         log_message('error', $item_id);
@@ -120,6 +129,9 @@ class ItemController extends BaseController
     public function setAvailability(){
         $session = session();
         $model = new ItemModel();
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid'); 
 
         if ($this->request->getMethod() === 'post' && $this->validate([
@@ -140,7 +152,9 @@ class ItemController extends BaseController
 
     public function updatedescription(){
         $session = session();
-        
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid');
         $model = new ItemModel();
         if ($this->request->getMethod() === 'post' && $this->validate([
@@ -157,7 +171,9 @@ class ItemController extends BaseController
     public function updateprice()
     {
         $session = session();
-        
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid');
         log_message('error', "in update price");
         log_message('error', $this->request->getPost('itemid'));
@@ -177,7 +193,9 @@ class ItemController extends BaseController
     public function updateavailability()
     {
         $session = session();
-        
+        if ( empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $item_id = $this->request->getPost('itemid');
         
         $model = new ItemModel();
@@ -213,12 +231,12 @@ class ItemController extends BaseController
         $this->wareEditor($item_id);
     }
 
-    public function decrementavailability($itemid){
+    private function decrementavailability($itemid){
         $model = new ItemModel();
 
         $model->decrementavailability($itemid);
     }
-    public function incrementavailability($itemid){
+    private function incrementavailability($itemid){
         $model = new ItemModel();
 
         $model->incrementavailability($itemid);

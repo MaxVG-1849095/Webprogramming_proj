@@ -31,24 +31,8 @@ class OrderController extends BaseController
             }
         }
         unset($_SESSION['cart']);
-        // $itemid = $this->request->getPost('itemid');
-
-        // $itemmodel = new ItemModel();
-
-        // $item = $itemmodel->getItems($itemid);
-
-        // if ($this->request->getPost('delivery') == "Pickup at store") {
-        //     $del = "0";
-        // } else {
-        //     $usermodel = new UsersModel();
-        //     $del = $usermodel->getUserAdress($_SESSION['id'])['adress'];
-        // }
-
-        // if ($item['availability'] > 0) {
-        //     $this->placeorderavailable($del);
-        // } else {
-        //     $this->placeorderunavailable($del);
-        // }
+        $pag = new Pages();
+        $pag->homeredirect();
     }
 
     public function placeorder($itemid){
@@ -79,7 +63,7 @@ class OrderController extends BaseController
         $item = $itemmodel->getItems($itemid);
 
         $ordermodel = new OrderModel();
-
+        
         $ordermodel->insert([
             'shopperid' => $_SESSION['id'],
             'sellerid' => $item['sellerid'],
@@ -89,8 +73,8 @@ class OrderController extends BaseController
             'delivery' => $del,
         ]);
 
-        $itemcontr = new ItemController();
-        $itemcontr->decrementavailability($itemid);
+        $itemmodel = new ItemModel();
+        $itemmodel->decrementavailability($itemid);
     }
 
     public function placeorderunavailable($del, $itemid)
@@ -100,7 +84,7 @@ class OrderController extends BaseController
         $itemmodel = new ItemModel();
 
         $item = $itemmodel->getItems($itemid);
-
+        
         $ordermodel = new OrderModel();
 
         $ordermodel->insert([
@@ -118,7 +102,9 @@ class OrderController extends BaseController
         $session = session();
         $ordermodel = new OrderModel();
         $usermodel = new UsersModel();
-
+        if ( !isset($_SESSION['id']) | $_SESSION['slug'] != 'Seller') {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to view this page');
+        }
         $shopperids = $ordermodel->getShopperUserIds([$_SESSION['id']]);
         $shopperarray[] = [];
         foreach ($shopperids as $sid) {
@@ -152,6 +138,9 @@ class OrderController extends BaseController
         $itemmodel = new ItemModel();
         $ordermodel = new OrderModel();
         $usermodel = new UsersModel();
+        if ( !isset($_SESSION['id']) | $_SESSION['slug'] != 'Shopper') {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to view this page');
+        }
         $sellerids = $ordermodel->getSellerUserIds([$_SESSION['id']]);
         $sellerarray[] = [];
         foreach ($sellerids as $sid) {
@@ -180,13 +169,16 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $order_id = $this->request->getPost('orderid');
         $shopperid = $ordermodel->getShopperid($order_id);
         $ordermodel
             ->wherein('orderid', [$order_id])
             ->delete();
         $notimodel = new NotificationModel();
-
+        
         $notimodel->insert([
             'content' => "Your order on item " . $this->request->getPost('itemid') . " has been cancelled. You can contact user with id " . $_SESSION['id'] . " for more information!",
             'userid' => $shopperid['shopperid'],
@@ -201,6 +193,9 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $order_id = $this->request->getPost('orderid');
 
         $sellerid = $ordermodel->getsellerid($order_id);
@@ -226,6 +221,9 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $order_id = $this->request->getPost('orderid');
         $shopperid = $ordermodel->getShopperid($order_id);
         $ordermodel
@@ -248,6 +246,9 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $order_id = $this->request->getPost('orderid');
 
         $ordermodel
@@ -260,6 +261,9 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $orderid = $this->request->getPost('orderid');
         $shopperid = $ordermodel->getShopperid($orderid);
         $ordermodel
@@ -287,12 +291,13 @@ class OrderController extends BaseController
         $this->loadOrdersSeller();
     }
 
-    public function setFirstPendingActive($itemid)
+    private function setFirstPendingActive($itemid)
     {
         $session = session();
         $ordermodel = new OrderModel();
         $notimodel = new NotificationModel();
         $itemmodel = new ItemModel();
+        
         if ($ordermodel->getFirstInactive($itemid) != null) {
             $notimodel->insert([
                 'content' => "Your order on " . $itemmodel->getItems($itemid)['name'] . " has started, you can still cancel it if you want to!",
@@ -315,6 +320,9 @@ class OrderController extends BaseController
         $session = session();
         $itemmodel = new ItemModel();
         $ordermodel = new OrderModel();
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $data = [
             'item' => $itemmodel->getItems($this->request->getPost('itemid')),
             'order' => $ordermodel->getOrder($this->request->getPost('orderid')),
@@ -324,8 +332,11 @@ class OrderController extends BaseController
 
     public function setWaitingDate()
     {
+        
         $sesion = session();
-
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $ordermodel = new OrderModel();
 
         $ordermodel
@@ -339,7 +350,9 @@ class OrderController extends BaseController
     {
         $session = session();
         $ordermodel = new OrderModel();
-
+        if ( empty($this->request->getPost('orderid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         log_message('error', $this->request->getPost('orderid'));
         log_message('error', $this->request->getPost('time'));
         log_message('error', $this->request->getPost('date'));
@@ -352,7 +365,7 @@ class OrderController extends BaseController
         $this->loadOrdersShopper();
     }
 
-    public function addOrderToCart($itemid, $amount)
+    private function addOrderToCart($itemid, $amount)
     {
         $session = session();
         //if (!in_array($this->request->getPost('itemid'), $session->get('cart'))) {
@@ -366,11 +379,14 @@ class OrderController extends BaseController
                         break;
                     }
                 }
-                $newarr = array(
-                    'itemid' => $itemid,
-                    'amount' => $amount
-                );
-                array_push($cartarr, $newarr);
+                if($amount > 0){
+                    $newarr = array(
+                        'itemid' => $itemid,
+                        'amount' => $amount
+                    );
+                    array_push($cartarr, $newarr);
+                }
+                
 
                 $session->set('cart',$cartarr);
             } else {
@@ -385,7 +401,6 @@ class OrderController extends BaseController
                 $session->set('cart', $cartarr);
             }
         //}
-        
     }
 
     function debug_to_console($data) {
@@ -397,13 +412,13 @@ class OrderController extends BaseController
     }
 
     public function ajaxOrderCart(){
-        $notimodel = new NotificationModel();
-
-        $notimodel->insert([
-            'content' => "Ajax is goed gelukt",
-            'userid' => 1,
-            'itemid' => 1,
-        ]);
+        if ( empty($this->request->getVar('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
+        $this->addOrderToCart($this->request->getVar('itemid'), $this->request->getVar('orderamount'));
+        // log_message('error', 'in ajax function');
+        // log_message('error', $this->request->getVar('itemid'));
+        // log_message('error', $this->request->getVar('orderamount'));
         // $data = $this->request->getVar();
 
         // echo json_encode(array(
@@ -417,6 +432,9 @@ class OrderController extends BaseController
         $session = session();
         $items_arr[] = [];
         $itemmodel = new ItemModel();
+        if ( !$session->has('cart')) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action: cart is empty');
+        }
         if($session->has('cart')){
             $price = 0;
             foreach($session->get('cart') as $order){
@@ -437,5 +455,17 @@ class OrderController extends BaseController
         }
             
         $this->template('Items/OrderCart', $data);
+    }
+
+
+
+    public function emptyCart(){
+        $session = session();
+        if ( !$session->has('cart')) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action: cart is empty');
+        }
+        $session->remove('cart');
+        $pag = new Pages();
+        $pag->homeredirect();
     }
 }

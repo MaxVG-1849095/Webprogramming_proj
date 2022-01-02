@@ -1,0 +1,165 @@
+ERROR - 2021-12-18 09:20:26 --> in login func
+ERROR - 2021-12-18 09:20:26 --> test
+ERROR - 2021-12-18 09:20:26 --> Andreas@mail.com
+ERROR - 2021-12-18 09:20:26 --> 0
+ERROR - 2021-12-18 09:20:52 --> 0
+ERROR - 2021-12-18 09:23:19 --> in login func
+ERROR - 2021-12-18 09:23:19 --> test
+ERROR - 2021-12-18 09:23:19 --> Andreas@mail.com
+ERROR - 2021-12-18 09:23:20 --> 0
+ERROR - 2021-12-18 09:40:14 --> 0
+CRITICAL - 2021-12-18 09:40:14 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:40:27 --> 0
+CRITICAL - 2021-12-18 09:40:27 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:41:02 --> 0
+CRITICAL - 2021-12-18 09:41:02 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:41:09 --> 0
+CRITICAL - 2021-12-18 09:41:09 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:41:26 --> 0
+CRITICAL - 2021-12-18 09:41:26 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:41:51 --> 0
+CRITICAL - 2021-12-18 09:41:51 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-18 09:42:06 --> 0
+ERROR - 2021-12-18 09:42:06 --> 
+CRITICAL - 2021-12-18 09:42:06 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:42:31 --> 0
+ERROR - 2021-12-18 09:42:31 --> 
+CRITICAL - 2021-12-18 09:42:31 --> Undefined array key "id"
+#0 /app/app/Controllers/ProfileController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->index()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 09:42:57 --> 0
+ERROR - 2021-12-18 09:42:57 --> 
+ERROR - 2021-12-18 09:48:51 --> in login func
+ERROR - 2021-12-18 09:48:51 --> test
+ERROR - 2021-12-18 09:48:51 --> Andreas@mail.com
+ERROR - 2021-12-18 09:48:51 --> 0
+ERROR - 2021-12-18 09:48:51 --> 1
+CRITICAL - 2021-12-18 09:56:14 --> Too few arguments to function App\Controllers\OrderController::setFirstPendingActive(), 0 passed in /app/system/CodeIgniter.php on line 802 and exactly 1 expected
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->setFirstPendingActive()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 09:59:26 --> Call to undefined method CodeIgniter\Session\Session::isset()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-18 09:59:29 --> Call to undefined method CodeIgniter\Session\Session::isset()
+#0 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadCartView()
+#1 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#2 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-18 10:06:15 --> 0
+ERROR - 2021-12-18 10:06:15 --> 1
+ERROR - 2021-12-18 10:06:22 --> in login func
+ERROR - 2021-12-18 10:06:22 --> test
+ERROR - 2021-12-18 10:06:22 --> Max@mail.com
+ERROR - 2021-12-18 10:06:22 --> 0
+ERROR - 2021-12-18 10:06:22 --> 1
+ERROR - 2021-12-18 10:06:33 --> 0
+ERROR - 2021-12-18 10:06:33 --> 1
+ERROR - 2021-12-18 10:06:35 --> 1
+ERROR - 2021-12-18 10:34:35 --> 0
+ERROR - 2021-12-18 10:34:35 --> 1
+ERROR - 2021-12-18 10:34:40 --> 0
+ERROR - 2021-12-18 10:34:40 --> 1
+CRITICAL - 2021-12-18 10:34:43 --> Undefined array key "id"
+#0 /app/app/Controllers/MessageController.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->loadMessages()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-18 10:34:52 --> 0
+ERROR - 2021-12-18 10:34:52 --> 
+CRITICAL - 2021-12-18 10:39:17 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(104): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-18 10:39:35 --> in login func
+ERROR - 2021-12-18 10:39:35 --> test
+ERROR - 2021-12-18 10:39:35 --> Max@mail.com
+ERROR - 2021-12-18 10:39:35 --> 0
+ERROR - 2021-12-18 10:39:35 --> 1
+CRITICAL - 2021-12-18 10:39:40 --> Undefined array key "name"
+#0 /app/app/Views/pages/account.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(104): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->accountredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-18 10:44:51 --> 0
+ERROR - 2021-12-18 10:44:51 --> 1
+ERROR - 2021-12-18 10:44:59 --> in login func
+ERROR - 2021-12-18 10:44:59 --> test
+ERROR - 2021-12-18 10:44:59 --> Max@mail.com
+ERROR - 2021-12-18 10:45:00 --> 0
+ERROR - 2021-12-18 10:45:00 --> 1
+ERROR - 2021-12-18 10:45:02 --> in login func
+ERROR - 2021-12-18 10:45:02 --> test
+CRITICAL - 2021-12-18 10:45:02 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/LoginController.php on line 83
+#0 /app/app/Controllers/LoginController.php(83): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\LoginController->login()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

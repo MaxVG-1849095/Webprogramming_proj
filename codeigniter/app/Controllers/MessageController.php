@@ -21,6 +21,9 @@ class MessageController extends BaseController
         $messagemodel = new MessageModel();
         $usersmodel = new UsersModel();
         $notimodel = new NotificationModel();
+        if ( !$session->has('id')) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to load this page');
+        }
         $senderarray[] = [];
         $receiverarray[]=[];
 
@@ -52,6 +55,7 @@ class MessageController extends BaseController
 
     public function loadSpecificMessages(){
         $session = session();
+        
         if($this->request->getPost('userid') ==0){
             $this->loadMessages();
         }
@@ -65,9 +69,12 @@ class MessageController extends BaseController
         $messagemodel = new MessageModel();
         $usersmodel = new UsersModel();
         $notimodel = new NotificationModel();
+        $session=session();
         $senderarray[] = [];
         $receiverarray[]=[];
-
+        if ( !$session->has('id')|empty($this->request->getPost('userid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to load this page');
+        }
         array_push($senderarray, $usersmodel->getUserandID($this->request->getPost('userid')));
         array_shift($senderarray);
 
@@ -89,7 +96,9 @@ class MessageController extends BaseController
     {
         $session = session();
         $messagemodel = new MessageModel();
-
+        if ( !$session->has('id')|empty($this->request->getPost('receiverid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         if ($this->request->getMethod() === 'post' && $this->validate([
             'receiverid' => 'required',
             'content'  => 'required',
@@ -118,6 +127,9 @@ class MessageController extends BaseController
     public function removeMessage(){
         $session = session();
         $messagemodel = new MessageModel();
+        if ( !$session->has('id')|empty($this->request->getPost('messageid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $message_id = $this->request->getPost('messageid');
 
         $messagemodel
@@ -131,6 +143,9 @@ class MessageController extends BaseController
     public function removeNotification(){
         $session=session();
         $notimodel = new NotificationModel();
+        if ( !$session->has('id')|empty($this->request->getPost('notiId'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         $noti_id = $this->request->getPost('notiId');
 
         $notimodel
@@ -143,6 +158,9 @@ class MessageController extends BaseController
     public function reviewpage(){
         $session = session();
         $itemmodel = new ItemModel();
+        if ( !$session->has('id')|empty($this->request->getPost('notid'))|empty($this->request->getPost('itemid'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to load this page');
+        }
         $data =[
             'item' => $itemmodel->getItems($this->request->getPost('itemid')),
             'notid' => $this->request->getPost('notid'),
@@ -154,7 +172,9 @@ class MessageController extends BaseController
     public function createReview(){
         $session = session();
         $reviewmodel = new ReviewModel();
-
+        if ( !$session->has('id')|empty($this->request->getPost('itemid'))|empty($this->request->getPost('description'))) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
         if ($this->request->getMethod() === 'post'&& $this->validate([
             'rating' => 'required',
             'description' => 'required',

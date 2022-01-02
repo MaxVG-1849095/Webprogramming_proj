@@ -53,7 +53,7 @@
                 <input rows="2" class="form-control" type="number" min="0" max="<?php echo $highestid['id']; ?>" name="userid" placeholder="id of user" required></input>
             </div>
         </div>
-        <button class=mx-4>Filter messages</button>
+        <button class="btn-info btn mx-4">Filter messages</button>
     </div>
 </form>
 
@@ -143,7 +143,7 @@
                 <textarea rows="2" class="form-control" name="content" placeholder="content of message" required></textarea>
             </div>
         </div>
-        <button class=mx-4>Send message</button>
+        <button class="mx-4 btn btn-success">Send message</button>
     </div>
 </form>
 

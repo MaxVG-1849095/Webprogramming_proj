@@ -8,8 +8,8 @@
     <div class="row  justify-content-center d-inline-flex">
     <?php foreach ($wares as $wares_ware): ?>
         <div id="sepitem" class="row container-fluid border border-dark rounded m-auto p-auto bg-primary col">
-            <a class="column d-inline-flex justify-content-center"href="/ItemController/wareEditor/<?= esc($wares_ware['itemid'], 'url') ?>">
-                <img alt="wares" src="/Images/Items/<?php echo $wares_ware['filename']; ?>"
+            <a tabindex=0 class="column d-inline-flex justify-content-center"href="/ItemController/wareEditor/<?= esc($wares_ware['itemid'], 'url') ?>">
+                <img alt="<?php echo $wares_ware['name']; ?>-picture" src="/Images/Items/<?php echo $wares_ware['filename']; ?>"
                 width="120" height="120">
             </a>
             <h3 class="column d-inline-flex justify-content-center"><?= esc($wares_ware['name']) ?></h3>
@@ -23,7 +23,7 @@
     </div>
     <?php else : ?>
 
-    <h3>No wares</h3>
+    <h1>No wares</h1>
 
     <p>Unable to find any wares for you.</p>
 

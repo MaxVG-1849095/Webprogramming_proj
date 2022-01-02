@@ -19,11 +19,11 @@
 <header class="navbar fixed-top">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class=" p-4">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
+      <ul class="navbar-nav" tabindex=0>
+        <li class="nav-item active" tabindex=0>
           <div class="nav-item ml-1"><a title="Home" href='/Pages/homeredirect'>Home</a></div>
         </li>
-        <li class="nav-item ml-1">
+        <li class="nav-item ml-1" tabindex=0>
           <div class="nav-item "><a title="About" href='/Pages/aboutredirect'>About</a></div>
         </li>
         <?php if(isset($_SESSION['cart'])) :?>
@@ -31,19 +31,19 @@
           <div class="nav-item "><a title="Order Cart" href='/OrderController/loadCartView'>Order cart</a></div>
         </li>
         <?php endif;?>
-        <li class="nav-item ml-1">
+        <li class="nav-item ml-1" tabindex=0>
           <div class="nav-item"><a title="Profile/Login" href='<?php if (isset($_SESSION['id'])) {
                                                       echo '/profile';
                                                     } else {
                                                       echo '/login';
                                                     } ?>'>Account</a></div>
         </li>
-        <li class="nav-item ml-1">
+        <li class="nav-item ml-1" tabindex=0>
           <div class="nav-item"><?php if (isset($_SESSION['name'])) {
                                   echo "Currently logged in: ", $_SESSION['name'];
                                 } ?></div>
         </li>
-        <li class="nav-item ml-1">
+        <li class="nav-item ml-1" tabindex=0>
           <form class="form-inline my-2 my-lg-0" action="/SearchController/index" method="post">
           <?= csrf_field() ?>  
           <input class="form-control mr-sm-2" name ="search" type="search" placeholder="Search" aria-label="Search">

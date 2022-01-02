@@ -156,3 +156,6 @@ body {
 #cartitem{
     max-height: 30vh;
 }
+#badgetext{
+    width: 8rem;
+}

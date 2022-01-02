@@ -17,6 +17,10 @@ class ProfileController extends BaseController
         $session=session();
         $model = new UsersModel();
         log_message('error',$profid);
+        log_message('error', isset($_SESSION['id']));
+        if ( !isset($_SESSION['id'])&& $profid == 0) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not logged in');
+        }
         if($profid === 0){
             
             $data = [
@@ -90,11 +94,13 @@ class ProfileController extends BaseController
         $session_id = $session->get('id');
         $model = new UsersModel();
         if ($this->request->getMethod() === 'post' && $this->validate([
-            'newadress' => 'required',
+            'street' => 'required',
+            'city' => 'required',
+            'housenumber' => 'required'
         ])) {
-            log_message('error', 'in editdesc if');
+            $adress = $this->request->getPost('street') . " " . $this->request->getPost('housenumber') . " " . $this->request->getPost("city");
             $data = [
-                'adress' => $this->request->getPost('newadress'),
+                'adress' => $adress,
             ];
             $model->update($session_id, $data);
         }
