@@ -61,6 +61,7 @@ header{
 footer{
     background-color: rgb(42,157,244);
     font-size: 2rem;
+    margin-top: 5rem;
 }
 
 .Home-Body{
@@ -85,16 +86,16 @@ footer{
     
 }
 
-#sepitem{
+.sepitem{
     min-height: fit-content;
     max-width: 40vw;
-    max-height: 40vh;
-    
-    margin: auto;
-
+    max-height: 60vh;
     
 }
-#sepitem img{
+.itemtitle{
+    word-wrap: break-word;
+}
+.sepitem img{
     min-height: 20vh;
     max-width: 30vw;
     max-height: 30vh;
@@ -102,6 +103,19 @@ footer{
     margin: 0 auto;
 
     
+}
+#cartitem{
+    min-height: fit-content;
+    max-width: 40vw;
+    max-height: 60vh;
+    min-height:50vh;
+}
+#cartitem img{
+    min-height: 20vh;
+    max-width: 30vw;
+    max-height: 30vh;
+    
+    margin: 0 auto;
 }
 
 #order img{

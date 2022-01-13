@@ -11,7 +11,7 @@
         <?= csrf_field() ?>
         <label class="" for="Descriptionedit">Edit description</label>
         <div class="d-flex">
-        <textarea rows="2" class="form-control" type="newdesc" name="newdesc"></textarea>
+        <textarea rows="2" class="form-control" type="text" name="newdesc"></textarea>
             <button type="submit" class="btn btn-primary">Edit</button>
         </div>
     </form>
@@ -27,11 +27,11 @@
             <div class="d-flex">
                 <div class="form-group">
                     <label>City</label>
-                    <input type="city" class="form-control" name="city" aria-describedby="adressHelp" placeholder="Enter your City name" required>
+                    <input type="text" class="form-control" name="city" aria-describedby="adressHelp" placeholder="Enter your City name" required>
                 </div>
                 <div class="form-group">
                     <label>Streetname</label>
-                    <input type="street" class="form-control" name="street" aria-describedby="adressHelp" placeholder="Enter your Street name" required>
+                    <input type="text" class="form-control" name="street" aria-describedby="adressHelp" placeholder="Enter your Street name" required>
                 </div>
                 <div class="form-group">
                     <label>House number</label>
@@ -49,4 +49,9 @@
         <input type="file" id="profile_image" name="media_file" size="33" />
         <input type="submit" value="Upload Image" />
     </form>
+    <?php if (session()->getFlashdata('picturefeedback')) : ?>
+    <div class="alert alert-warning">
+        <?= session()->getFlashdata('picturefeedback') ?>
+    </div>
+<?php endif; ?>
 </div>

@@ -1,4 +1,4 @@
-<h2><?= esc($item['name']) ?></h2>
+<h1 class="d-flex justify-content-center"><?= esc($item['name']) ?></h1>
 
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -30,15 +30,15 @@
     </button>
 </div>
 
-<h3 class="d-flex justify-content-center">
+<h2 class="d-flex justify-content-center">
     Description:
-</h3>
+</h2>
 <p class="d-flex justify-content-center">
     <?= esc($item['description']) ?>
 </p>
-<h3 class="d-flex justify-content-center">
+<p class="d-flex justify-content-center">
     Sold by seller <?= esc($nameid['name']) ?> with id: <?= esc($item['sellerid']) ?>
-</h3>
+                </p>
 <h3 class="d-flex justify-content-center">
     Price:<?= esc($item['price']) ?>$
 </h3>
@@ -46,7 +46,7 @@
 
 
     <form class="d-flex justify-content-center row" type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
-        <div class=" justify-content-center">
+        <div class="justify-content-center">
             <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
             <label>Amount to order? 1-3</label>
             <div class="d-flex">
@@ -88,12 +88,12 @@
 
 <?php endif ?>
 
-<h3>
+<h2 class="m-4">
     Reviews:
-</h3>
-<h4>
+</h2>
+<h3 class="m-4">
     This item has an average review score of <?php echo round($average['score'], 1) ?>
-</h4>
+</h3>
 <?php if (!empty($reviews) && is_array($reviews)) : ?>
     <?php foreach ($reviews as $reviews_review) : ?>
         <?php foreach ($reviewers as $reviewer) {

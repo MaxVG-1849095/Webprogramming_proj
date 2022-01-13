@@ -1,0 +1,66 @@
+ERROR - 2022-01-02 06:17:18 --> in login func
+ERROR - 2022-01-02 06:17:18 --> test
+ERROR - 2022-01-02 06:17:18 --> Lukas@mail.com
+ERROR - 2022-01-02 06:17:18 --> 0
+ERROR - 2022-01-02 06:17:18 --> 1
+ERROR - 2022-01-02 06:17:21 --> 11
+ERROR - 2022-01-02 06:17:24 --> in item deleter
+ERROR - 2022-01-02 06:17:24 --> 17
+ERROR - 2022-01-02 06:17:24 --> 11
+ERROR - 2022-01-02 06:47:32 --> 0
+ERROR - 2022-01-02 06:47:32 --> 1
+ERROR - 2022-01-02 06:47:34 --> 11
+ERROR - 2022-01-02 06:47:36 --> in item deleter
+ERROR - 2022-01-02 06:47:36 --> 11
+ERROR - 2022-01-02 06:47:36 --> 11
+ERROR - 2022-01-02 06:54:02 --> 0
+ERROR - 2022-01-02 06:54:02 --> 1
+ERROR - 2022-01-02 06:54:17 --> in login func
+ERROR - 2022-01-02 06:54:17 --> test
+ERROR - 2022-01-02 06:54:17 --> Rigo@mail.com
+ERROR - 2022-01-02 06:54:17 --> 0
+ERROR - 2022-01-02 06:54:17 --> 1
+ERROR - 2022-01-02 06:55:03 --> 0
+ERROR - 2022-01-02 06:55:03 --> 1
+ERROR - 2022-01-02 06:55:09 --> in login func
+ERROR - 2022-01-02 06:55:09 --> test
+ERROR - 2022-01-02 06:55:09 --> Marie@mail.com
+ERROR - 2022-01-02 06:55:09 --> 0
+ERROR - 2022-01-02 06:55:09 --> 1
+ERROR - 2022-01-02 06:55:48 --> 0
+ERROR - 2022-01-02 06:55:48 --> 1
+ERROR - 2022-01-02 06:57:05 --> 0
+ERROR - 2022-01-02 06:57:05 --> 1
+ERROR - 2022-01-02 06:59:59 --> 0
+ERROR - 2022-01-02 06:59:59 --> 1
+ERROR - 2022-01-02 07:00:40 --> 0
+ERROR - 2022-01-02 07:00:40 --> 1
+ERROR - 2022-01-02 07:01:38 --> 0
+ERROR - 2022-01-02 07:01:38 --> 1
+ERROR - 2022-01-02 07:01:46 --> in login func
+ERROR - 2022-01-02 07:01:46 --> test
+ERROR - 2022-01-02 07:01:46 --> Max@mail.com
+ERROR - 2022-01-02 07:01:46 --> 0
+ERROR - 2022-01-02 07:01:46 --> 1
+ERROR - 2022-01-02 07:01:48 --> 1
+ERROR - 2022-01-02 07:04:11 --> 1
+CRITICAL - 2022-01-02 07:04:11 --> Undefined variable $items_item
+#0 /app/app/Views/Profile/wareEdit.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ItemController.php(33): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->editWares()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-02 07:04:26 --> 1
+ERROR - 2022-01-02 07:05:49 --> 0
+ERROR - 2022-01-02 07:05:49 --> 1
+ERROR - 2022-01-02 07:05:51 --> 1
+ERROR - 2022-01-02 07:06:05 --> 0
+ERROR - 2022-01-02 07:06:05 --> 1
+ERROR - 2022-01-02 07:06:11 --> 0
+ERROR - 2022-01-02 07:06:11 --> 1

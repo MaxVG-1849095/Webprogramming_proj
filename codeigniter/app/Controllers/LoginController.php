@@ -61,12 +61,12 @@ class LoginController extends BaseController
             ];
             $session->set($ses_data);
             $profContr = new ProfileController();
-            return $profContr->index();
+            return redirect()->to('/profile');
         }
         else{
             $session->setFlashdata('signuperror', 'Something went wrong, check if you entered everything otherwise try a different email');
             
-            return $this->signupRedirect();
+            return redirect()->to('/signup');
         }
     }
     public function login()
@@ -100,19 +100,19 @@ class LoginController extends BaseController
                 $session->set($ses_data);
                 
                 $profContr = new ProfileController();
-                return $profContr->index();
+                return redirect()->to('/profile');
             
             }else{
                 $session->setFlashdata('loginerror', 'Password is incorrect.');
                 //log_message('error', $pass);
                 //log_message('error', $password);
-                return $this->index();
-            }
+                return redirect()->to('login');
+                }
 
         }else{
             $session->setFlashdata('loginerror', 'Email is not in our records.');
             //log_message('error', 'second else block');
-            return $this->index();
+            return redirect()->to('login');
         }
     }
 }

@@ -186,7 +186,7 @@ class OrderController extends BaseController
         ]);
         $this->setFirstPendingActive($this->request->getPost('itemid'));
 
-        $this->loadOrdersSeller();
+        return redirect()->to('/sellerorders');
     }
 
     public function removeActiveOrderShopper()
@@ -214,7 +214,7 @@ class OrderController extends BaseController
 
         $this->setFirstPendingActive($this->request->getPost('itemid'));
 
-        $this->loadOrdersShopper();
+        return redirect()->to('/shopperorders');
     }
 
     public function removePendingOrderSeller()
@@ -239,7 +239,7 @@ class OrderController extends BaseController
             'itemid' => $this->request->getPost('itemid'),
         ]);
 
-        $this->loadOrdersSeller();
+        return redirect()->to('/sellerorders');
     }
 
     public function removePendingOrderShopper()
@@ -254,7 +254,7 @@ class OrderController extends BaseController
         $ordermodel
             ->wherein('orderid', [$order_id])
             ->delete();
-        $this->loadOrdersShopper();
+            return redirect()->to('/shopperorders');
     }
 
     public function completeOrder()
@@ -288,7 +288,7 @@ class OrderController extends BaseController
                 'attachment' => 1,
             ]);
         }
-        $this->loadOrdersSeller();
+        return redirect()->to('/sellerorders');
     }
 
     private function setFirstPendingActive($itemid)
@@ -343,7 +343,7 @@ class OrderController extends BaseController
             ->where(['orderid' => $this->request->getPost('orderid')])
             ->set(['waitingDate' => 1])
             ->update();
-        $this->loadOrdersSeller();
+            return redirect()->to('/sellerorders');
     }
 
     public function createOrderTime()
@@ -362,7 +362,7 @@ class OrderController extends BaseController
             ->set(['waitingDate' => 0, 'ordertime' => $this->request->getPost('time'), 'orderdate' => $this->request->getPost('date')])
             ->update();
 
-        $this->loadOrdersShopper();
+        return redirect()->to('/shopperorders');
     }
 
     private function addOrderToCart($itemid, $amount)
@@ -432,8 +432,8 @@ class OrderController extends BaseController
         $session = session();
         $items_arr[] = [];
         $itemmodel = new ItemModel();
-        if ( !$session->has('cart')) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action: cart is empty');
+        if (!$session->has('slug') | $session->get('slug') != ('Shopper')) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action: not logged in as shopper!');
         }
         if($session->has('cart')){
             $price = 0;

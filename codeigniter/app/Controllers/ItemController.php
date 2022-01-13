@@ -21,6 +21,9 @@ class ItemController extends BaseController
     {
         
     }
+    public function editWaresRedirect(){
+        return redirect()->to('/editwares');
+    }
     public function editWares(){
         $session = session();
         $itemmodel = new ItemModel();
@@ -32,11 +35,21 @@ class ItemController extends BaseController
 
         $this->template('Profile/wareEdit', $data);
     }
+    public function wareEditorRedirect($itemid){
+        $redirectString = "wareeditor/".$itemid;
+        //print_r($redirectString);
+        return redirect()->to($redirectString);
+    }
     public function wareEditor($itemid){
         $session = session(); //otherwise session data is lost?
-        $data['itemid'] = $itemid;
         $itemmodel = new ItemModel();
         $data['item'] = $itemmodel->getItems($itemid);
+        if ( !$session->has('id') | $session->get('slug') != 'Seller'| empty($data['item'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
+        }
+        $data['itemid'] = $itemid;
+        
+    
         $this->template('Profile/wareEditor',$data);
     }
 
@@ -64,6 +77,10 @@ class ItemController extends BaseController
     }
     
     public function createItemRedirect(){
+        return redirect()->to('/createitem');
+    }
+
+    public function createItemViewLoader(){
         $session = session();
         $data = [];
         if ( !$session->has('id') | $session->get('slug') != 'Seller') {
@@ -108,7 +125,7 @@ class ItemController extends BaseController
             
         }
         $data = [];
-        $this->editWares();
+        return redirect()->to('/editwares');
     }
     public function removeItem(){
         $session = session();
@@ -123,7 +140,7 @@ class ItemController extends BaseController
             ->wherein('itemid',[$item_id])
             ->delete();
         $data = [];
-        $this->editWares();
+        return redirect()->to('/editwares');
     }
 
     public function setAvailability(){
@@ -146,7 +163,9 @@ class ItemController extends BaseController
 
 
 
-        $this->wareEditor($item_id);
+        $redirectString = "/wareeditor/". $this->request->getPost('itemid');
+        //print_r($redirectString);
+        return redirect()->to($redirectString);
     }
 
 
@@ -166,7 +185,9 @@ class ItemController extends BaseController
             ->set(['description' => $this->request->getPost('newdesc')])
             ->update();
         }
-        $this->wareEditor($item_id);
+        $redirectString = "/wareeditor/". $this->request->getPost('itemid');
+        //print_r($redirectString);
+        return redirect()->to($redirectString);
     }
     public function updateprice()
     {
@@ -187,7 +208,9 @@ class ItemController extends BaseController
             ->set(['price' => $this->request->getPost('newprice')])
             ->update();
         }
-        $this->wareEditor($item_id);
+        $redirectString = "/wareeditor/". $this->request->getPost('itemid');
+        //print_r($redirectString);
+        return redirect()->to($redirectString);
     }
 
     public function updateavailability()
@@ -228,7 +251,9 @@ class ItemController extends BaseController
             ]);
         }
 
-        $this->wareEditor($item_id);
+        $redirectString = "/wareeditor/". $this->request->getPost('itemid');
+        //print_r($redirectString);
+        return redirect()->to($redirectString);
     }
 
     private function decrementavailability($itemid){

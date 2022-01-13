@@ -1,14 +1,14 @@
 <?php if (!empty($_SESSION['cart']) && is_array($_SESSION['cart'])) : ?>
-    <div id="cartitems" class="overflow-auto">
+    <div class="d-flex justify-content-center ">
+    <div id="cartitems" class="align-content-stretch container row overflow-auto">
         <?php foreach ($_SESSION['cart'] as $order) : ?>
-            <div id="cartitem" class="m-5 container-fluid">
+            <div id="cartitem" class="m-2 container-fluid border border-dark rounded bg-primary">
                 <?php foreach ($items as $itemarr) {
                     if ($itemarr['itemid'] == $order['itemid']) {
                         $item = $itemarr;
                         break;
                     }
                 } ?>
-                <div class="pb-2 col m-3 bg-primary rounded" id="order">
                     <h2 class="d-flex justify-content-center">
                         <span class="badge badge-secondary"><?php echo $item['name'] ?></span>
                     </h2>
@@ -16,16 +16,20 @@
                     <span class="badge badge-secondary">Amount ordered: <?php echo $order['amount'] ?></span>
                         
                     </h3>
-                    <img class="row .img-fluid. max-width: 100%; height: auto;" alt="Items" src="/Images/Items/<?php echo $item['filename']; ?>">
+                    <div class="containter-fluid bg-secondary pb-5 mx-5 d-flex justify-content-center ">
+
+                    
+                        <img class="" alt="Items" src="/Images/Items/<?php echo $item['filename']; ?>">
+                    </div>
                 </div>
-            </div>
 
         <?php endforeach; ?>
     </div>
-    <h2 class="d-flex justify-content-center">
+            </div>
+    <h2 class="d-flex justify-content-center my-5">
         Total price: <?php echo $price ?>
     </h2>
-<?php endif; ?>
+
 
 <form action="/OrderController/makeOrdersFromCart" method="post" class="d-flex justify-content-center">
     <?= csrf_field() ?>
@@ -39,3 +43,9 @@
     <button type="submit" class="btn btn-success">place order(s)</button>
 </form>
 <a type="button" class="btn btn-danger" href="/OrderController/emptyCart">Empty Cart</a>
+
+<?php else:?>
+    <h1 class="d-flex justify-content-center my-5">
+        Your cart is empty, you can add things to it by ordering items from the store!.
+    </h1>
+<?php endif; ?>

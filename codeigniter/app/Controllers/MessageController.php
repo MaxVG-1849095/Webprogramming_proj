@@ -57,35 +57,39 @@ class MessageController extends BaseController
         $session = session();
         
         if($this->request->getPost('userid') ==0){
-            $this->loadMessages();
+            log_message('error','in if');
+            return redirect()->to('/messages');
         }
         else{
-            $this->loadSpecificMessagesHelper();
+            $redirectString = '/messages/'.$this->request->getPost('userid');
+            log_message('error','in else');
+            print_r($redirectString);
+            return redirect()->to($redirectString);
         }
 
     }
 
-    public function loadSpecificMessagesHelper(){
+    public function loadSpecificMessagesHelper($userid){
         $messagemodel = new MessageModel();
         $usersmodel = new UsersModel();
         $notimodel = new NotificationModel();
         $session=session();
         $senderarray[] = [];
         $receiverarray[]=[];
-        if ( !$session->has('id')|empty($this->request->getPost('userid'))) {
+        if ( !$session->has('id')|empty($userid)) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to load this page');
         }
-        array_push($senderarray, $usersmodel->getUserandID($this->request->getPost('userid')));
+        array_push($senderarray, $usersmodel->getUserandID($userid));
         array_shift($senderarray);
 
-        array_push($receiverarray, $usersmodel->getUserandID($this->request->getPost('userid')));
+        array_push($receiverarray, $usersmodel->getUserandID($userid));
         array_shift($receiverarray);
 
         $data = [
             'senders' => $senderarray,
             'receivers' => $receiverarray,
-            'received_messages' => $messagemodel->getSpecificReceivedMessages($_SESSION['id'], $this->request->getPost('userid')),
-            'sent_messages' => $messagemodel->getSpecificSentMessages($_SESSION['id'], $this->request->getPost('userid')),
+            'received_messages' => $messagemodel->getSpecificReceivedMessages($_SESSION['id'], $userid),
+            'sent_messages' => $messagemodel->getSpecificSentMessages($_SESSION['id'], $userid),
             'highestid' => $usersmodel->getMaxID(),
             'notifications' => $notimodel->getUserNotis($_SESSION['id'],)
         ];
@@ -96,13 +100,14 @@ class MessageController extends BaseController
     {
         $session = session();
         $messagemodel = new MessageModel();
+        $usermodel = new UsersModel();
         if ( !$session->has('id')|empty($this->request->getPost('receiverid'))) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
         }
         if ($this->request->getMethod() === 'post' && $this->validate([
             'receiverid' => 'required',
             'content'  => 'required',
-        ]) && $this->request->getPost('senderid') != $this->request->getPost('receiverid')) {
+        ]) && $this->request->getPost('senderid') != $this->request->getPost('receiverid') && $usermodel->getUserByID($this->request->getPost('receiverid'))!= null) {
             $messagemodel->insert([
                 'senderid' => $this->request->getPost('senderid'),
                 'receiverid' => $this->request->getPost('receiverid'),
@@ -119,9 +124,9 @@ class MessageController extends BaseController
             ]);
         }else
         {
-            $session->setFlashdata('messageerror', 'Something went wrong, check if you entered everything correctly (Unable to send message to yourself!)');
+            $session->setFlashdata('messageerror', 'Something went wrong, check if you entered everything correctly (Unable to send message to yourself or accounts that do not exist!)');
         }
-        $this->loadMessages();
+        return redirect()->to('/messages');
     }
 
     public function removeMessage(){
@@ -137,7 +142,7 @@ class MessageController extends BaseController
             ->wherein('ownerid', [$_SESSION['id']])
             ->delete();
         
-        $this->loadMessages();
+            return redirect()->to('/messages');
     }
 
     public function removeNotification(){
@@ -152,7 +157,7 @@ class MessageController extends BaseController
         ->wherein('notid', [$noti_id])
         ->delete();
         
-        $this->loadMessages();
+        return redirect()->to('/messages');
     }
 
     public function reviewpage(){
@@ -199,6 +204,6 @@ class MessageController extends BaseController
             
         ]);
 
-        $this->loadMessages();
+        return redirect()->to('/messages');
     }
 }

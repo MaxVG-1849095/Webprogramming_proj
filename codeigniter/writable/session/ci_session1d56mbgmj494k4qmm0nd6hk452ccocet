@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1641128348;_ci_previous_url|s:60:"http://localhost:8080/index.php/OrderController/loadCartView";slug|s:7:"Shopper";name|s:5:"Siebe";email|s:14:"Siebe@mail.com";id|s:2:"17";cart|a:2:{i:0;a:2:{s:6:"itemid";s:2:"16";s:6:"amount";s:1:"1";}i:1;a:2:{s:6:"itemid";s:1:"2";s:6:"amount";s:1:"2";}}

@@ -1,11 +1,10 @@
-<footer class="navbar fixed-bottom" id="footer">
+<footer class="navbar fixed-bottom mt-auto" id="footer">
         <div class="navbar-brand">
             Thanks for Visiting my bin!
         </div>
         <div class="navbar-brand text-right">
             &copy; 2021
         </div>
-    </div>
 
 
 </footer>

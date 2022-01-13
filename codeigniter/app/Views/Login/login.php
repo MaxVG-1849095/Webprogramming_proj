@@ -5,11 +5,11 @@
     <?= csrf_field() ?>
     <div class="">
         <label for="email">Email</label>
-        <input type="email" class="form-control" name="email" aria-describedby="nameHelp" placeholder="Enter Email">
+        <input type="email" class="form-control" name="email" aria-label="email" placeholder="Enter Email">
     </div>
     <div class="">
         <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="password" class="form-control" name="password"  aria-label="password" placeholder="Password">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     <?php if (session()->getFlashdata('signuperror')) : ?>

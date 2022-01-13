@@ -1,26 +1,23 @@
 
-<form action="/ItemController/updateprice" method="post" class="">
+<form action="/ItemController/createItemRedirect" method="post" class="">
         <?= csrf_field() ?>
         <a type="button" class="btn btn-success" href="/ItemController/createItemRedirect">Create ware</a>
 </form>
-<div id="allwares" class=" align-content-stretch container d-flex justify-content-center">
+<div class="d-flex justify-content-center">
+<div id="allwares" class="align-content-stretch container d-flex justify-content-center row overflow-auto">
     <?php if (! empty($wares) && is_array($wares)) : ?>
-    <div class="row  justify-content-center d-inline-flex">
     <?php foreach ($wares as $wares_ware): ?>
-        <div id="sepitem" class="row container-fluid border border-dark rounded m-auto p-auto bg-primary col">
-            <a tabindex=0 class="column d-inline-flex justify-content-center"href="/ItemController/wareEditor/<?= esc($wares_ware['itemid'], 'url') ?>">
-                <img alt="<?php echo $wares_ware['name']; ?>-picture" src="/Images/Items/<?php echo $wares_ware['filename']; ?>"
-                width="120" height="120">
+        <div id="sepitem" class="p-auto m-0 column container-fluid border border-dark rounded bg-primary col">
+            <a tabindex=0 class=""href="/wareeditor/<?= esc($wares_ware['itemid'], 'url') ?>">
+                <img class="d-flex justify-content-center" alt="<?php echo $wares_ware['name']; ?>-picture" src="/Images/Items/<?php echo $wares_ware['filename']; ?>">
             </a>
-            <h3 class="column d-inline-flex justify-content-center"><?= esc($wares_ware['name']) ?></h3>
+            <p id="itemtitle" class="d-flex justify-content-center text-justify overflow-auto"><?= esc($wares_ware['name']) ?></p>
 
-            <div class="main">
-            </div>
+        
         </div>
         
 
     <?php endforeach; ?>
-    </div>
     <?php else : ?>
 
     <h1>No wares</h1>

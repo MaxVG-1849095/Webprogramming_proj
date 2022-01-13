@@ -60,7 +60,7 @@ class ProfileController extends BaseController
         $session = session();
 
         $session_id = $session->get('id');
-        log_message('error', $session_id);
+        //log_message('error', $session_id);
 
         $data['user'] = $model->getUsers($session_id);
         // echo view('templates/header', $data);
@@ -84,7 +84,7 @@ class ProfileController extends BaseController
             ];
             $model->update($session_id, $data);
         }
-        return $this->edit();
+        return redirect()->to('/profileedit');
     }
 
     public function editadress()
@@ -104,7 +104,7 @@ class ProfileController extends BaseController
             ];
             $model->update($session_id, $data);
         }
-        return $this->edit();
+        return redirect()->to('/profileedit');
     }
 
     

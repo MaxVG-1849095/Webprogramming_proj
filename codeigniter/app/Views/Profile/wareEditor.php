@@ -31,7 +31,7 @@
     <form action="/ItemController/updatedescription" method="post" class="">
         <?= csrf_field() ?>
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
-        <label class="" for="Descriptionedit">Edit description</label>
+        <label class="" for="Descriptionedit">Edit description (Current description: <?php echo $item['description']?>)</label>
         <div class="d-flex">
             <textarea rows="2" class="form-control" type="newdesc" name="newdesc" placeholder="new description"></textarea>
             <button type="submit" class="btn btn-primary">Edit</button>
@@ -45,6 +45,11 @@
         <input type="file" id="profile_image" name="media_file" size="33" />
         <input type="submit" value="Upload Image" />
     </form>
+    <?php if (session()->getFlashdata('picturefeedback')) : ?>
+    <div class="alert alert-warning">
+        <?= session()->getFlashdata('picturefeedback') ?>
+    </div>
+<?php endif; ?>
 
     <form action="/ItemController/removeItem" method="post" class="">
         <?= csrf_field() ?>
@@ -52,5 +57,8 @@
         <button type="submit" class="btn btn-danger">delete ware</button>
     </form>
 
-
+    <?php else:?>
+        <h1>
+            This is not your item!
+        </h1>
     <?php endif; ?>

@@ -140,7 +140,7 @@
         <div class="m-4">
             <label class="" for="contentinput">Message content</label>
             <div class="d-flex">
-                <textarea rows="2" class="form-control" name="content" placeholder="content of message" required></textarea>
+                <textarea rows="2" type="text" class="form-control" name="content" placeholder="content of message" required></textarea>
             </div>
         </div>
         <button class="mx-4 btn btn-success">Send message</button>

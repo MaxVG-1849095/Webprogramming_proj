@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-5">
+        <div class="">
 
             <h2>
                 Signup
@@ -42,7 +42,7 @@
                     <label for="number">House number</label>
                     <input type="number" class="form-control" min="0" name="housenumber" aria-describedby="adressHelp" placeholder="Enter your House number" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 <?php if (session()->getFlashdata('signuperror')) : ?>
                     <div class="alert alert-warning">
                         <?= session()->getFlashdata('signuperror') ?>

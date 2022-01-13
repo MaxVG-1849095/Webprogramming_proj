@@ -1,0 +1,270 @@
+ERROR - 2022-01-09 03:51:23 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-01-09 03:51:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query()
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/app/Models/ItemModel.php(25): CodeIgniter\BaseModel->findAll()
+#5 /app/app/Controllers/Pages.php(32): App\Models\ItemModel->getItems()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-09 03:51:26 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:51:26 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:51:27 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:51:28 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:51:29 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:51:40 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:52:20 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-09 03:52:21 --> Undefined array key "slug"
+#0 /app/app/Views/templates/header.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/Pages.php(36): view()
+#5 /app/system/CodeIgniter.php(802): App\Controllers\Pages->homeredirect()
+#6 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#7 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-09 03:55:46 --> in login func
+ERROR - 2022-01-09 03:55:46 --> test
+ERROR - 2022-01-09 03:55:46 --> Max@mail.com
+ERROR - 2022-01-09 03:55:46 --> 0
+ERROR - 2022-01-09 03:55:46 --> 1
+ERROR - 2022-01-09 03:58:57 --> in login func
+ERROR - 2022-01-09 03:58:57 --> test
+ERROR - 2022-01-09 03:58:57 --> Siebe@mail.com
+ERROR - 2022-01-09 03:58:57 --> 0
+ERROR - 2022-01-09 03:58:57 --> 1
+ERROR - 2022-01-09 03:59:01 --> 17
+ERROR - 2022-01-09 04:02:47 --> in login func
+ERROR - 2022-01-09 04:02:47 --> test
+ERROR - 2022-01-09 04:02:47 --> Lukas@mail.com
+ERROR - 2022-01-09 04:02:47 --> 0
+ERROR - 2022-01-09 04:02:47 --> 1
+ERROR - 2022-01-09 04:03:10 --> 11
+ERROR - 2022-01-09 04:04:57 --> 11
+ERROR - 2022-01-09 04:05:25 --> 0
+ERROR - 2022-01-09 04:05:25 --> 1
+ERROR - 2022-01-09 04:05:37 --> 0
+ERROR - 2022-01-09 04:05:37 --> 1
+ERROR - 2022-01-09 04:05:55 --> 0
+ERROR - 2022-01-09 04:05:55 --> 1
+ERROR - 2022-01-09 04:06:16 --> 92
+ERROR - 2022-01-09 04:06:16 --> 16:10
+ERROR - 2022-01-09 04:06:16 --> 2022-01-12
+ERROR - 2022-01-09 04:06:26 --> 93
+ERROR - 2022-01-09 04:06:26 --> 16:10
+ERROR - 2022-01-09 04:06:26 --> 2022-01-19
+ERROR - 2022-01-09 04:06:57 --> 0
+ERROR - 2022-01-09 04:06:57 --> 1
+ERROR - 2022-01-09 04:21:32 --> 0
+ERROR - 2022-01-09 04:21:32 --> 1
+ERROR - 2022-01-09 04:38:45 --> 0
+ERROR - 2022-01-09 04:38:45 --> 1
+ERROR - 2022-01-09 04:38:51 --> in login func
+ERROR - 2022-01-09 04:38:51 --> test
+ERROR - 2022-01-09 04:38:51 --> Max@mail.com
+ERROR - 2022-01-09 04:38:51 --> 0
+ERROR - 2022-01-09 04:38:51 --> 1
+ERROR - 2022-01-09 04:38:53 --> 1
+ERROR - 2022-01-09 04:40:33 --> 1
+ERROR - 2022-01-09 04:41:22 --> 1
+ERROR - 2022-01-09 04:41:36 --> 0
+ERROR - 2022-01-09 04:41:36 --> 1
+ERROR - 2022-01-09 04:41:41 --> in login func
+ERROR - 2022-01-09 04:41:41 --> test
+ERROR - 2022-01-09 04:41:41 --> Ronan@mail.com
+ERROR - 2022-01-09 04:41:41 --> 0
+ERROR - 2022-01-09 04:41:41 --> 1
+ERROR - 2022-01-09 04:41:42 --> 13
+ERROR - 2022-01-09 04:42:05 --> 13
+ERROR - 2022-01-09 04:42:35 --> 0
+ERROR - 2022-01-09 04:42:35 --> 1
+ERROR - 2022-01-09 04:44:01 --> 5
+ERROR - 2022-01-09 04:44:01 --> 1
+ERROR - 2022-01-09 04:44:33 --> 5
+ERROR - 2022-01-09 04:44:33 --> 1
+ERROR - 2022-01-09 04:44:39 --> 0
+ERROR - 2022-01-09 04:44:39 --> 1
+ERROR - 2022-01-09 04:44:45 --> 0
+ERROR - 2022-01-09 04:44:45 --> 1
+ERROR - 2022-01-09 04:44:50 --> 13
+ERROR - 2022-01-09 04:46:04 --> 13
+ERROR - 2022-01-09 05:43:22 --> 0
+ERROR - 2022-01-09 05:43:22 --> 1
+ERROR - 2022-01-09 05:49:35 --> 0
+ERROR - 2022-01-09 05:49:35 --> 1
+ERROR - 2022-01-09 05:49:40 --> 13
+ERROR - 2022-01-09 05:49:59 --> 13
+ERROR - 2022-01-09 05:52:47 --> 0
+ERROR - 2022-01-09 05:52:47 --> 1
+ERROR - 2022-01-09 05:57:19 --> 0
+ERROR - 2022-01-09 05:57:19 --> 1
+ERROR - 2022-01-09 05:57:22 --> 13
+ERROR - 2022-01-09 05:57:27 --> post
+ERROR - 2022-01-09 05:57:27 --> in editdesc if
+CRITICAL - 2022-01-09 05:57:27 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/ProfileController.php on line 63
+#0 /app/app/Controllers/ProfileController.php(63): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-09 05:57:57 --> post
+ERROR - 2022-01-09 05:57:57 --> in editdesc if
+CRITICAL - 2022-01-09 05:57:57 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/profileEdit.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/ProfileController.php(69): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\ProfileController->edit()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-09 05:57:59 --> 0
+ERROR - 2022-01-09 05:57:59 --> 1
+ERROR - 2022-01-09 05:58:00 --> 0
+ERROR - 2022-01-09 05:58:00 --> 1
+ERROR - 2022-01-09 05:58:15 --> in login func
+ERROR - 2022-01-09 05:58:15 --> test
+ERROR - 2022-01-09 05:58:15 --> Max@mail.com
+ERROR - 2022-01-09 05:58:15 --> 0
+ERROR - 2022-01-09 05:58:15 --> 
+ERROR - 2022-01-09 05:58:40 --> in login func
+ERROR - 2022-01-09 05:58:40 --> test
+ERROR - 2022-01-09 05:58:40 --> Max@mail.com
+ERROR - 2022-01-09 05:58:40 --> 0
+ERROR - 2022-01-09 05:58:40 --> 1
+ERROR - 2022-01-09 05:59:12 --> in login func
+ERROR - 2022-01-09 05:59:12 --> test
+ERROR - 2022-01-09 05:59:12 --> Max@mail.com
+ERROR - 2022-01-09 05:59:12 --> 0
+ERROR - 2022-01-09 05:59:12 --> 1
+ERROR - 2022-01-09 05:59:17 --> post
+ERROR - 2022-01-09 05:59:17 --> in editdesc if
+ERROR - 2022-01-09 06:00:37 --> 0
+ERROR - 2022-01-09 06:00:37 --> 1
+ERROR - 2022-01-09 06:01:01 --> 0
+ERROR - 2022-01-09 06:01:01 --> 1
+ERROR - 2022-01-09 06:01:26 --> 0
+ERROR - 2022-01-09 06:01:26 --> 1
+ERROR - 2022-01-09 06:10:36 --> 0
+ERROR - 2022-01-09 06:10:36 --> 1
+ERROR - 2022-01-09 06:11:35 --> 0
+ERROR - 2022-01-09 06:11:35 --> 1
+ERROR - 2022-01-09 06:11:41 --> 1
+ERROR - 2022-01-09 06:11:46 --> 0
+ERROR - 2022-01-09 06:11:46 --> 1
+ERROR - 2022-01-09 06:12:02 --> 0
+ERROR - 2022-01-09 06:12:02 --> 1
+ERROR - 2022-01-09 06:12:37 --> 0
+ERROR - 2022-01-09 06:12:37 --> 1
+ERROR - 2022-01-09 06:12:47 --> 0
+ERROR - 2022-01-09 06:12:47 --> 1
+ERROR - 2022-01-09 06:21:12 --> 0
+ERROR - 2022-01-09 06:21:12 --> 1
+ERROR - 2022-01-09 06:21:20 --> 0
+ERROR - 2022-01-09 06:21:20 --> 1
+ERROR - 2022-01-09 06:21:29 --> in else
+ERROR - 2022-01-09 08:32:05 --> 0
+ERROR - 2022-01-09 08:32:05 --> 
+ERROR - 2022-01-09 08:32:11 --> in login func
+ERROR - 2022-01-09 08:32:11 --> test
+ERROR - 2022-01-09 08:32:11 --> Andreas@mail.com
+ERROR - 2022-01-09 08:32:11 --> 0
+ERROR - 2022-01-09 08:32:11 --> 1
+ERROR - 2022-01-09 08:32:19 --> Cannot add or update a child row: a foreign key constraint fails (`shopDB`.`messages`, CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`receiverid`) REFERENCES `Users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+CRITICAL - 2022-01-09 08:32:19 --> Cannot add or update a child row: a foreign key constraint fails (`shopDB`.`messages`, CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`receiverid`) REFERENCES `Users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+#0 /app/system/Database/MySQLi/Connection.php(280): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(620): CodeIgniter\BaseModel->insert()
+#7 /app/app/Controllers/MessageController.php(116): CodeIgniter\Model->insert()
+#8 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->sendMessage()
+#9 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-09 08:38:56 --> 0
+ERROR - 2022-01-09 08:38:56 --> 1
