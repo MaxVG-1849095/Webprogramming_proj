@@ -39,7 +39,7 @@ class SearchController extends BaseController
             echo view('Items/itemoverview', $data);
             echo view('templates/footer', $data);
         }
-        elseif ($this->request->getPost('searchtype') === "Search by seller") {
+        elseif ($this->request->getPost('searchtype') === "Search by sellerid") {
             $itemmodel = new ItemModel();
             $data['items'] = $itemmodel->getItemLikeSeller($this->request->getPost('search'));
             echo view('templates/header', $data);

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use PDO;
 
 class OrderModel extends Model
 {
@@ -43,6 +44,12 @@ class OrderModel extends Model
     public function getActiveSellerOrders($sellerid){
         return $this->asArray()
         ->where(['itemid !=' => null, 'sellerid' => $sellerid, 'active'=>1, 'finished' => 0])
+        ->findAll();
+    }
+
+    public function getActiveItemShoppers($itemid){
+        return $this->select('shopperid')
+        ->where(['itemid' => $itemid, 'finished' =>0])
         ->findAll();
     }
 

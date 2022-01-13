@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-center ">
     <div id="cartitems" class="align-content-stretch container row overflow-auto">
         <?php foreach ($_SESSION['cart'] as $order) : ?>
-            <div id="cartitem" class="m-2 container-fluid border border-dark rounded bg-primary">
+            <div  class="cartitem m-2 container-fluid border border-dark rounded bg-primary">
                 <?php foreach ($items as $itemarr) {
                     if ($itemarr['itemid'] == $order['itemid']) {
                         $item = $itemarr;

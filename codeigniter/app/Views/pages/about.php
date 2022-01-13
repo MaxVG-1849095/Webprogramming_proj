@@ -24,6 +24,7 @@
     -Images are not used as links<br>
     -Hierarchical usage of headers<br>
     -Fluent design supporting multiple devices<br>
+    -Website is usable for people who disable javascript<br>
 </p>
 <h2>
     Redirect disclaimer

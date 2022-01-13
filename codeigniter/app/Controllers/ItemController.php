@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ItemModel;
+use App\Models\MessageModel;
 use App\Models\NotificationModel;
 use App\Models\OrderModel;
 use App\Models\ReviewModel;
@@ -44,11 +45,12 @@ class ItemController extends BaseController
         $session = session(); //otherwise session data is lost?
         $itemmodel = new ItemModel();
         $data['item'] = $itemmodel->getItems($itemid);
+        $ordermodel = new OrderModel();
+        
         if ( !$session->has('id') | $session->get('slug') != 'Seller'| empty($data['item'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
         }
         $data['itemid'] = $itemid;
-        
     
         $this->template('Profile/wareEditor',$data);
     }
@@ -134,12 +136,25 @@ class ItemController extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
         }
         $item_id = $this->request->getPost('itemid'); 
+        $notimodel = new NotificationModel();
+        $ordermodel = new OrderModel();
+        $activeshoppers = $ordermodel->getActiveItemShoppers($item_id);
+        $ordermodel
+        ->where(['itemid'=>$item_id, 'finished' =>0])->delete();
+        foreach($activeshoppers as $activeshopper){
+            $notimodel->insert([
+                'content' => "Your order on item " . $item_id . " has been cancelled because the item was deleted from our website. You can contact user with id " . $_SESSION['id'] . " for more information!",
+                'userid' => $activeshopper['shopperid'],
+                'itemid' => $item_id,
+            ]);
+        }
         log_message('error', 'in item deleter');
         log_message('error', $item_id);
         $model
             ->wherein('itemid',[$item_id])
             ->delete();
         $data = [];
+        
         return redirect()->to('/editwares');
     }
 

@@ -55,3 +55,209 @@ ERROR - 2022-01-13 03:59:16 --> 1
 ERROR - 2022-01-13 03:59:20 --> in item deleter
 ERROR - 2022-01-13 03:59:20 --> 10
 ERROR - 2022-01-13 03:59:20 --> 1
+ERROR - 2022-01-13 04:23:48 --> 0
+ERROR - 2022-01-13 04:23:48 --> 1
+ERROR - 2022-01-13 04:24:48 --> 0
+ERROR - 2022-01-13 04:24:48 --> 1
+ERROR - 2022-01-13 05:08:55 --> in login func
+ERROR - 2022-01-13 05:08:55 --> test
+ERROR - 2022-01-13 05:08:55 --> Max@mail.com
+ERROR - 2022-01-13 05:08:55 --> 0
+ERROR - 2022-01-13 05:08:55 --> 1
+ERROR - 2022-01-13 05:08:57 --> 1
+ERROR - 2022-01-13 05:10:18 --> 1
+ERROR - 2022-01-13 05:14:17 --> 0
+ERROR - 2022-01-13 05:14:17 --> 1
+ERROR - 2022-01-13 05:14:22 --> 0
+ERROR - 2022-01-13 05:14:22 --> 1
+ERROR - 2022-01-13 05:14:27 --> 1
+ERROR - 2022-01-13 05:14:46 --> 1
+ERROR - 2022-01-13 05:15:15 --> in login func
+ERROR - 2022-01-13 05:15:15 --> test
+ERROR - 2022-01-13 05:15:15 --> Rigo@mail.com
+ERROR - 2022-01-13 05:15:16 --> 0
+ERROR - 2022-01-13 05:15:16 --> 1
+ERROR - 2022-01-13 05:15:32 --> 0
+ERROR - 2022-01-13 05:15:32 --> 1
+ERROR - 2022-01-13 05:15:39 --> 0
+ERROR - 2022-01-13 05:15:39 --> 1
+ERROR - 2022-01-13 05:15:43 --> 1
+ERROR - 2022-01-13 05:15:45 --> in item deleter
+ERROR - 2022-01-13 05:15:45 --> 21
+ERROR - 2022-01-13 05:15:46 --> 1
+ERROR - 2022-01-13 05:15:47 --> 0
+ERROR - 2022-01-13 05:15:47 --> 1
+ERROR - 2022-01-13 05:15:54 --> 0
+ERROR - 2022-01-13 05:15:54 --> 1
+ERROR - 2022-01-13 05:16:01 --> 0
+ERROR - 2022-01-13 05:16:01 --> 1
+ERROR - 2022-01-13 05:16:04 --> 0
+ERROR - 2022-01-13 05:16:04 --> 1
+ERROR - 2022-01-13 05:22:58 --> 0
+ERROR - 2022-01-13 05:22:58 --> 1
+ERROR - 2022-01-13 05:23:09 --> 0
+ERROR - 2022-01-13 05:23:09 --> 1
+ERROR - 2022-01-13 05:23:12 --> 1
+ERROR - 2022-01-13 05:23:26 --> 1
+CRITICAL - 2022-01-13 05:23:40 --> Call to undefined method App\Models\OrderModel::getActiveItemShoppers
+#0 /app/app/Controllers/ItemController.php(49): CodeIgniter\Model->__call()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\ItemController->wareEditor()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-13 05:23:58 --> 1
+ERROR - 2022-01-13 05:34:21 --> in item deleter
+ERROR - 2022-01-13 05:34:21 --> 22
+ERROR - 2022-01-13 05:34:22 --> 1
+ERROR - 2022-01-13 05:34:25 --> 0
+ERROR - 2022-01-13 05:34:25 --> 1
+ERROR - 2022-01-13 05:34:29 --> 0
+ERROR - 2022-01-13 05:34:29 --> 1
+ERROR - 2022-01-13 05:35:12 --> 0
+ERROR - 2022-01-13 05:35:12 --> 1
+ERROR - 2022-01-13 05:35:21 --> in login func
+ERROR - 2022-01-13 05:35:21 --> test
+ERROR - 2022-01-13 05:35:21 --> marie@mail.com
+ERROR - 2022-01-13 05:35:21 --> 0
+ERROR - 2022-01-13 05:35:21 --> 1
+ERROR - 2022-01-13 05:35:25 --> 3
+ERROR - 2022-01-13 05:35:42 --> 3
+ERROR - 2022-01-13 05:36:06 --> in login func
+ERROR - 2022-01-13 05:36:06 --> test
+ERROR - 2022-01-13 05:36:06 --> Joren@mail.com
+ERROR - 2022-01-13 05:36:06 --> 0
+ERROR - 2022-01-13 05:36:06 --> 1
+ERROR - 2022-01-13 05:37:25 --> 0
+ERROR - 2022-01-13 05:37:25 --> 1
+ERROR - 2022-01-13 05:37:27 --> 3
+ERROR - 2022-01-13 05:37:30 --> 0
+ERROR - 2022-01-13 05:37:30 --> 1
+CRITICAL - 2022-01-13 05:37:32 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/sellerOrders.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(132): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-13 05:37:42 --> 0
+ERROR - 2022-01-13 05:37:42 --> 1
+CRITICAL - 2022-01-13 05:37:43 --> Trying to access array offset on value of type null
+#0 /app/app/Views/Profile/sellerOrders.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/View/View.php(214): include('...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1092): CodeIgniter\View\View->render()
+#4 /app/app/Controllers/BaseController.php(83): view()
+#5 /app/app/Controllers/OrderController.php(132): App\Controllers\BaseController->template()
+#6 /app/system/CodeIgniter.php(802): App\Controllers\OrderController->loadOrdersSeller()
+#7 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-13 05:39:23 --> 0
+ERROR - 2022-01-13 05:39:23 --> 1
+ERROR - 2022-01-13 05:39:25 --> 3
+ERROR - 2022-01-13 05:39:27 --> in item deleter
+ERROR - 2022-01-13 05:39:27 --> 23
+ERROR - 2022-01-13 05:39:27 --> 3
+ERROR - 2022-01-13 05:39:29 --> 0
+ERROR - 2022-01-13 05:39:29 --> 1
+ERROR - 2022-01-13 05:39:37 --> 0
+ERROR - 2022-01-13 05:39:37 --> 1
+ERROR - 2022-01-13 05:39:41 --> 0
+ERROR - 2022-01-13 05:39:41 --> 1
+CRITICAL - 2022-01-13 05:49:27 --> syntax error, unexpected token "}", expecting ";"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /app/system/CodeIgniter.php(767): class_exists()
+#4 /app/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-13 05:49:29 --> syntax error, unexpected token "}", expecting ";"
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-13 05:50:07 --> 0
+ERROR - 2022-01-13 05:50:07 --> 1
+ERROR - 2022-01-13 05:53:41 --> 0
+ERROR - 2022-01-13 05:53:41 --> 1
+ERROR - 2022-01-13 05:53:49 --> 0
+ERROR - 2022-01-13 05:53:49 --> 1
+ERROR - 2022-01-13 05:53:53 --> 0
+ERROR - 2022-01-13 05:53:53 --> 1
+ERROR - 2022-01-13 05:57:15 --> 0
+ERROR - 2022-01-13 05:57:15 --> 1
+ERROR - 2022-01-13 05:57:17 --> 3
+ERROR - 2022-01-13 05:57:20 --> 3
+ERROR - 2022-01-13 05:57:31 --> 3
+ERROR - 2022-01-13 05:58:06 --> 0
+ERROR - 2022-01-13 05:58:06 --> 1
+ERROR - 2022-01-13 05:58:18 --> 0
+ERROR - 2022-01-13 05:58:18 --> 1
+ERROR - 2022-01-13 05:58:21 --> 3
+ERROR - 2022-01-13 05:58:23 --> in item deleter
+ERROR - 2022-01-13 05:58:23 --> 24
+ERROR - 2022-01-13 05:58:23 --> 3
+ERROR - 2022-01-13 05:58:25 --> 0
+ERROR - 2022-01-13 05:58:25 --> 1
+ERROR - 2022-01-13 05:58:36 --> 0
+ERROR - 2022-01-13 05:58:36 --> 1
+ERROR - 2022-01-13 05:58:50 --> 0
+ERROR - 2022-01-13 05:58:50 --> 1
+ERROR - 2022-01-13 06:11:52 --> 0
+ERROR - 2022-01-13 06:11:52 --> 1
+ERROR - 2022-01-13 06:11:53 --> 3
+ERROR - 2022-01-13 06:11:55 --> 0
+ERROR - 2022-01-13 06:11:55 --> 1
+ERROR - 2022-01-13 06:12:05 --> 0
+ERROR - 2022-01-13 06:12:05 --> 1
+ERROR - 2022-01-13 06:14:01 --> 0
+ERROR - 2022-01-13 06:14:01 --> 1
+ERROR - 2022-01-13 06:14:10 --> in login func
+ERROR - 2022-01-13 06:14:10 --> test
+ERROR - 2022-01-13 06:14:10 --> siebe@mail.com
+ERROR - 2022-01-13 06:14:10 --> 0
+ERROR - 2022-01-13 06:14:10 --> 1
+ERROR - 2022-01-13 09:09:27 --> 13
+ERROR - 2022-01-13 09:09:27 --> 
+ERROR - 2022-01-13 09:09:35 --> 17
+ERROR - 2022-01-13 09:09:35 --> 
+ERROR - 2022-01-13 09:28:20 --> in login func
+ERROR - 2022-01-13 09:28:20 --> test
+ERROR - 2022-01-13 09:28:20 --> Max@mail.com
+ERROR - 2022-01-13 09:28:20 --> 0
+ERROR - 2022-01-13 09:28:20 --> 1
+ERROR - 2022-01-13 09:28:25 --> 0
+ERROR - 2022-01-13 09:28:25 --> 1
+ERROR - 2022-01-13 09:28:29 --> in login func
+ERROR - 2022-01-13 09:28:29 --> test
+ERROR - 2022-01-13 09:28:29 --> rigo@mail.com
+ERROR - 2022-01-13 09:28:30 --> 0
+ERROR - 2022-01-13 09:28:30 --> 1
+ERROR - 2022-01-13 09:31:27 --> 0
+ERROR - 2022-01-13 09:31:27 --> 1
+ERROR - 2022-01-13 09:35:39 --> 0
+ERROR - 2022-01-13 09:35:39 --> 1
+CRITICAL - 2022-01-13 09:35:40 --> syntax error, unexpected token "}", expecting ";"
+#0 /app/system/Router/Router.php(160): CodeIgniter\Router\Router->autoRoute()
+#1 /app/system/CodeIgniter.php(702): CodeIgniter\Router\Router->handle()
+#2 /app/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-13 09:35:45 --> 0
+ERROR - 2022-01-13 09:35:45 --> 1
+ERROR - 2022-01-13 09:50:51 --> 0
+ERROR - 2022-01-13 09:50:51 --> 1
+ERROR - 2022-01-13 09:52:54 --> 0
+ERROR - 2022-01-13 09:52:54 --> 1

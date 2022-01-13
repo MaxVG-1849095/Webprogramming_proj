@@ -31,8 +31,7 @@ class OrderController extends BaseController
             }
         }
         unset($_SESSION['cart']);
-        $pag = new Pages();
-        $pag->homeredirect();
+        return redirect()->to('/');
     }
 
     public function placeorder($itemid){
@@ -52,6 +51,45 @@ class OrderController extends BaseController
         } else {
             $this->placeorderunavailable($del, $itemid);
         }
+    }
+
+    public function placeordernoscript(){
+        $session = session();
+        $itemid = $this->request->getPost('itemid');
+        $amount = $this->request->getPost('orderamount');
+        //if (!in_array($this->request->getPost('itemid'), $session->get('cart'))) {
+            if ($session->has('cart')) {
+                $cartarr = $session->get('cart');
+                $cartsize = count($cartarr);
+                for ($x = 0; $x < $cartsize; $x++) {
+                    if($cartarr[$x]['itemid'] === $itemid){
+                        unset($cartarr[$x]);
+                        $cartarr = array_values($cartarr);
+                        break;
+                    }
+                }
+                if($amount > 0){
+                    $newarr = array(
+                        'itemid' => $itemid,
+                        'amount' => $amount
+                    );
+                    array_push($cartarr, $newarr);
+                }
+                
+
+                $session->set('cart',$cartarr);
+            } else {
+                $cartarr[] = array();
+                $newarr = array(
+                    'itemid' => $itemid,
+                    'amount' => $amount
+                );
+                
+                array_push($cartarr, $newarr);
+                array_shift($cartarr);
+                $session->set('cart', $cartarr);
+            }
+            return redirect()->to('/item/'.$itemid);
     }
 
     public function placeorderavailable($del, $itemid)

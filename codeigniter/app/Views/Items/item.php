@@ -42,16 +42,30 @@
 <h3 class="d-flex justify-content-center">
     Price:<?= esc($item['price']) ?>$
 </h3>
+<h4 class="d-flex justify-content-center">
+    Currently available: <?=esc($item['availability'])?>
+</h4>
 <?php if (isset($_SESSION['id']) && $_SESSION['slug'] == "Shopper") : ?>
 
-
-    <form class="d-flex justify-content-center row" type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
-        <div class="justify-content-center">
+    <noscript>
+    <form action="/OrderController/placeordernoscript" method="post" class="d-flex justify-content-center">
+                <?= csrf_field() ?>
+                <div class="justify-content-center">
             <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
             <label>Amount to order? 1-3</label>
             <div class="d-flex">
             <input rows="2" class="form-control d-inline-flex" type="number" min="0" max="3" id="orderamount" name="orderamount" placeholder="amount of items you want to order" required></input>
             <button type="submit" id="btn-order" class="btn btn-primary">place order</button>
+            </div>
+        </div>
+    </noscript>
+    <form class="js-content" type="get" id="amount_form" onsubmit="event.preventDefault();ajaxOrder()">
+        <div class="justify-content-center">
+            <input type="hidden" id="itemid" name="itemid" value="<?php echo $item['itemid'] ?>">
+            <label>Amount to order? 1-3</label>
+            <div class="d-flex">
+            <input rows="2" class="form-control d-inline-flex ml-3" type="number" min="0" max="3" id="orderamount" name="orderamount" placeholder="amount of items you want to order" required></input>
+            <button type="submit" id="btn-order" class="btn btn-primary mr-3">place order</button>
             </div>
         </div>
     </form>

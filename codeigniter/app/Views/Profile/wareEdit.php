@@ -7,11 +7,11 @@
 <div id="allwares" class="align-content-stretch container d-flex justify-content-center row overflow-auto">
     <?php if (! empty($wares) && is_array($wares)) : ?>
     <?php foreach ($wares as $wares_ware): ?>
-        <div id="sepitem" class="p-auto m-0 column container-fluid border border-dark rounded bg-primary col">
+        <div class="sepitem p-auto m-0 column container-fluid border border-dark rounded bg-primary col">
             <a tabindex=0 class=""href="/wareeditor/<?= esc($wares_ware['itemid'], 'url') ?>">
                 <img class="d-flex justify-content-center" alt="<?php echo $wares_ware['name']; ?>-picture" src="/Images/Items/<?php echo $wares_ware['filename']; ?>">
             </a>
-            <p id="itemtitle" class="d-flex justify-content-center text-justify overflow-auto"><?= esc($wares_ware['name']) ?></p>
+            <p  class="itemtitle d-flex justify-content-center text-justify overflow-auto"><?= esc($wares_ware['name']) ?></p>
 
         
         </div>

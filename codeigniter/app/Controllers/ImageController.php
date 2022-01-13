@@ -31,7 +31,10 @@ class ImageController extends BaseController
             $session->setFlashdata('picturefeedback','please choose a valid file');
         } else {
             $file = $this->request->getFile('media_file');
+            
             $file->move(ROOTPATH .'public/Images/Items');
+            
+            
 
             $mediamodel->insert([
                 'file' =>  $file->getName(),
