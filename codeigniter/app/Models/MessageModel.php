@@ -13,7 +13,9 @@ class MessageModel extends Model
         'senderid',
         'receiverid',
         'content',
-        'ownerid'
+        'ownerid',
+        'date',
+        'time'
     ];
 
     public function getReceivedMessages($id = 0){

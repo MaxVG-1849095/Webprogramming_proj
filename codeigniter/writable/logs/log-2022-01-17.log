@@ -1,0 +1,54 @@
+ERROR - 2022-01-17 03:52:46 --> in login func
+ERROR - 2022-01-17 03:52:46 --> test
+ERROR - 2022-01-17 03:52:46 --> Max@mail.com
+ERROR - 2022-01-17 03:52:47 --> 0
+ERROR - 2022-01-17 03:52:47 --> 1
+ERROR - 2022-01-17 03:52:49 --> 0
+ERROR - 2022-01-17 03:52:49 --> 1
+ERROR - 2022-01-17 03:54:14 --> 1969-12-31
+ERROR - 2022-01-17 03:54:14 --> test in send
+CRITICAL - 2022-01-17 04:00:22 --> log_message(): Argument #2 ($message) must be of type string, null given, called in /app/app/Controllers/MessageController.php on line 110
+#0 /app/app/Controllers/MessageController.php(110): log_message()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->sendMessage()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-17 04:01:28 --> 2022/01/17
+ERROR - 2022-01-17 04:01:28 --> 1969-12-31
+ERROR - 2022-01-17 04:01:28 --> test in send
+ERROR - 2022-01-17 04:02:03 --> 2022/01/17
+ERROR - 2022-01-17 04:02:03 --> 1969-12-31
+ERROR - 2022-01-17 04:02:03 --> test in send
+ERROR - 2022-01-17 04:03:17 --> 2022/01/17
+ERROR - 2022-01-17 04:03:17 --> 1969-12-31
+ERROR - 2022-01-17 04:03:17 --> test in send
+ERROR - 2022-01-17 04:03:39 --> 2022/01/17
+ERROR - 2022-01-17 04:03:39 --> 04:03:39am
+ERROR - 2022-01-17 04:03:39 --> test in send
+ERROR - 2022-01-17 04:05:07 --> 2022/01/17
+ERROR - 2022-01-17 04:05:07 --> 04:05:07am
+ERROR - 2022-01-17 04:05:07 --> test in send
+CRITICAL - 2022-01-17 04:06:47 --> Undefined array key "date"
+#0 /app/app/Controllers/MessageController.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/CodeIgniter.php(802): App\Controllers\MessageController->sendMessage()
+#2 /app/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController()
+#3 /app/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-17 04:07:05 --> 2022/01/17
+ERROR - 2022-01-17 04:07:05 --> 04:07:05am
+ERROR - 2022-01-17 04:07:05 --> 1969-12-31 18:00:00
+ERROR - 2022-01-17 04:12:04 --> 2022/01/17
+ERROR - 2022-01-17 04:12:04 --> 04:12:04am
+ERROR - 2022-01-17 04:12:04 --> 1969-12-31
+ERROR - 2022-01-17 04:14:00 --> 2022/01/17
+ERROR - 2022-01-17 04:14:00 --> 04:14:00am
+ERROR - 2022-01-17 04:14:00 --> 1969-12-31
+ERROR - 2022-01-17 12:58:54 --> in login func
+ERROR - 2022-01-17 12:58:54 --> test
+ERROR - 2022-01-17 12:58:54 --> Andreas@mail.com
+ERROR - 2022-01-17 12:58:54 --> 0
+ERROR - 2022-01-17 12:58:54 --> 1
+ERROR - 2022-01-17 13:03:56 --> 0
+ERROR - 2022-01-17 13:03:56 --> 1

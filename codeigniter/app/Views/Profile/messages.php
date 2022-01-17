@@ -70,7 +70,8 @@
             }
         } ?>
         <div class="bg-secondary m-2 p-2 rounded">
-            <h4> Message from user <?php echo $sendername ?> with id: <?php echo $message['senderid']; ?></h4>
+            <p class="h4"> Message from user <?php echo $sendername ?> with id: <?php echo $message['senderid']; ?></p>
+            <p class="h5">Sent: <?php echo $message['date']?> <?php echo $message['time']?></p>
 
             <p><?php echo $message['content']; ?></p>
             <form action="/MessageController/removeMessage" method="post" class="">
@@ -101,7 +102,8 @@
             }
         } ?>
         <div class="bg-secondary m-2 p-2 rounded">
-            <h4> Message to user <?php echo $receivername ?> with id: <?php echo $message['receiverid']; ?></h4>
+            <p class="h4"> Message to user <?php echo $receivername ?> with id: <?php echo $message['receiverid']; ?></p>
+            <p class="h5">Sent: <?php echo $message['date']?> <?php echo $message['time']?></p>
             <p><?php echo $message['content']; ?></p>
             <form action="/MessageController/removeMessage" method="post" class="">
                 <?= csrf_field() ?>

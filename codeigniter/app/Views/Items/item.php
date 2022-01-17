@@ -29,7 +29,11 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
+<noscript>
+    <p class="d-flex justify-content-center">
+    Please turn on javascript to use image carousel!
+    </p>
+</noscript>
 <h2 class="d-flex justify-content-center">
     Description:
 </h2>

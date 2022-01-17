@@ -114,6 +114,8 @@ class MessageController extends BaseController
                 'content' => $this->request->getPost('content'),
                 'systemmessage' => 0,
                 'ownerid' => $this->request->getPost('senderid'),
+                'date' => strval(date("Y/m/d")),
+                'time' => strval(date("H:i:sa"))
             ]);
             $messagemodel->insert([
                 'senderid' => $this->request->getPost('senderid'),
@@ -121,7 +123,9 @@ class MessageController extends BaseController
                 'content' => $this->request->getPost('content'),
                 'systemmessage' => 0,
                 'ownerid' => $this->request->getPost('receiverid'),
-            ]);
+                'date' => strval(date("Y/m/d")),
+                'time' => strval(date('H:i:sa'))
+            ]); 
         }else
         {
             $session->setFlashdata('messageerror', 'Something went wrong, check if you entered everything correctly (Unable to send message to yourself or accounts that do not exist!)');

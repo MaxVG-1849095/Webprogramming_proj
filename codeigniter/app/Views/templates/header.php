@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="/css/templateStyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <noscript>
+  <noscript> <!-- css for noscript compatibility -->
         <style type="text/css">
             .js-content { display: none; }
         </style>
@@ -25,7 +25,7 @@
 </head>
 <body class="min-vh-100 ownBgColor">
 <noscript>
-  <div class="" id="">
+  <div class="bg-primary" id="">
     <nav>
       <div class="p-4">
         <ul class="">
