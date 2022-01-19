@@ -22,6 +22,7 @@ class ItemController extends BaseController
     {
         
     }
+    //redirect to edit wares
     public function editWaresRedirect(){
         return redirect()->to('/editwares');
     }
@@ -36,11 +37,13 @@ class ItemController extends BaseController
 
         $this->template('Profile/wareEdit', $data);
     }
+    //redirect to edit a ware
     public function wareEditorRedirect($itemid){
         $redirectString = "wareeditor/".$itemid;
         //print_r($redirectString);
         return redirect()->to($redirectString);
     }
+    //loads page to edit a ware
     public function wareEditor($itemid){
         $session = session(); //otherwise session data is lost?
         $itemmodel = new ItemModel();
@@ -51,10 +54,13 @@ class ItemController extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
         }
         $data['itemid'] = $itemid;
-    
+        $ordermodel = new OrderModel();
+        $data['activeorders'] = $ordermodel->getActiveOrderCountItem($itemid);
+        $data['inactiveorders'] = $ordermodel->getInactiveOrderCountItem($itemid);
+        $data['finishedorders'] = $ordermodel->getFinishedOrderCountitem($itemid);
         $this->template('Profile/wareEditor',$data);
     }
-
+    //updates name of a ware
     public function updatename()
     {
         $session = session();
@@ -77,11 +83,11 @@ class ItemController extends BaseController
         $data['item'] = $model->getItems($item_id);
         $this->template('Profile/wareEditor',$data);
     }
-    
+    //redirect to create item page
     public function createItemRedirect(){
         return redirect()->to('/createitem');
     }
-
+    //loads view to create item
     public function createItemViewLoader(){
         $session = session();
         $data = [];
@@ -91,7 +97,7 @@ class ItemController extends BaseController
         $this->template("/Profile/wareCreator",$data);
     }
     
-
+    //creates an item
     public function createItem(){
         $session = session();
         $itemmodel = new ItemModel();
@@ -110,12 +116,17 @@ class ItemController extends BaseController
             'max_size[media_file,4096]',
         ])){
             $file = $this->request->getFile('media_file');
-            $file->move(ROOTPATH .'public/Images/Items');
+            $name = $file->getRandomName();
+            $image = \Config\Services::image()
+                ->withFile($file)
+                ->resize(350, 350, true, 'height')
+                ->save(ROOTPATH .'public/Images/Items/'. $name);
+            //$file->move(ROOTPATH .'public/Images/Items');
             $itemmodel->insert([
                 'name' => $this->request->getPost('name'),
                 'description'  => $this->request->getPost('description'),
                 'price' => $this->request->getPost('price'),
-                'filename' => $file->getName(),
+                'filename' => $name,
                 'availability' => $this->request->getPost('availability'),
                 'sellerid' => $this->request->getPost('sellerid'),
             ]);
@@ -129,6 +140,7 @@ class ItemController extends BaseController
         $data = [];
         return redirect()->to('/editwares');
     }
+    //deletes an item from the database
     public function removeItem(){
         $session = session();
         $model = new ItemModel();
@@ -157,7 +169,7 @@ class ItemController extends BaseController
         
         return redirect()->to('/editwares');
     }
-
+    //sets new availability for an item
     public function setAvailability(){
         $session = session();
         $model = new ItemModel();
@@ -183,7 +195,7 @@ class ItemController extends BaseController
         return redirect()->to($redirectString);
     }
 
-
+    //updates description of an item
     public function updatedescription(){
         $session = session();
         if ( empty($this->request->getPost('itemid'))) {
@@ -204,6 +216,7 @@ class ItemController extends BaseController
         //print_r($redirectString);
         return redirect()->to($redirectString);
     }
+    //updates price of an item
     public function updateprice()
     {
         $session = session();
@@ -227,7 +240,7 @@ class ItemController extends BaseController
         //print_r($redirectString);
         return redirect()->to($redirectString);
     }
-
+    //updates availability of an item
     public function updateavailability()
     {
         $session = session();

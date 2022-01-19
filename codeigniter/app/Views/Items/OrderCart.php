@@ -16,7 +16,7 @@
                     <span class="badge badge-secondary">Amount ordered: <?php echo $order['amount'] ?></span>
                         
                     </h3>
-                    <div class="containter-fluid bg-secondary pb-5 mx-5 d-flex justify-content-center ">
+                    <div class="containter-fluid pb-5 mx-5 d-flex justify-content-center ">
 
                     
                         <img class="" alt="Items" src="/Images/Items/<?php echo $item['filename']; ?>">

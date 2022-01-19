@@ -130,8 +130,8 @@
     <?php endforeach; ?>
 <?php else : ?>
 
-    <h3>No reviews</h3>
+    <h3 class="m-4">No reviews</h3>
 
-    <p>Unable to find any reviews for this item.</p>
+    <p class="m-4">Unable to find any reviews for this item.</p>
 
 <?php endif ?>

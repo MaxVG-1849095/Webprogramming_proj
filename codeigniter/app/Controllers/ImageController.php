@@ -11,7 +11,7 @@ class ImageController extends BaseController
     {
         //parent::__construct();
     }
-
+    //stores new image for an item
     public function storeItemImage()
     {
         $session = session();
@@ -25,19 +25,28 @@ class ImageController extends BaseController
             'mime_in[media_file,image/jpg,image/jpeg,image/gif,image/png,video/mp4]',
             'max_size[media_file,4096]',
         ]);
-        //log_message('error', $this->request->getFile('media_file')->getRandomName());
-        //log_message('error', $this->request->getFile('media_file')->getClientMimeType());
+        
         if (!$input) {
             $session->setFlashdata('picturefeedback','please choose a valid file');
         } else {
             $file = $this->request->getFile('media_file');
+            $name = $file->getRandomName();
+            if($file->getMimeType() != "video/mp4"){
+                $image = \Config\Services::image()
+                ->withFile($file)
+                ->resize(350, 350, true, 'height')
+                ->save(ROOTPATH .'public/Images/Items/'. $name);
+            }
+            else{
+                
+                $file->move(ROOTPATH .'public/Images/Items', $name);
+            }
             
-            $file->move(ROOTPATH .'public/Images/Items');
             
             
 
             $mediamodel->insert([
-                'file' =>  $file->getName(),
+                'file' =>  $name,
                 'type'  => $file->getClientMimeType(),
                 'itemID' => $this->request->getPost('itemid'),
             ]);
@@ -48,7 +57,7 @@ class ImageController extends BaseController
         //print_r($redirectString);
         return redirect()->to($redirectString);
     }
-
+    //stores new image for a user
     public function storeProfileImage()
     {
         $session = session();

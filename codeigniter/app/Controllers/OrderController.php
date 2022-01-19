@@ -17,7 +17,7 @@ class OrderController extends BaseController
     }
 
 
-
+    //creates orders 
     public function makeOrdersFromCart()
     {
         $session = Session();
@@ -33,7 +33,7 @@ class OrderController extends BaseController
         unset($_SESSION['cart']);
         return redirect()->to('/');
     }
-
+    //creates seperate order
     public function placeorder($itemid){
         $itemmodel = new ItemModel();
 
@@ -52,7 +52,7 @@ class OrderController extends BaseController
             $this->placeorderunavailable($del, $itemid);
         }
     }
-
+    //places order into cart for no js users
     public function placeordernoscript(){
         $session = session();
         $itemid = $this->request->getPost('itemid');
@@ -91,7 +91,7 @@ class OrderController extends BaseController
             }
             return redirect()->to('/item/'.$itemid);
     }
-
+    //places order when item is available
     public function placeorderavailable($del, $itemid)
     {
         $session = Session();
@@ -114,7 +114,7 @@ class OrderController extends BaseController
         $itemmodel = new ItemModel();
         $itemmodel->decrementavailability($itemid);
     }
-
+    //places order when item is unavailable
     public function placeorderunavailable($del, $itemid)
     {
         $session = Session();
@@ -134,7 +134,7 @@ class OrderController extends BaseController
             'delivery' => $del,
         ]);
     }
-
+    //loads orders for a seller
     public function loadOrdersSeller()
     {
         $session = session();
@@ -169,7 +169,7 @@ class OrderController extends BaseController
         ];
         $this->template('Profile/sellerOrders', $data);
     }
-
+    //loads orders for a shopper
     public function loadOrdersShopper()
     {
         $session = session();
@@ -202,7 +202,7 @@ class OrderController extends BaseController
         $this->template('Profile/shopperOrders', $data);
     }
 
-
+    //removes an active order invoked by seller
     public function removeActiveOrderSeller()
     {
         $session = session();
@@ -226,7 +226,7 @@ class OrderController extends BaseController
 
         return redirect()->to('/sellerorders');
     }
-
+    //removes an active order invoked by a shopper
     public function removeActiveOrderShopper()
     {
         $session = session();
@@ -254,7 +254,7 @@ class OrderController extends BaseController
 
         return redirect()->to('/shopperorders');
     }
-
+    //removes a pending order invoked by a seller
     public function removePendingOrderSeller()
     {
         $session = session();
@@ -279,7 +279,7 @@ class OrderController extends BaseController
 
         return redirect()->to('/sellerorders');
     }
-
+    //removes a pending order invoked by a shopper
     public function removePendingOrderShopper()
     {
         $session = session();
@@ -294,7 +294,7 @@ class OrderController extends BaseController
             ->delete();
             return redirect()->to('/shopperorders');
     }
-
+    //completes an order
     public function completeOrder()
     {
         $session = session();
@@ -328,7 +328,7 @@ class OrderController extends BaseController
         }
         return redirect()->to('/sellerorders');
     }
-
+    //sets first pending order active (when more items become available)
     private function setFirstPendingActive($itemid)
     {
         $session = session();
@@ -352,7 +352,7 @@ class OrderController extends BaseController
         }
     }
 
-
+    //redirect for choosing the date of an order
     public function orderdateredirect()
     {
         $session = session();
@@ -367,7 +367,7 @@ class OrderController extends BaseController
         ];
         $this->template('Profile/orderDate', $data);
     }
-
+    //sets date for an order
     public function setWaitingDate()
     {
         
@@ -402,7 +402,7 @@ class OrderController extends BaseController
 
         return redirect()->to('/shopperorders');
     }
-
+    //adds order to cart from ajax function
     private function addOrderToCart($itemid, $amount)
     {
         $session = session();
@@ -448,7 +448,7 @@ class OrderController extends BaseController
     
         echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
     }
-
+    // function called by ajax to add order to cart
     public function ajaxOrderCart(){
         if ( empty($this->request->getVar('itemid'))) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Currently not allowed to take this action');
@@ -465,7 +465,7 @@ class OrderController extends BaseController
         //     "data" => $data
         // ));
     }
-
+    //view loader for cart 
     public function loadCartView(){
         $session = session();
         $items_arr[] = [];
@@ -496,7 +496,7 @@ class OrderController extends BaseController
     }
 
 
-
+    //empties the cart
     public function emptyCart(){
         $session = session();
         if ( !$session->has('cart')) {

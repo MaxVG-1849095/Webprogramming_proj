@@ -55,6 +55,8 @@ $routes->get('wareeditor/(:segment)', 'ItemController::wareEditor/$1');
 $routes->get('/createitem', 'ItemController::createItemViewLoader');
 $routes->get('/sellerorders', 'OrderController::loadOrdersSeller');
 $routes->get('/shopperorders', 'OrderController::loadOrdersShopper');
+$routes->get('/search/(:segment)', 'SearchController::dosearchnull/$1');
+$routes->get('/search/(:segment)/(:segment)', 'SearchController::dosearch/$1/$2');
 
 $routes->match(['get', 'post'], 'Login/login', 'LoginController::login');
 $routes->match(['get', 'post'], 'Login/signup', 'LoginController::signup');

@@ -22,6 +22,7 @@ class LoginController extends BaseController
         echo view('Login/signup');
         echo view('templates/footer');
     }
+    //creates new account in database and logs into that account
     public function signup(){
         $session = session();
         $UsersModel = new UsersModel();
@@ -69,6 +70,7 @@ class LoginController extends BaseController
             return redirect()->to('/signup');
         }
     }
+    //logs user into their account or tells them that their login is incorrect
     public function login()
     {
         log_message('error', 'in login func');

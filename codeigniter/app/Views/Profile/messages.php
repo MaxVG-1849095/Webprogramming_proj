@@ -1,7 +1,7 @@
 <h1>
     System notifications:
 </h1>
-<div class="overflow-auto" id="messages">
+<div class="overflow-auto messages">
 <?php if (!empty($notifications) && is_array($notifications)) : ?>
     <?php foreach ($notifications as $message) : ?>
         <div class="bg-primary m-2 p-2 rounded">
@@ -60,7 +60,7 @@
 <h1>
     Received messages:
 </h1>
-<div class="overflow-auto" id="messages">
+<div class="overflow-auto messages" >
 <?php if (!empty($received_messages) && is_array($received_messages)) : ?>
     <?php foreach ($received_messages as $message) : ?>
         <?php foreach ($senders as $sender) {
@@ -92,7 +92,7 @@
 <h1>
     Sent messages:
 </h1>
-<div class="overflow-auto" id="messages">
+<div class="overflow-auto messages" >
 <?php if (!empty($sent_messages) && is_array($sent_messages)) : ?>
     <?php foreach ($sent_messages as $message) : ?>
         <?php foreach ($receivers as $receiver) {

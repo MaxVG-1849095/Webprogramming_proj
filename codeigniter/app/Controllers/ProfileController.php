@@ -12,6 +12,7 @@ class ProfileController extends BaseController
     {
         //parent::__construct();
     }
+    //loads view for profile
     public function index($profid = 0)
     {
         $session=session();
@@ -44,6 +45,7 @@ class ProfileController extends BaseController
         echo view('Profile/profile', $data);
         echo view('templates/footer', $data);
     }
+    //logs current user out
     function logout()
     {
         $session = session();
@@ -54,6 +56,7 @@ class ProfileController extends BaseController
         $logincont = new LoginController();
         return $logincont->index();
     }
+    //loads view for profile edit
     public function edit()
     {
         $model = new UsersModel();
@@ -68,6 +71,7 @@ class ProfileController extends BaseController
         // echo view('templates/footer', $data);
         $this->template('Profile/profileEdit', $data);
     }
+    //edits description of logged in account in database
     public function editdesc()
     {
         log_message('error', $this->request->getMethod());
@@ -86,7 +90,7 @@ class ProfileController extends BaseController
         }
         return redirect()->to('/profileedit');
     }
-
+    //edits adress of logged in account in database
     public function editadress()
     {
         $session = session();

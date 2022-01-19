@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="m-4 form-group">
-            <label class="" for="fileinput">File name</label>
+            <label class="" for="fileinput">Picture for thumbnail</label>
             <div class="d-flex">
                 
             <input type="file" id="profile_image" name="media_file" size="33" required/>
@@ -34,5 +34,9 @@
         <div class="m-4">
             <button type="submit" class="btn btn-success">create ware</button>
         </div>
-        
+        <?php if (session()->getFlashdata('itemError')) : ?>
+    <div class="alert alert-warning">
+        <?= session()->getFlashdata('itemError') ?>
+    </div>
+    <?php endif;?>
 </form>

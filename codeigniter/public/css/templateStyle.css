@@ -159,7 +159,7 @@ body {
     padding-top:75px;
     padding-bottom: 75px; }
 
-#messages{
+.messages{
     max-height: 38vh;
 }
 #cartitems{

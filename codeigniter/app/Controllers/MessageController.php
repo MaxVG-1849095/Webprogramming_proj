@@ -14,7 +14,7 @@ class MessageController extends BaseController
     {
         //parent::__construct();
     }
-
+    //loads message view
     public function loadMessages()
     {
         $session = session();
@@ -52,7 +52,7 @@ class MessageController extends BaseController
 
         $this->template('Profile/messages', $data);
     }
-
+    //loads messages when filter is applied
     public function loadSpecificMessages(){
         $session = session();
         
@@ -95,7 +95,7 @@ class MessageController extends BaseController
         ];
         $this->template('Profile/messages', $data);
     }
-
+    //adds a message into the database
     public function sendMessage()
     {
         $session = session();
@@ -132,7 +132,7 @@ class MessageController extends BaseController
         }
         return redirect()->to('/messages');
     }
-
+    //removes a message from the database
     public function removeMessage(){
         $session = session();
         $messagemodel = new MessageModel();
@@ -148,7 +148,7 @@ class MessageController extends BaseController
         
             return redirect()->to('/messages');
     }
-
+    //removes a notification from the database
     public function removeNotification(){
         $session=session();
         $notimodel = new NotificationModel();
@@ -163,7 +163,7 @@ class MessageController extends BaseController
         
         return redirect()->to('/messages');
     }
-
+    //loads the review page for an item
     public function reviewpage(){
         $session = session();
         $itemmodel = new ItemModel();
@@ -177,7 +177,7 @@ class MessageController extends BaseController
 
         $this->template('Items/itemreviewform',$data);
     }
-
+    //creates a review for an item
     public function createReview(){
         $session = session();
         $reviewmodel = new ReviewModel();

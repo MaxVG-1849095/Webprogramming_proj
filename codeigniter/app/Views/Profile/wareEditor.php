@@ -4,7 +4,7 @@
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
         <label class="" for="nameEdit">Edit name (Current name: <?php echo $item['name'] ?>)</label>
         <div class="d-flex">
-            <input rows="2" class="form-control" type="newname" name="newname" placeholder="new name"></input>
+            <input rows="2" class="form-control" type="text" name="newname" placeholder="new name">
             <button type="submit" class="btn btn-primary">Edit</button>
         </div>
     </form>
@@ -13,7 +13,7 @@
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
         <label class="" for="priceEdit">Edit price (Current price: <?php echo $item['price'] ?>)</label>
         <div class="d-flex">
-            <input rows="2" class="form-control" type="number" min="0" name="newprice" placeholder="new price"></input>
+            <input rows="2" class="form-control" type="number" min="0" name="newprice" placeholder="new price">
             <button type="submit" class="btn btn-primary">Edit</button>
         </div>
     </form>
@@ -23,7 +23,7 @@
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">
         <label class="" for="priceEdit">Edit Amount of available items (Current amount of items available: <?php echo $item['availability'] ?>)</label>
         <div class="d-flex">
-            <input rows="2" class="form-control" type="number" min="0" name="newavailable" placeholder="new amount of items available"></input>
+            <input rows="2" class="form-control" type="number" min="0" name="newavailable" placeholder="new amount of items available">
             <button type="submit" class="btn btn-primary">Edit</button>
         </div>
     </form>
@@ -50,7 +50,16 @@
         <?= session()->getFlashdata('picturefeedback') ?>
     </div>
 <?php endif; ?>
-
+<h3>
+    Item order stats:
+</h3>
+<p class="m-3">
+    Active orders: <?php echo $activeorders['orderid']?>
+    <br>
+    Inactive orders: <?php echo $inactiveorders['orderid']?>
+    <br>
+    Finished orders: <?php echo $finishedorders['orderid']?>
+</p>
     <form action="/ItemController/removeItem" method="post" class="">
         <?= csrf_field() ?>
         <input type="hidden" name="itemid" value="<?php echo $item['itemid'] ?>">

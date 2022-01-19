@@ -112,6 +112,16 @@ class OrderModel extends Model
         return $query;
     }
 
+    public function getActiveOrderCountItem($itemid){
+        $db = \Config\Database::connect();
+        $builder = $db->table('Orders');
+        $builder->where('itemid', $itemid);
+        $builder->where('active', 1);
+        $builder->selectCount('orderid');
+        $query = $builder->get()->getRowArray();
+        return $query;
+    }
+
     public function getInactiveOrderCount($sellerid){
         $db = \Config\Database::connect();
         $builder = $db->table('Orders');
@@ -123,10 +133,31 @@ class OrderModel extends Model
         return $query;
     }
 
+    public function getInactiveOrderCountItem($itemid){
+        $db = \Config\Database::connect();
+        $builder = $db->table('Orders');
+        $builder->where('itemid', $itemid);
+        $builder->where('active', 0);
+        $builder->where('finished', 0);
+        $builder->selectCount('orderid');
+        $query = $builder->get()->getRowArray();
+        return $query;
+    }
+
     public function getFinishedOrderCount($sellerid){
         $db = \Config\Database::connect();
         $builder = $db->table('Orders');
         $builder->where('sellerid', $sellerid);
+        $builder->where('finished', 1);
+        $builder->selectCount('orderid');
+        $query = $builder->get()->getRowArray();
+        return $query;
+    }
+
+    public function getFinishedOrderCountitem($itemid){
+        $db = \Config\Database::connect();
+        $builder = $db->table('Orders');
+        $builder->where('itemid', $itemid);
         $builder->where('finished', 1);
         $builder->selectCount('orderid');
         $query = $builder->get()->getRowArray();

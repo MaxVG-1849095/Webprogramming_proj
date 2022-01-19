@@ -3,7 +3,7 @@
             Thanks for Visiting my bin!
         </div>
         <div class="navbar-brand text-right">
-            &copy; 2021
+            &copy; 2022
         </div>
 
 
